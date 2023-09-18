@@ -1,0 +1,144 @@
+<FranticDan>
+<append xpath="/quests">
+
+	<!-- Automatically completed quest -->
+	<quest id="SpencerMansionQuest">
+		<property name="group_name_key" value="quest_BasicSurvival"/>
+		<property name="name_key" value="The Spencer Mansion Challenge"/>
+		<property name="subtitle_key" value="Enter The Survival Horror"/>
+		<property name="description_key" value="questStartup_desc"/>
+		<property name="icon" value="ui_game_symbol_map_bed"/>
+		<property name="category_key" value="The Challenge"/>
+		<property name="difficulty" value="veryeasy"/>
+		<property name="offer_key" value="questStartup_offer"/>
+		<property name="shareable" value="false"/>
+
+		<reward type="Item" id="VoidInventory" value="45"/>
+		
+<!-- 		<reward type="Exp" value="11024"/> -->
+		<reward type="Quest" id="Escape"/>
+	</quest>
+
+	<quest id="quest_BookOfCurses">
+		<property name="name" value="Book of Curses"/>
+		<property name="subtitle" value="Book of Curses"/>
+		<property name="description" value="Book of Curses"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="offer_key" value="BookOfCurses_offer"/>
+		<property name="category" value="Book"/>
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false"/>
+
+		<action type="ShowTip" value="Quest_SwordKey_tip">
+		<property name="delay" value="1"/>
+		</action>
+
+		<reward type="Item" id="SwordKey" value="4"/>
+	</quest>
+
+	<quest id="Dog_Whistle">
+		<property name="name_key" value="A crumpled memo"/>
+		<property name="subtitle_key" value="A crumpled memo"/>
+		<property name="description_key" value="A crumpled memo"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="true"/>
+		<property name="category" value="Memo"/>
+		<property name="offer_key" value="DogWhistle_offer"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="TerraceKey" value="1"/>		
+		<!-- <property name="completiontype" value="TurnIn"/> -->
+
+<!-- 		<reward type="Item" id="BalconyTerraceKey" value="1"/> -->
+
+		<!-- <objective type="RandomGoto" value="35-36" phase="1">
+			<property name="completion_distance" value="30"/>
+			<property name="nav_object" value="quest" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create"/>
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<action type="SpawnEnemy" id="animalZombieDog" value="1" phase="3"/>
+		<action type="SpawnEnemy" id="ZombieDog" value="1" phase="3"/>
+		<objective type="EntityKill" id="animalZombieDog" value="1" phase="3"/>
+		<objective type="EntityKill" id="ZombieDog" value="1" phase="3"/> -->
+
+		<!-- <objective type="InteractWithNPC">
+			<property name="phase" value="4"/>
+		</objective>
+
+		<reward type="Exp" value="500"/>
+		You can define a range of rewards like <reward type="Item" id="casinoCoin" value="500"/>
+		<reward type="Item" id="casinoCoin" value="350"/> -->
+	</quest>
+
+	<quest id="Escape">
+		<property name="name_key" value="Build a Gyrocopter"/>
+		<property name="subtitle_key" value="Escape The Spencer Mansion"/>
+		<property name="description_key" value="Scavenge the mansion for parts and put together a gyrocopter. Then escape to the helipad."/>
+		<property name="icon" value="ui_game_symbol_misc_crafting"/>
+		<property name="category" value="Mission"/>
+		<property name="difficulty" value="hard"/>
+		<property name="offer_key" value="quest_BasicSurvival_offer"/>
+		<property name="shareable" value="false"/>
+
+		<objective type="Craft">
+			<property name="phase" value="1"/>
+			<property name="item" value="vehicleGyrocopterPlaceable"/>
+			<property name="count" value="1"/>
+		</objective>
+
+		<reward type="Quest" id="FinalEscape"/>
+	</quest>
+
+	<quest id="FinalEscape">
+		<property name="name_key" value="FinalEscapename"/>
+		<property name="subtitle_key" value="FinalEscapekey"/>
+		<property name="description_key" value="FinalEscapedesc"/>
+		<property name="icon" value="ui_game_symbol_map_house"/>
+		<property name="category" value="Mission"/>
+		<property name="difficulty" value="hard"/>
+		<property name="offer_key" value="quest_BasicSurvival_offer"/>
+		<property name="shareable" value="false"/>
+
+
+		<objective type="Goto" id="trader" value="5" phase="1">
+			<!-- <property name="biome_filter_type" value="OnlyBiome" /> -->
+			<!-- <property name="biome_filter" value="pine_forest" /> -->
+			<!-- <property name="biome_filter_type" value="ExcludeBiome" /> -->
+			<!-- <property name="biome_filter" value="wasteland" /> -->
+			<property name="nav_object" value="go_to_trader" />
+		</objective>
+		<objective type="EntityKill" id="SuperTyrant" value="1" phase="2"/>
+		<!-- <objective type="InteractWithNPC">
+			<property name="phase" value="3"/>
+			<property name="nav_object" value="return_to_trader" />
+			<property name="use_closest" value="true" />
+		</objective> -->
+		<reward type="Quest" id="Completion"/>
+	</quest>
+
+	<quest id="Completion">
+		<property name="name_key" value="Challenge Completion"/>
+		<property name="subtitle_key" value="Challenge Completion"/>
+		<property name="description_key" value="Completion_desc"/>
+		<property name="icon" value="ui_game_symbol_map_trader"/>
+		<property name="category" value="Congratulations!"/>
+		<property name="difficulty" value="easy"/>
+		<property name="shareable" value="false"/>
+
+
+		<action type="ShowTip" value="Quest_Completion_tip">
+		<property name="delay" value="5"/>
+		</action>
+
+
+	</quest>
+
+	</append>
+</FranticDan>
