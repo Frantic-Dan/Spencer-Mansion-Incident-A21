@@ -1,0 +1,22 @@
+<configs>
+	<!--Remove zombie/animal spawning-->
+	<set xpath="/spawning/biome[@name='pine_forest']//spawn[1]/@maxcount">0</set>
+	<set xpath="/spawning/biome[@name='pine_forest']//spawn[1]/@respawndelay">99.9</set>
+	<set xpath="/spawning/biome[@name='pine_forest']//spawn[2]/@maxcount">0</set>
+	<set xpath="/spawning/biome[@name='pine_forest']//spawn[2]/@respawndelay">99.9</set>
+	<set xpath="/spawning/biome[@name='pine_forest']//spawn[3]/@maxcount">0</set>
+	<set xpath="/spawning/biome[@name='pine_forest']//spawn[3]/@respawndelay">99.9</set>
+	<set xpath="/spawning/biome[@name='pine_forest']//spawn[4]/@maxcount">0</set>
+	<set xpath="/spawning/biome[@name='pine_forest']//spawn[4]/@respawndelay">99.9</set>
+	<set xpath="/spawning/biome[@name='pine_forest']//spawn[5]/@maxcount">0</set>
+	<set xpath="/spawning/biome[@name='pine_forest']//spawn[5]/@respawndelay">99.9</set>
+	<set xpath="/spawning/biome[@name='pine_forest']//spawn[6]/@maxcount">0</set>
+	<set xpath="/spawning/biome[@name='pine_forest']//spawn[6]/@respawndelay">99.9</set>
+	<set xpath="/spawning/biome[@name='pine_forest']//spawn[7]/@maxcount">0</set>
+	<set xpath="/spawning/biome[@name='pine_forest']//spawn[7]/@respawndelay">99.9</set>
+	<set xpath="/spawning/biome[@name='pine_forest']//spawn[8]/@maxcount">0</set>
+	<set xpath="/spawning/biome[@name='pine_forest']//spawn[8]/@respawndelay">99.9</set>
+	<set xpath="/spawning/biome[@name='pine_forest']//spawn[9]/@maxcount">0</set>
+	<set xpath="/spawning/biome[@name='pine_forest']//spawn[9]/@respawndelay">99.9</set>
+	
+</configs>
