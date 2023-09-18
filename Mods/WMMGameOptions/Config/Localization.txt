@@ -1,0 +1,5 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+goZombieRage,,UI,Menu,KgNone,Zombie Rage,,,,,
+goZombieRageDesc,,UI,Menu,KgNone,Zombie Rage.,,,,,
+goZombieRageOn,,UI,Menu,KgNone,On,,,,,
+goZombieRageOff,,UI,Menu,KgNone,Off,,,,,
