@@ -1,0 +1,10 @@
+<configs>
+
+<remove xpath="/shapes/shape/property[@name='MaterialHitpointMultiplier'][@value='0.05']"/>
+<set xpath="/shapes/shape/property[@name='MaterialHitpointMultiplier'][@value='0.001']/@value">0.00002</set>
+
+<insertafter xpath="/shapes/shape[@name]/property[1]">
+	<property name="CreativeMode" value="None"/>
+
+</insertafter>
+</configs>
