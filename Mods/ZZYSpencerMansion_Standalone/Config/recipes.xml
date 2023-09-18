@@ -1,0 +1,411 @@
+<FranticDan>
+<set xpath="/recipes">
+
+<!-- * * * * * * * * * * * * basic scrap material recipes * * * * * * * * * * * * -->
+<!--<recipe name="resourceMilitaryFiber" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe> -->
+<recipe name="resourceScrapPolymers" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+<recipe name="resourceElectricParts" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+<recipe name="resourceMechanicalParts" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+<recipe name="resourceBrokenGlass" count="1" tooltip="ttScrapMetalBrass"  always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+<recipe name="resourceCloth" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+<recipe name="resourceLeather" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+<recipe name="resourcePaper" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+<recipe name="resourceRockSmall" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+<recipe name="resourceScrapBrass" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+<recipe name="resourceScrapIron" count="1" tooltip="ttScrapMetalIron" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+<recipe name="resourceScrapLead" count="1" tooltip="ttScrapMetalLead" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+<recipe name="resourceWood" count="1" tooltip="ttScrapMetalLead" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+<recipe name="resourceYuccaFibers" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+<recipe name="resourceClayLump" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+<!--<recipe name="resourcePaint" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe> -->
+<recipe name="resourceBone" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+<!-- * * * * * * * * * * * * forge-emptying recipes: use_ingredient_modifier defaults to true and can disable the CraftingIngredientCount passive * * * * * * * * * * * * -->
+<!-- <recipe name="resourceClayLump" count="1" material_based="true" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_clay" count="5"/>
+</recipe> -->
+
+<!-- <recipe name="resourceCrushedSand" count="1" material_based="true" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_glass" count="4"/>
+</recipe> -->
+
+<!-- <recipe name="resourceRockSmall" count="1" material_based="true" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_stone" count="5"/>
+</recipe> -->
+
+<recipe name="resourceScrapBrass" count="1" material_based="true" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_brass" count="1"/>
+</recipe>
+
+<!-- <recipe name="resourceScrapIron" count="1" material_based="true" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_iron" count="1"/>
+</recipe> -->
+
+<recipe name="resourceScrapLead" count="1" material_based="true" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_lead" count="1"/>
+</recipe>
+
+<!-- <recipe name="drinkJarBeer" count="1" craft_area="chemistryStation" tags="perkMasterChef,learnable,chemStationCrafting">
+	<ingredient name="resourceCropHopsFlower" count="4"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="resourceCropHopsFlower"/>
+	</effect_group>
+</recipe>
+-->
+
+
+<recipe name="ammo9mmBulletBallRE" count="1" craft_time="3" craft_area="workbench" craft_exp_gain="0" tags="perkChemistExpert,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="40"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-10" tags="resourceGunPowder"/>
+	</effect_group>
+</recipe>
+
+<recipe name="ammo9mmBulletHPRE" count="1" craft_time="3" craft_area="workbench" craft_exp_gain="0" tags="perkChemistExpert,learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="52"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-13" tags="resourceGunPowder"/>
+	</effect_group>	
+</recipe>
+
+<recipe name="ammo44MagnumBulletBallRE" count="1" craft_time="3" craft_area="workbench" craft_exp_gain="0" tags="perkChemistExpert,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="4"/>
+	<ingredient name="resourceGunPowder" count="160"/>
+	<ingredient name="resourceBulletCasing" count="4"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-40" tags="resourceGunPowder"/>
+	</effect_group>	
+</recipe>
+
+<recipe name="ammo44MagnumBulletHPRE" count="1" craft_time="3" craft_area="workbench" craft_exp_gain="0" tags="perkChemistExpert,learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="4"/>
+	<ingredient name="resourceGunPowder" count="208"/>
+	<ingredient name="resourceBulletCasing" count="4"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-52" tags="resourceGunPowder"/>
+	</effect_group>	
+</recipe>
+
+<recipe name="ammo762mmBulletBallRE" count="1" craft_time="3" craft_area="workbench" craft_exp_gain="0" tags="perkChemistExpert,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="28"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-7" tags="resourceGunPowder"/>
+	</effect_group>	
+</recipe>
+
+<recipe name="ammo762mmBulletHPRE" count="1" craft_time="3" craft_area="workbench" craft_exp_gain="0" tags="perkChemistExpert,learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="36"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-9" tags="resourceGunPowder"/>
+	</effect_group>	
+</recipe>
+
+<recipe name="ammoShotgunShellRE" count="1" craft_time="3" craft_area="workbench" craft_exp_gain="0" tags="perkChemistExpert,workbenchCrafting">
+	<ingredient name="resourceBuckshot" count="1"/>
+	<ingredient name="resourceGunPowder" count="120"/>
+	<ingredient name="resourcePaper" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-30" tags="resourceGunPowder"/>
+	</effect_group>	
+</recipe>
+
+<recipe name="ammoShotgunSlugRE" count="1" craft_time="3" craft_area="workbench" craft_exp_gain="0" tags="perkChemistExpert,learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="3"/>
+	<ingredient name="resourceGunPowder" count="160"/>
+	<ingredient name="resourceScrapPolymers" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-40" tags="resourceGunPowder"/>
+	</effect_group>	
+</recipe>
+
+<recipe name="MixedGreenHerb" count="1" craft_exp_gain="0" craft_time="3">
+	<ingredient name="Green_Herb" count="2"/>
+</recipe>
+
+<recipe name="Mixed3GreenHerbs" count="1" craft_exp_gain="0" craft_time="3">
+	<ingredient name="Green_Herb" count="1"/>
+	<ingredient name="MixedGreenHerb" count="1"/>
+</recipe>
+
+<recipe name="MixedGreen+BlueHerb" count="1" craft_exp_gain="0" craft_time="3">
+	<ingredient name="Green_Herb" count="1"/>
+	<ingredient name="Blue_Herb" count="1"/>
+</recipe>
+
+<recipe name="Mixed2Green+BlueHerb" count="1" craft_exp_gain="0" craft_time="3">
+	<ingredient name="Green_Herb" count="1"/>
+	<ingredient name="MixedGreen+BlueHerb" count="1"/>
+</recipe>
+
+<recipe name="Mixed2Green+BlueHerb" count="1" craft_exp_gain="0" craft_time="3">
+	<ingredient name="Blue_Herb" count="1"/>
+	<ingredient name="MixedGreenHerb" count="1"/>
+</recipe>
+
+<recipe name="MixedGreen+RedHerb" count="1" craft_exp_gain="0" craft_time="3">
+	<ingredient name="Green_Herb" count="1"/>
+	<ingredient name="Red_Herb" count="1"/>
+</recipe>
+
+<recipe name="MixedGreen+Red+BlueHerb" count="1" craft_exp_gain="0" craft_time="3">
+	<ingredient name="Blue_Herb" count="1"/>
+	<ingredient name="MixedGreen+RedHerb" count="1"/>
+</recipe>
+
+<recipe name="MixedGreen+Red+BlueHerb" count="1" craft_exp_gain="0" craft_time="3">
+	<ingredient name="Red_Herb" count="1"/>
+	<ingredient name="MixedGreen+BlueHerb" count="1"/>
+</recipe>
+
+<recipe name="modGunFlashlightRE" count="1" craft_exp_gain="0">
+	<ingredient name="Military-GradeDuctTape" count="1"/>
+	<ingredient name="meleeTorchRE" count="1"/>
+</recipe>
+
+<recipe name="modGunSoundSuppressorSilencerRE" count="1" craft_time="5" craft_exp_gain="0">
+	<ingredient name="MilitaryGoods" count="1"/>
+</recipe>
+
+<recipe name="BulletProofVest" count="1" craft_time="5" craft_exp_gain="0">
+	<ingredient name="MilitaryGoods" count="1"/>
+</recipe>
+
+<recipe name="Bandolier" count="1" craft_time="5" craft_exp_gain="0">
+	<ingredient name="MilitaryGoods" count="1"/>
+</recipe>
+
+<recipe name="resourceBuckshot" count="1" craft_time="3" craft_exp_gain="0" material_based="true" craft_area="forge">
+	<ingredient name="unit_lead" count="6"/>
+</recipe>
+
+<recipe name="resourceBulletCasing" count="1" craft_time="1.25" craft_exp_gain="0" material_based="true" craft_area="forge">
+	<ingredient name="unit_brass" count="5"/>
+</recipe>
+
+<recipe name="resourceBulletTip" count="1" craft_time="1.25" craft_exp_gain="0" material_based="true" craft_area="forge">
+	<ingredient name="unit_lead" count="2"/>
+</recipe>
+
+<recipe name="thrownAmmoMolotovCocktailRE" count="1" craft_time="5" craft_exp_gain="0">
+	<ingredient name="Kerosene" count="3"/>
+</recipe>
+
+<!-- <recipe name="vehicleGyroCopterAccessories" count="1" craft_time="60" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting">
+	<ingredient name="resourceElectricParts" count="15"/>
+	<ingredient name="resourceMetalPipe" count="20"/>
+	<ingredient name="resourceMechanicalParts" count="10"/>
+	<ingredient name="resourceSpring" count="5"/>
+</recipe>
+
+<recipe name="vehicleGyroCopterChassis" count="1" craft_time="60" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="30"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+	<ingredient name="resourceDuctTape" count="6"/>
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceElectricParts" count="20"/>
+</recipe> -->
+
+<recipe name="vehicleGyrocopterPlaceable" count="1" craft_time="0" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting">
+	<ingredient name="vehicleWheels" count="3"/>
+	<ingredient name="vehicleGyroCopterChassis" count="1"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+
+<recipe name="9mmBullet" count="1" craft_time="0.2" craft_exp_gain="0" tags="perkChemistExpert">
+	<ingredient name="resourceBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="40"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+	<ingredient name="ReloadingTool" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-10" tags="resourceGunPowder"/>
+	</effect_group>
+</recipe>
+
+<recipe name="Dismantle9mmAmmo" count="1" craft_time="2" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting">
+	<ingredient name="ammo9mmBulletBallRE" count="1"/>
+</recipe>
+
+<recipe name="9mmHPBullet" count="1" craft_time="0.2" craft_exp_gain="0" tags="perkChemistExpert,learnable">
+	<ingredient name="resourceBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="52"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+	<ingredient name="ReloadingTool" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-13" tags="resourceGunPowder"/>
+	</effect_group>
+</recipe>
+
+<recipe name="44MagnumBullet" count="1" craft_time="0.2" craft_exp_gain="0" tags="perkChemistExpert">
+	<ingredient name="resourceBulletTip" count="4"/>
+	<ingredient name="resourceGunPowder" count="160"/>
+	<ingredient name="resourceBulletCasing" count="4"/>
+	<ingredient name="ReloadingTool" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-40" tags="resourceGunPowder"/>
+	</effect_group>
+</recipe>
+
+<recipe name="Dismantle.44Ammo" count="1" craft_time="2" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting">
+	<ingredient name="ammo44MagnumBulletBallRE" count="1"/>
+</recipe>
+
+<recipe name="44MagnumHPBullet" count="1" craft_time="0.2" craft_exp_gain="0" tags="perkChemistExpert,learnable">
+	<ingredient name="resourceBulletTip" count="4"/>
+	<ingredient name="resourceGunPowder" count="208"/>
+	<ingredient name="resourceBulletCasing" count="4"/>
+	<ingredient name="ReloadingTool" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-52" tags="resourceGunPowder"/>
+	</effect_group>
+</recipe>
+
+<recipe name="762Bullet" count="1" craft_time="0.2" craft_exp_gain="0" tags="perkChemistExpert">
+	<ingredient name="resourceBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="28"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+	<ingredient name="ReloadingTool" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-7" tags="resourceGunPowder"/>
+	</effect_group>
+</recipe>
+
+<recipe name="Dismantle7.62Ammo" count="1" craft_time="2" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting">
+	<ingredient name="ammo762mmBulletBallRE" count="1"/>
+</recipe>
+
+<recipe name="762HPBullet" count="1" craft_time="0.2" craft_exp_gain="0" tags="perkChemistExpert,learnable">
+	<ingredient name="resourceBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="36"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+	<ingredient name="ReloadingTool" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-9" tags="resourceGunPowder"/>
+	</effect_group>
+</recipe>
+
+<recipe name="ShotgunShell" count="1" craft_time="0.2" craft_exp_gain="0" tags="perkChemistExpert">
+	<ingredient name="resourceBuckshot" count="1"/>
+	<ingredient name="resourceGunPowder" count="120"/>
+	<ingredient name="resourcePaper" count="1"/>
+	<ingredient name="ReloadingTool" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-30" tags="resourceGunPowder"/>
+	</effect_group>
+</recipe>
+
+<recipe name="DismantleShotgunShells" count="1" craft_time="2" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting">
+	<ingredient name="ammoShotgunShellRE" count="1"/>
+</recipe>
+
+<recipe name="ShotgunSlug" count="1" craft_time="0.2" craft_exp_gain="0" tags="perkChemistExpert,learnable">
+	<ingredient name="resourceBulletTip" count="3"/>
+	<ingredient name="resourceGunPowder" count="160"/>
+	<ingredient name="resourceScrapPolymers" count="1"/>
+	<ingredient name="ReloadingTool" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-40" tags="resourceGunPowder"/>
+	</effect_group>
+</recipe>
+
+<recipe name="GunPowder" count="1" craft_time="0.2" craft_exp_gain="0" tags="perkChemistExpert">
+	<ingredient name="resourceCoal" count="10"/>
+	<ingredient name="resourcePotassiumNitratePowder" count="10"/>
+	<ingredient name="ReloadingTool" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-2" tags="resourceCoal,resourcePotassiumNitratePowder"/>
+	</effect_group>
+</recipe>
+
+<recipe name="ArmourKey" count="9" craft_time="3" craft_exp_gain="0">
+	<ingredient name="Coin" count="1"/>
+</recipe>
+
+<recipe name="EmptyWaterBottle" count="1" craft_time="1" craft_exp_gain="0">
+	<ingredient name="EmptyBottle" count="1"/>
+</recipe>
+
+<recipe name="EmptyUMB-No3Bottle" count="1" craft_time="1" craft_exp_gain="0">
+	<ingredient name="EmptyBottle" count="1"/>
+</recipe>
+
+<recipe name="EmptyYellow-6Bottle" count="1" craft_time="1" craft_exp_gain="0">
+	<ingredient name="EmptyBottle" count="1"/>
+</recipe>
+
+<recipe name="NP-004Mixing" count="1" craft_time="1" craft_exp_gain="0">
+	<ingredient name="WaterFilled" count="1"/>
+	<ingredient name="UMB-No3Filled" count="1"/>
+</recipe>
+
+<recipe name="UMB-No7Mixing" count="1" craft_time="1" craft_exp_gain="0">
+	<ingredient name="WaterFilled" count="1"/>
+	<ingredient name="Yellow-6Filled" count="1"/>
+</recipe>
+
+<recipe name="UMB-No10Mixing" count="1" craft_time="1" craft_exp_gain="0">
+	<ingredient name="NP-004Filled" count="1"/>
+	<ingredient name="Yellow-6Filled" count="1"/>
+</recipe>
+
+<recipe name="VP-017Mixing" count="1" craft_time="1" craft_exp_gain="0">
+	<ingredient name="UMB-No7Filled" count="1"/>
+	<ingredient name="UMB-No10Filled" count="1"/>
+</recipe>
+
+<recipe name="V-Jolt" count="1" craft_time="3" craft_exp_gain="0">
+	<ingredient name="UMB-No3Filled" count="1"/>
+	<ingredient name="VP-017Filled" count="1"/>
+</recipe>
+
+
+<recipe name="CylinderShaft" count="1" craft_time="3" craft_exp_gain="0">
+	<ingredient name="Cylinder" count="1"/>
+	<ingredient name="Shaft" count="1"/>
+</recipe>
+
+<recipe name="StoneandMetalObject" count="1" craft_time="3" craft_exp_gain="0">
+	<ingredient name="StoneRing" count="1"/>
+	<ingredient name="MetalObject2"/>
+</recipe>
+
+<recipe name="JewelryBox2" count="1" craft_time="3" craft_exp_gain="0">
+	<ingredient name="RedGemstone" count="1"/>
+	<ingredient name="LockedJewelryBox" count="1"/>
+</recipe>
+
+<recipe name="PainToleranceTraining" craft_time="1" craft_exp_gain="0">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+<recipe name="PassiveHealingTraining" craft_time="1" craft_exp_gain="0">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+<recipe name="MedicalKnowledgeTraining" craft_time="1" craft_exp_gain="0">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+<recipe name="KnifeTrainedTraining" craft_time="1" craft_exp_gain="0">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+<recipe name="ChemistExpertTraining" craft_time="1" craft_exp_gain="0">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+<recipe name="CardioTraining" craft_time="1" craft_exp_gain="0">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+
+	</set>
+</FranticDan>
