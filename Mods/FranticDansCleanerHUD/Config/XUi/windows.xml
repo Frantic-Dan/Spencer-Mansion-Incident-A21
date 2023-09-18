@@ -1,0 +1,119 @@
+<configs>
+<insertafter xpath="/windows/window[@name='windowCompass']//sprite[2]">
+		<label depth="15" pos="240,-540" width="300" height="30" pivot="center" effect="outline" upper_case="true" justify="center" text="Play Time: {PlayerLongestLife}" controller="PlayerStats, PlayerStatController"/>
+</insertafter>
+
+	<set xpath="/windows/window[@name='windowTargetBar']/@visibility">always</set>
+	<set xpath="/windows/window[@name='windowTargetBar']//rect[1]/@pos">-212,-55</set>	
+	<set xpath="/windows/window[@name='windowTargetBar']/rect[1]/@height">0</set>
+	<set xpath="/windows/window[@name='windowTargetBar']/rect[1]/sprite[@depth='1']/@width">0</set>
+	<set xpath="/windows/window[@name='windowTargetBar']/rect[1]/filledsprite[@depth='2']/@width">0</set>
+	<set xpath="/windows/window[@name='windowTargetBar']/rect[1]/label[@depth='3']/@font_size">35</set>
+	<set xpath="/windows/window[@name='windowTargetBar']/rect[1]/label[@depth='3']/@height">35</set>
+	<set xpath="/windows/window[@name='windowTargetBar']/rect[1]/label[@depth='3']/@color">[green]</set>
+	<set xpath="/windows/window[@name='windowTargetBar']/rect[1]/label[@depth='3']/@justify">center</set>
+	<set xpath="/windows/window[@name='windowTargetBar']/rect[1]/label[@depth='3']/@text">{name}</set>
+	
+	<set xpath="/windows/window[@name='windowToolbelt']//sprite[2]/@pos">0,-1000</set>	
+	<set xpath="/windows/window[@name='windowToolbelt']//sprite[3]/@pos">0,-1000</set>
+	<set xpath="/windows/window[@name='windowToolbelt']//sprite[4]/@pos">0,-1000</set>			
+	
+	<set xpath="/windows/window[@name='HUDLeftStatBars']//rect[1]/@pos">-515,54</set> <!-- Stealth -->
+
+	<set xpath="/windows/window[@name='HUDLeftStatBars']//rect[2]/@pos">-434,30</set> <!-- Buff list -->
+	<set xpath="/windows/window[@name='HUDLeftStatBars']//rect[@name='hud']/rect[2]/@pos">515,0</set> <!-- Stamina -->
+	<set xpath="/windows/window[@name='HUDLeftStatBars']//rect[@name='hud']/rect[2]/@width">342</set>
+	<set xpath="/windows/window[@name='HUDLeftStatBars']//rect[@name='hud']/rect[2]//filledsprite[1]/@width">340</set>
+	<set xpath="/windows/window[@name='HUDLeftStatBars']//rect[@name='hud']/rect[2]//filledsprite[2]/@width">340</set>
+
+	<set xpath="/windows/window[@name='HUDLeftStatBars']//rect[@name='hud']/rect[2]/label/@justify">left</set>
+	<set xpath="/windows/window[@name='HUDLeftStatBars']//rect[@name='hud']/rect[2]/label/@text">{statcurrent}</set>
+	
+	<set xpath="/windows/window[@name='HUDLeftStatBars']//rect[@name='hud']/rect[3]/@pos">172,0</set> <!-- Health -->
+	<set xpath="/windows/window[@name='HUDLeftStatBars']//rect[@name='hud']/rect[3]/@width">342</set>
+	<set xpath="/windows/window[@name='HUDLeftStatBars']//rect[@name='hud']/rect[3]//filledsprite[1]/@width">340</set>
+	<set xpath="/windows/window[@name='HUDLeftStatBars']//rect[@name='hud']/rect[3]//filledsprite[2]/@width">340</set>
+	<set xpath="/windows/window[@name='HUDLeftStatBars']//rect[@name='hud']/rect[3]/label/@justify">left</set>
+	<set xpath="/windows/window[@name='HUDLeftStatBars']//rect[@name='hud']/rect[3]/label/@text">{statcurrent}</set>
+	<set xpath="/windows/window[@name='toolTipPopups']/@pos">0,-20</set>
+	<set xpath="/windows/window[@name='interactionPrompt']/@pos">0,110</set>
+	<set xpath="/windows/window[@name='interactionPrompt']/@anchor">CenterBottom</set>
+	<set xpath="/windows/window[@name='interactionPrompt']/label[@name='lblText']/@font_size">32</set>
+	<set xpath="/windows/window[@name='interactionPrompt']/label[@name='lblText']/@effect_color">150,150,50</set>
+	<set xpath="/windows/window[@name='focusedBlockHealth']/@pos">0,-1200</set>
+	<set xpath="/windows/window[@name='windowCompass']/@pos">-240,509</set>
+	<set xpath="/windows/window[@name='windowEntering']/rect/@pos">-150,545</set>
+	<set xpath="/windows/window[@name='windowLocation']/@pos">-259, 1060</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/panel[@name='header']//label[2]/@pos">575,1008</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/panel[@name='header']//sprite[2]/@pos">577,1010</set>
+
+	
+	<!-- Toolbelt -->
+	<remove xpath="/windows/window[@name='windowToolbelt']/rect//sprite[@name='backgroundMain']"/>
+	<set xpath="/windows/window[@name='windowToolbelt']/rect//rect[2]/@pos">0,-900</set>
+	<set xpath="/windows/window[@name='windowToolbelt']/rect//rect[3]/@pos">0,-900</set>
+	<set xpath="/windows/window[@name='windowToolbelt']/rect/rect[1]//grid[1]/@rows">5</set>
+	<set xpath="/windows/window[@name='windowToolbelt']/rect/rect[1]//grid[1]/@cols">2</set>
+	<set xpath="/windows/window[@name='windowToolbelt']/@anchor">LeftBottom</set>
+	<set xpath="/windows/window[@name='windowToolbelt']/@pos">5, 385</set>
+	<!-- Backpack -->
+	<set xpath="/windows/window[@name='windowBackpack']/@width">290</set>
+	<set xpath="/windows/window[@name='windowBackpack']/panel[1]/rect[1]/@pos">2203,0</set>
+	<set xpath="/windows/window[@name='windowBackpack']/panel[1]//label[2]/@pos">2672,-8</set>
+	<set xpath="/windows/window[@name='windowBackpack']/panel[1]//sprite[2]/@pos">2777,-10</set>
+	<set xpath="/windows/window[@name='windowBackpack']/panel[2]/sprite[@depth='8']/@width">135</set>
+	<set xpath="/windows/window[@name='windowBackpack']/panel[2]/grid[@depth='10']/@rows">0</set>
+	<set xpath="/windows/window[@name='windowBackpack']/panel[2]/grid[@depth='10']/@cols">0</set>
+	<insertafter xpath="/windows/window[@name='windowBackpack']/panel[2]/grid[@depth='10'][@name='inventory']">
+			<rect pos="3,-3" controller="Toolbelt">
+                <grid depth="10" name="inventory" rows="5" cols="2" pos="0,0" cell_width="67" cell_height="67" repeat_content="true">
+                    <backpack_item_stack name="0"/>
+                </grid>
+				</rect>	
+	</insertafter>
+	
+	<!-- Skills -->
+	<set xpath="/windows/window[@name='windowSkillList']/panel[2]//rect[1]/@pos">6,2000</set>
+	<set xpath="/windows/window[@name='windowSkillList']/panel[1]//label[2]/@text">Jill's Training</set>
+	<!-- <set xpath="/windows/window[@name='windowSkillList']/panel[2]/rect[2]/rect[@name='tableHeader']/@pos">5,260</set> -->
+	
+	
+	<!-- Journal entry -->
+	<set xpath="/windows/window[@name='windowJournalEntryDescription']/@width">783</set>
+	<set xpath="/windows/window[@name='windowJournalEntryDescription']/@height">720</set>
+	<set xpath="/windows/window[@name='windowJournalEntryDescription']/rect[@name='content']/@height">734</set>
+	<set xpath="/windows/window[@name='windowJournalEntryDescription']/rect[@name='content']//sprite[1]/@width">783</set>
+	<set xpath="/windows/window[@name='windowJournalEntryDescription']/rect[@name='content']//sprite[1]/@height">734</set>
+	<set xpath="/windows/window[@name='windowJournalEntryDescription']/rect[@name='content']/label[@depth='3']/@width">770</set>
+	<set xpath="/windows/window[@name='windowJournalEntryDescription']/rect[@name='content']/label[@depth='3']/@height">725</set>
+	
+	<!-- quest -->
+	<set xpath="/windows/window[@name='windowQuestList']/rect[@name='content']/rect[@depth='3']//button[3]/@pos">-2120,-21</set>
+	<set xpath="/windows/window[@name='windowQuestOffer']/@width">783</set>
+	<set xpath="/windows/window[@name='windowQuestOffer']/@height">593</set>
+	<set xpath="/windows/window[@name='windowQuestOffer']/@pos">-400,250</set>
+	<set xpath="/windows/window[@name='windowQuestOffer']/panel[1]//label[2]/@pos">605,-10</set>
+	<set xpath="/windows/window[@name='windowQuestOffer']/panel[2]/sprite[@depth='8']/@width">783</set>
+	<set xpath="/windows/window[@name='windowQuestOffer']/panel[2]/sprite[@depth='8']/@height">429</set>
+	<set xpath="/windows/window[@name='windowQuestOffer']/panel[2]/label[@depth='3']/@width">770</set>
+	<set xpath="/windows/window[@name='windowQuestOffer']/panel[2]/label[@depth='3']/@height">420</set>
+	<set xpath="/windows/window[@name='windowQuestOffer']//rect[@name='btnAccept']/@pos">0,-478</set>
+	<set xpath="/windows/window[@name='windowQuestOffer']//rect[2]/@pos">480,-478</set>
+	<set xpath="/windows/window[@name='windowQuestOffer']//panel[2]/@height">429</set>
+	
+	<!-- Items collected / Ammo -->
+	<set xpath="/windows/window[@name='HUDRightStatBars']/rect[@name='hud']/panel[@width='168']//sprite[2]/@size">76,76</set>
+	<set xpath="/windows/window[@name='HUDRightStatBars']/rect[@name='hud']/panel[@width='168']//sprite[3]/@pos">-20,16</set>
+	<set xpath="/windows/window[@name='HUDRightStatBars']/rect[@name='hud']/panel[@width='168']/@height">69</set>
+	<set xpath="/windows/window[@name='HUDRightStatBars']/rect[@name='hud']/panel[@width='168']//sprite[1]/@height">66</set>
+	<set xpath="/windows/window[@name='HUDRightStatBars']/rect[1]/@pos">-90,52</set>
+	<set xpath="/windows/window[@name='HUDRightStatBars']/grid[@name='hud']/rect[@width='188']//sprite[2]/@size">78,70</set>
+	<set xpath="/windows/window[@name='HUDRightStatBars']/grid[@name='hud']/rect[@width='188']//sprite[2]/@pos">110,4</set>
+	<set xpath="/windows/window[@name='HUDRightStatBars']/grid[@name='hud']/rect[@width='188']/@height">69</set>
+	<set xpath="/windows/window[@name='HUDRightStatBars']/grid[@name='hud']/rect[@width='188']//sprite[1]/@height">69</set>
+	<set xpath="/windows/window[@name='HUDRightStatBars']/grid[@name='hud']/@pos">-194,65</set>
+	<set xpath="/windows/window[@name='HUDRightStatBars']/grid[@name='hud']/rect[@width='188']/label[@depth='6']/@pos">105,-31</set>
+	<set xpath="/windows/window[@name='HUDRightStatBars']/grid[@name='hud']/rect[@width='188']/label[@depth='6']/@font_size">36</set>
+	
+</configs>
+
