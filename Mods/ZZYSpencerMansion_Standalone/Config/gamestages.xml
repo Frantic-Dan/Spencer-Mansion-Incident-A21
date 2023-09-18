@@ -1,0 +1,206 @@
+<FranticDan>
+<append xpath="/gamestages">
+
+	<group name="S_-Group_Mansion_Zombie" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="SleeperMansionList" count="9"/>
+	</group>
+
+	<group name="S_-Group_MansionHunter_Zombie" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="SleeperMansionHunterList" count="9"/>
+	</group>
+
+	<group name="S_-Group_Residence_Zombie" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="SleeperResidenceList" count="9"/>
+	</group>
+
+	<group name="S_-Group_MansionSpider_Zombie" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="SleeperMansionSpiderList" count="9"/>
+	</group>
+
+	<group name="S_-Group_MansionBlackTiger_Zombie" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="SleeperMansionBlackTigerList" count="9"/>
+	</group>
+
+	<group name="S_-Group_MansionLisaTrevor_Zombie" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="SleeperMansionLisaTrevorList" count="9"/>
+	</group>
+
+	<group name="S_-Group_Lab_Zombie" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="SleeperLabList" count="9"/>
+	</group>
+
+	<group name="S_-Group_Plant42_Zombie" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="SleeperPlant42List" count="9"/>
+	</group>
+
+	<spawner name="SleeperMansionList">
+		<gamestage stage="1">
+			<spawn group="sleeperMansionStageGS1" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="10">
+			<spawn group="sleeperMansionStageGS10" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="20">
+			<spawn group="sleeperMansionStageGS20" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="30">
+			<spawn group="sleeperMansionStageGS30" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="40">
+			<spawn group="sleeperMansionStageGS40" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="50">
+			<spawn group="sleeperMansionStageGS50" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+	</spawner>
+
+	<spawner name="SleeperMansionHunterList">
+		<gamestage stage="1">
+			<spawn group="sleeperMansionHunterStageGS1" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="7">
+			<spawn group="sleeperMansionHunterStageGS7" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="20">
+			<spawn group="sleeperMansionHunterStageGS20" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="30">
+			<spawn group="sleeperMansionHunterStageGS30" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="40">
+			<spawn group="sleeperMansionHunterStageGS40" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="50">
+			<spawn group="sleeperMansionHunterStageGS50" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+	</spawner>
+
+	<spawner name="SleeperResidenceList">
+		<gamestage stage="1">
+			<spawn group="sleeperResidenceStageGS1" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="10">
+			<spawn group="sleeperResidenceStageGS10" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="20">
+			<spawn group="sleeperResidenceStageGS20" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="30">
+			<spawn group="sleeperResidenceStageGS30" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="40">
+			<spawn group="sleeperResidenceStageGS40" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="50">
+			<spawn group="sleeperResidenceStageGS50" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+	</spawner>
+
+	<spawner name="SleeperMansionSpiderList">
+		<gamestage stage="1">
+			<spawn group="sleeperMansionSpiderStageGS1" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="10">
+			<spawn group="sleeperMansionSpiderStageGS10" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="20">
+			<spawn group="sleeperMansionSpiderStageGS20" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="30">
+			<spawn group="sleeperMansionSpiderStageGS30" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="40">
+			<spawn group="sleeperMansionSpiderStageGS40" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="50">
+			<spawn group="sleeperMansionSpiderStageGS50" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+	</spawner>
+
+	<spawner name="SleeperMansionBlackTigerList">
+		<gamestage stage="1">
+			<spawn group="sleeperMansionBlackTigerStageGS1" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="10">
+			<spawn group="sleeperMansionBlackTigerStageGS10" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="20">
+			<spawn group="sleeperMansionBlackTigerStageGS20" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="30">
+			<spawn group="sleeperMansionBlackTigerStageGS30" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="40">
+			<spawn group="sleeperMansionBlackTigerStageGS40" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="50">
+			<spawn group="sleeperMansionBlackTigerStageGS50" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+	</spawner>
+
+	<spawner name="SleeperMansionLisaTrevorList">
+		<gamestage stage="1">
+			<spawn group="sleeperMansionLisaTrevorStageGS1" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="10">
+			<spawn group="sleeperMansionLisaTrevorStageGS10" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="20">
+			<spawn group="sleeperMansionLisaTrevorStageGS20" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="30">
+			<spawn group="sleeperMansionLisaTrevorStageGS30" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="40">
+			<spawn group="sleeperMansionLisaTrevorStageGS40" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="50">
+			<spawn group="sleeperMansionLisaTrevorStageGS50" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+	</spawner>
+
+	<spawner name="SleeperLabList">
+		<gamestage stage="1">
+			<spawn group="sleeperLabStageGS1" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="10">
+			<spawn group="sleeperLabStageGS10" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="20">
+			<spawn group="sleeperLabStageGS20" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="30">
+			<spawn group="sleeperLabStageGS30" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="40">
+			<spawn group="sleeperLabStageGS40" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="50">
+			<spawn group="sleeperLabStageGS50" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+	</spawner>
+
+	<spawner name="SleeperPlant42List">
+		<gamestage stage="1">
+			<spawn group="sleeperPlant42StageGS1" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="10">
+			<spawn group="sleeperPlant42StageGS10" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="20">
+			<spawn group="sleeperPlant42StageGS20" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="30">
+			<spawn group="sleeperPlant42StageGS30" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="40">
+			<spawn group="sleeperPlant42StageGS40" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+		<gamestage stage="50">
+			<spawn group="sleeperPlant42StageGS50" num="1" maxAlive="1" duration="1"/>
+		</gamestage>
+	</spawner>
+
+
+</append>
+</FranticDan>
