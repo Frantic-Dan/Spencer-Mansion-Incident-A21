@@ -1,0 +1,21 @@
+key,english,japanese,german,latam,french,italian,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+HerbPot_Green,Green Herb (Seed),グリーンハーブ(種),Grünes Kraut (Samen)
+GreenHerb_Growing,Green Herb (Growing),グリーンハーブ(成長中),Grünes Kraut (wachsend)
+GreenHerb_Harvest,Green Herb (Harvest),グリーンハーブ(収穫可能),Grünes Kraut (Ernte)
+GreenHerb_Wild,Green Herb,グリーンハーブ,Grünes Kraut
+
+HerbPot_Blue,Blue Herb (Seed),ブルーハーブ(種),Blaues Kraut (Samen)
+BlueHerb_Growing,Blue Herb (Growing),ブルーハーブ(成長中),Blaues Kraut (wachsend)
+BlueHerb_Harvest,Blue Herb (Harvest),ブルーハーブ(収穫可能),Blaues Kraut (Ernte)
+BlueHerb_Wild,Blue Herb,ブルーハーブ,Blaues Kraut
+
+HerbPot_Red,Red Herb (Seed),レッドハーブ(種),Rotes Kraut (Samen)
+RedHerb_Growing,Red Herb (Growing),レッドハーブ(成長中),Rotes Kraut (wachsend)
+RedHerb_Harvest,Red Herb (Harvest),レッドハーブ(収穫可能),Rotes Kraut (Ernte)
+RedHerb_Wild,Red Herb,レッドハーブ,Rotes Kraut
+
+HerbPotDesc,"There is already an herb seed in this pot.  It can be placed anywhere to grow.  After harvesting the herb, it will leave a seed in the pot to grow again.","この鉢植えの中には、既に種が植えてあります。\n時間がたつと育ち、収穫可能になります。\n収穫後は、再度種の状態になります。\n\nこの鉢植えはどこに設置しても育ちます。","In diesem Topf befindet sich bereits ein Kräutersamen. Es kann überall platziert werden, um zu wachsen. Nach der Ernte des Krauts hinterlässt es einen Samen im Topf, der wieder wächst."
+HerbGrowingDesc,"Growing herb.","成長中のハーブ。","Wachsendes Kraut."
+HerbHarvestDesc,"Harvestable herb.","収穫可能なハーブ。","Erntebares Kraut."
+
+Empty_Pot,"Empty Pot","空のポット"
