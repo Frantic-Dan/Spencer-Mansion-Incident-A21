@@ -1,0 +1,681 @@
+Key,english
+goGameWorld,[FF4F00]Select 'Spencer Mansion Incident'[-]
+goDifficultyRE,[FF4F00]Difficulty (Read me)[-]
+goDifficultyREDesc,C - Enemy HP: 100%. Player Damage Taken: 100%.\n[FFC800]Recommended for first playthrough.[-]\n\nB - Enemy HP: 120%. Player Damage Taken: 125%.\n\nA - Enemy HP: 140%. Player Damage Taken: 150%.\n\nS - Enemy HP: 160%. Player Damage Taken: 175%.\n[FFC800]Recommended for 'Insane' Difficulty players.[-]\n\nNightmare - Enemy HP: 180%. Player Damage Taken: 200%..\n[FF4F00](DO NOT try this on your first playthrough)[-]\n\nSadomasochist - Enemy HP: 200%. Player Damage Taken: 250%..\n[FF4F00](DO NOT try this on your first playthrough)[-]
+goDifficulty1RE,C
+goDifficulty2RE,B
+goDifficulty3RE,A
+goDifficulty4RE,S
+goDifficulty5RE,Nightmare
+goDifficulty6RE,Sadomasochist
+goDayLengthREDesc," "
+goDayLengthRE,[FF4F00]Select '120 Minutes'[-]
+goDayLightLengthREDesc," "
+goDayLightLengthRE,[FF4F00]Select '0'[-]
+goBloodMoonFrequencyREDesc," "
+goBloodMoonFrequencyRE,[FF4F00]Select 'Disabled'[-]
+goXPMultiplierRE,[FF4F00]Select '100%'[-]
+goBlockDamagePlayerRE,[FF4F00]Select '100%'[-]
+goBlockDamageAIRE,[FF4F00]Select '100%'[-]
+goLootAbundanceRE,[FF4F00]Select '100%'[-]
+goLootRespawnDaysREDesc," "
+goLootRespawnDaysRE,[FF4F00]Select 'Disabled'[-]
+goAirDropFrequencyREDesc," "
+goAirDropFrequencyRE,[FF4F00]Select 'Disabled'[-]
+goZombieMoveNightREDesc,"This affects the movement speed of generic zombies."
+goZombieMoveNightRE,[FF4F00]Zombie Night Speed (Always Night)[-]
+SpencerMansionSpawnText_title,Welcome To The Spencer Mansion Challenge
+loadingTipRE1,You're trapped inside Spencer Mansion. Healing supplies and ammunition are in short supply. Can you escape with your life? Or become a Jill Sandwich?
+loadingTipRE1_title,Welcome to Resident Evil!
+loadingTipRE2,"Sometimes, it's better to not kill everything in your path."
+loadingTipRE2_title,"Kill or keep alive:"
+loadingTipRE3,Just like in Resident Evil your inventory will be limited (10 slots). You'll have to pick and choose what you take with you.
+loadingTipRE3_title,Inventory:
+loadingTipRE4,Doors are your main defence in the Spencer Mansion. Closing doors will slow zombies from catching up to you.
+loadingTipRE4_title,Doors:
+loadingTipRE5,"Nitrate can be harvested from zombie animals, gardens and mutated wood.\nCoal can be harvested from burnt trees."
+loadingTipRE5_title,Nitrate and Coal:
+loadingTipRE6,"Zombies don't feel pain, just like in Resident Evil, so they won't even flinch when attacked."
+loadingTipRE6_title,Zombies Feel No Pain:
+loadingTipRE7,"This devastating weapon can easily take off legs."
+loadingTipRE7_title,The Pump Shotgun:
+loadingTipRE8,"A huge thank you to the following people: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox."
+loadingTipRE8_title,Special Thanks!
+SpencerMansionSpawnText,"You're about to experience the Spencer Mansion Incident in a first person perspective.\n\nTo keep the experience true to Resident Evil, please note the following.\n1) You have limited inventory space of 10 slots. There are Item Storage Boxes to store your items. These boxes are not linked like in classic Resident Evil so be mindful of where you store your items.\n2) You cannot jump.\n3) Most enemies don't feel pain, so fighting them will be different to what you're used to.\n4) You have one life!\n\n[FFC800]For an immersive experience, I'd recommend turning up your ambient sound volume and your music to play all the time.[-]\n\nFor the intended experience, be sure to remove any non-related modlets and your orange game settings are correct."
+TwitchAction_SpawnCrawlerCommand,#crawler
+TwitchAction_SpawnToughCommand,#spawn_tough
+TwitchAction_SpawnSnakeCommand,#snake
+TwitchAction_SpawnSpiderCommand,#web_spinner
+TwitchAction_SpawnDogCommand,#cerberus
+TwitchAction_SpawnCrimsonHeadCommand,#crimson_head
+TwitchAction_SpawnForestSpeyerCommand,#forest_speyer
+TwitchAction_SpawnHunterCommand,#hunter
+TwitchAction_SpawncrimsonPrototypeCommand,#crimson_prototype
+TwitchAction_SupplyAmmo9mmCommand,#handgun_x8
+TwitchAction_SupplyGreenHerbCommand,#green_herb
+TwitchAction_SupplyRedHerbCommand,#red_herb
+TwitchAction_SupplyBlueHerbCommand,#blue_herb
+TwitchAction_SupplyAmmoShellsCommand,#shotgun_x2
+TwitchAction_SupplyAmmo44MagCommand,#magnum_x2
+TwitchAction_SupplyAmmoRocketCommand,#rocket
+TwitchAction_SupplyAmmoGrenadeCommand,#grenade
+TwitchAction_SupplyAmmoMolotovCommand,#molotov
+TwitchAction_SupplyFirstAidSprayCommand,#firstaidspray
+TwitchAction_SupplyAmmo762Command,#rifle_x12
+buffNewbieCoatNameRE,General Information for The Spencer Mansion Incident
+buffNewbieCoatDescRE,"The Spencer Mansion Incident will give you a unique 7 Days to Die experience like no other mod.\nHere's some information to help you settle in.\n\nThere are no critical injuries, so you don't have to worry about bleeding out, knowing this you can focus on making the most of the limited healing supplies available.\n\nBe mindful of your inventory, don't try to gather herbs or ammo when full, as they will drop on the floor and go to waste.\n\nYou don't have to worry about food and water here, they'll always remain full. However, getting set on fire will make you thirsty. If you become completely dehydrated, then you'll have to drink from a water source and risk getting sick.\n\nZombies can open doors, so never assume you're safe!\n\nThis mod was made for single player in mind, if playing multiplayer, it could potentially make the game harder and SOFT LOCKING is possible, you've been warned!"
+xuiInventory,Jill Valentine's Inventory
+tooltipJammed,([DECEA3]Jammed[-])
+tooltipLocked,{1}
+tooltipUnlocked,{1}
+useBlock,{1}
+harvestTip,Use your knife to skin zombie animals for nitrate.\nNitrate is used for gunpowder crafting.
+cntCashRegister,Typewriter
+TheVault,Item Storage Box
+AmmoChest,Ammo Crafting Bundle\n(Hit to Pickup)
+ReloadingTool,Reloading Tool
+Reloading_Tooldesc,"A useful tool that you can make ammunition with.\n\nAllows you to dismantle Ammo in the field.\n\nMake sure your have enough empty inventory slots when crafting."
+InkRibbon,Ink Ribbon
+InkRibbondesc,"Currently useless, but will be needed to save your progress when manual saving is implemented.\n\nHold onto it for now."
+DeathMaskDesc,This Death Mask is used on the Door of Evil.\n\nUse with the secondary action.
+MansionBattery,This will power the door in the courtyard.
+Green_Herb,Green Herb
+GreenHerbDesc,"Heals you slightly.\n\nHeals 160 health over 2 seconds.\nMedical Knowledge: Heals 200 health over 2 seconds."
+Red_Herb,Red Herb
+RedHerbdesc,"Amplifies the effect of Green Herbs.\n\nCan't be used on its own."
+MixedGreenHerbDesc,"Heals you moderately.\n\nHeals 400 health over 5 seconds.\nMedical Knowledge: Heals 500 health over 5 seconds."
+Green+RedHerbDesc,"Heals you substantially.\n\nHeals 720 health over 9 seconds.\nMedical Knowledge: Heals 900 health over 9 seconds."
+Blue_Herb,Blue Herb
+BlueHerbDesc,"Cures Poison and heals you slightly.\n\nHeals 80 health over 1 second.\nMedical Knowledge: Heals 100 health over 1 second."
+Green+BlueHerbDesc,"Cures Poison and heals you slightly.\n\nHeals 240 health over 3 seconds.\nMedical Knowledge: Heals 300 health over 3 seconds."
+Green2+BlueHerbDesc,"Cures Poison and heals you moderately.\n\nHeals 480 health over 6 seconds.\nMedical Knowledge: Heals 600 health over 6 seconds."
+Green+Red+BlueHerbDesc,"Cures Poison and heals you substantially.\n\nHeals 800 health over 10 seconds.\nMedical Knowledge: Heals 1000 health over 10 seconds."
+FirstAidSprayDesc,"Greatly heals you.\n\nHeals 1600 health over 20 seconds.\nMedical Knowledge: Heals 2000 health over 20 seconds."
+WolfBook,A blue coloured book about a Wolf.
+WolfMedal,A medal of a Wolf.
+EagleBook,A red coloured book about an Eagle.
+EagleMedal,A medal of an Eagle.
+BookofCurses,Book of Curses
+BookOfCursesdesc,A creepy looking book you found on the ground on the 3rd floor.
+DogWhistle,Dog Whistle
+DogWhistledesc,A whistle used to get the attention of dogs.\n\nIn multiplayer the person who is hosting the game should be the one to start this quest.
+DogCollar,Dog Collar
+DogCollardesc,Does this collar have some importance?
+Coin,Coin
+Coindesc,A coin that was found inside a dog's collar.
+Lighter,Lighter
+Lighterdesc,Can be used as a small light source.\n\nYou will need this on you to light molotovs.
+EmptyBottledesc,A container used to mix chemicals.\n\nFill using the secondary action.
+FilledBottledesc,A bottle filled with liquid
+MixingBottledesc,Two types of liquid mixing together.
+VJoltdesc,A powerful chemical that can weaken Plant 42.
+Crestdesc,A hexagonal shaped crest.
+BrokenShotgundesc,A shotgun that is damaged beyond repair.
+Herbicidedesc,A chemical used to kill plant life.
+MetalObjectdesc,An octagonal object that will unlock the door to the courtyard.
+StoneRingdesc,A ring made of stone with an octagonal shape
+MetalObject2desc,An octagonal object made out of metal.
+StoneMetalObjectdesc,This will unlock the door behind the stairs of the main hall in the mansion.
+Cylinderdesc,Looks like something belongs inside the hole.
+Shaftdesc,Looks like a ring of some sort is missing.
+CylinderShaftdesc,This will power the generator in the mine.
+FuelSupplyEmptydesc,An empty capsule designed to fuel a power source.\n\nFill it with something ice cold.
+FuelSupplydesc,Use this to refuel the roller shutter.
+JewelryBox2desc,"A mysterious box, what's inside?"
+JewelryBoxdesc,"It's unlocked now, what's inside?"
+RedGemstonedesc,This small rock would be worth a fortune...
+LockedBoxdesc,Securely locked
+PrisonKey,A floppy disk with the word 'MO' on it.
+REkeys,Use by pressing the [Interact] button while looking at a locked door.
+Jill's_LockPick,Jill's LockPick
+SwordKey,Sword Key
+TerraceKey,Terrace Key
+ArmourKey,Armour Key
+ClosetKey,Closet Key
+ShieldKey,Shield Key
+HelmetKey,Helmet Key
+EmblemKey,Emblem Key
+WolfBook,Wolf Book
+WolfMedal,Wolf Medal
+EagleBook,Eagle Book
+EagleMedal,Eagle Medal
+DeathMaskWithoutEyes,Death Mask Without Eyes
+DeathMaskWithoutMouth,Death Mask Without Mouth
+DeathMaskWithoutNose,Death Mask Without Nose
+DeathMaskWithoutAllThree,Death Mask Without All Three
+LaboratoryKey,Key for the Power Area
+MODisc,MO Disk
+EmptyBottle,Empty Bottle
+EmptyWaterBottle,Empty Water Bottle
+EmptyUMB-No3 Bottle,Empty UMB-No3 Bottle
+EmptyYellow-6 Bottle,Empty Yellow-6 Bottle
+WaterFilled,Water (Filled)
+UMB-No3Filled,UMB-No3 (Filled)
+Yellow-6Filled,Yellow-6 (Filled)
+NP-004Filled,NP-004 (Filled)
+UMB-No7Filled,UMB-No7 (Filled)
+UMB-No10Filled,UMB-No10 (Filled)
+VP-017Filled,VP-017 (Filled)
+NP-004Mixing,NP-004 (Mixing)
+UMB-No7Mixing,UMB-No7 (Mixing)
+UMB-No10Mixing,UMB-No10 (Mixing)
+VP-017Mixing,VP-017 (Mixing)
+V-Jolt,V-Jolt
+WindCrest,Wind Crest
+MoonCrest,Moon Crest
+StarCrest,Star Crest
+SunCrest,Sun Crest
+BrokenShotgun,Broken Shotgun
+Herbicide,Herbicide
+MetalObject,Metal Object
+StoneRing,Stone Ring
+MetalObject2,Metal Object
+StoneandMetalObject,Stone and Metal Object
+WD-40Spray,WD-40 Spray
+UnprintedBook,Unprinted Book
+ClawHammer,Claw Hammer
+ClawhammerDesc,I can repair the ladder with this!
+Battery,Battery
+Spraydesc,A lubricating liquid used to loosen joints of metalic objects.
+Cylinder,Cylinder
+Shaft,Shaft
+CylinderShaft,Cylinder Shaft
+FuelSupplyCapsuleEmpty,Fuel Supply Capsule Empty
+FuelSupplyCapsule,Fuel Supply Capsule
+Green_Herb,Green Herb
+MixedGreenHerb,Mixed Green Herb
+Mixed3GreenHerbs,Mixed 3 Green Herbs
+MixedGreen+RedHerb,Mixed Green+Red Herb
+MixedGreen+BlueHerb,Mixed Green+Blue Herb
+Mixed2Green+Blue Herb,Mixed 2 Green+Blue Herb
+MixedGreen+Red+Blue Herb,Mixed Green+Red+Blue Herb
+Red_Herb,Red Herb
+Blue_Herb,Blue Herb
+FirstAidSpray,First Aid Spray
+Military-GradeDuctTape,Military-Grade Duct Tape
+JewelryBox2,Jewelry Box
+JewelryBox,Jewelry Box
+KeytoRoom001,Key to Room 001
+KeytoRoom003,Key to Room 003
+GalleryKey,Gallery Key
+ControlRoomKey,Control Room Key
+RedGemstone,Red Gemstone
+LockedJewelryBox,Locked Jewelry Box
+MasterKey,Master Key
+
+doors
+ttLockpickMissing,It won't budge...
+DoubleMansionDoorBrown,Unlocked
+DoubleMansionLockedDoorBrown,Locked
+DoubleShieldDoorBrown,Locked
+DoubleMansionDoorBrownOld,Unlocked
+commercialMansionWindowDoorBlue,Unlocked
+commercialLockedMansionWindowDoorBlue,Jammed
+commercialMansionWindowDoorGrey,Unlocked
+commercialMansionDoorDoubleBlue,Unlocked
+commercialLockedMansionDoubleDoorBlue,Jammed
+commercialMansionDoorDoubleGrey,Unlocked
+commercialMansionDoorBlue,Unlocked
+commercialMansionMetalObjectDoorBlue,Locked
+commercialLabMansionDoorBlue,Locked
+commercialMansionDoorGrey,Unlocked
+commercialMansionMasterDoorGrey,Locked
+commercialMansionLockedDoorBlue,Jammed
+ironMansionDoorGrey,Unlocked
+ironMansionMOdisc1DoorGrey,Locked
+ironMansionMOdisc2DoorGrey,Locked
+ironMansionMOdisc3DoorGrey,Locked
+ironMansionDoorOrange,Unlocked
+ironMansionLockedDoorOrange,Jammed
+ironControlDoorOrange,Locked
+ironMansionLockableDoorGrey,Jammed
+ironMansionDoorBlack,Unlocked
+DoorThatSeesSpeaksSmellsNoEvil,Locked
+DoorThatSmellsNoEvil,Locked
+DoorThatSpeaksNoEvil,Locked
+DoorThatSeesNoEvil,Locked
+SingleMansionDoorBrown,Unlocked
+SingleMansionDoorGrey,Unlocked
+SingleArmourDoorGrey,Locked
+SingleMansionDoorBrown2,Unlocked
+SingleMansionDoorGrey2,Unlocked
+SinglePlantRoomDoorGrey2,Locked
+SingleLockedMansionDoorBrown,Jammed
+SingleSwordDoorBrown,Locked
+SingleSwordDoorWhite,Locked
+SingleSwordDoorBrown2,Locked
+SingleArmourDoorBrown,Locked
+SingleTerraceDoorBrown,Locked
+SingleClosetDoorBrown,Locked
+SingleMansionDoorOldBrown,Unlocked
+MansionArmourDoorOldBrown,Locked
+MansionRoom001DoorOldBrown,Locked
+MansionRoom003DoorOldBrown,Locked
+MansionGalleryDoorOldBrown,Locked
+SingleMansionDoorOldGrey,Unlocked
+SingleSwordMansionDoorOldGrey,Locked
+SingleSwordDoorOldBrown,Locked
+SingleHelmetDoorWhite,Locked
+SingleHelmetDoorBrown,Locked
+SingleMansionDoorOldOak2,Unlocked
+SingleMansionDoorOldGrey2,Unlocked
+SingleLockedDoorOldGrey2,Locked
+SingleLockedDoorOldoak2,Locked
+SingleShieldDoorOldOak2,Locked
+SingleBookDoorOldOak2,Locked
+SingleEmblemDoorOldOak2,Locked
+IronLockedMansionDoorWhite,Locked
+IronArmourMansionDoorWhite,Locked
+jailMansionDoorWhite,Unlocked
+DoubleMansionDoorWhite,Unlocked
+DoubleMansionDoorWhiteOld,Unlocked
+commercialMansionWindowDoorWhite,Unlocked
+commercialMansionDoorDoubleWhite,Unlocked
+commercialMansionDoorWhite,Unlocked
+ironMansionDoorWhite,Unlocked
+SingleMansionDoorWhite,Unlocked
+SingleMansionDoorWhite2,Unlocked
+SingleMansionDoorOldWhite,Unlocked
+SingleMansionDoorOldWhite2,Unlocked
+jailMansionDoorGrey,Unlocked
+jailMansionUnpoweredDoorGrey,Unpowered
+jailMansionLockedDoorGrey,Jammed
+jailMansionDoorDoubleWhite,Unlocked
+jailMansionDoorDoubleGrey,Unlocked
+jailMansionLockedDoorDoubleGrey,Jammed
+jailStoneObjectDoorDoubleGrey,Locked
+oldMansionDoor,Unlocked
+oldShieldDoor,Locked
+oldMansionDoubleDoor,Unlocked
+ironMansionDoorDoubleWhite,Unlocked
+ironMansionDoorDoubleArmyGreen,Unlocked
+ironMansionDoorDoubleBlack,Unlocked
+ironMansionLabDoorDoubleBlack,Locked
+ironMansionWD40DoorDoubleBlack,Rusted
+ironMansionLockedDoorDoubleBlack,Jammed
+ironArmourDoorDoubleArmyGreen,Locked
+SingleWolfDoorBrown,Locked
+SingleEagleDoorBrown,Locked
+elevatorMansionGyroDoorDouble,Locked
+elevatorMansionDoorDouble,Unlocked
+
+InsertWindCrest,Insert Wind Crest
+InsertMoonCrest,Insert Moon Crest
+InsertStarCrest,Insert Star Crest
+InsertSunCrest,Insert Sun Crest
+InsertBrokenShotgun,Insert Broken Shotgun
+Plant42'sRoots,Plant 42's Roots
+Plant42'sPoisonedRootsHittoDestroy,Plant 42's Poisoned Roots\n(Hit to Destroy)
+MineshaftHatchControlInsertCylinderShaft,Locked
+MineshaftHatchControl,Mineshaft Hatch Control
+LaboratoryComputer,Laboratory Computer
+UnpoweredRollerShutterNeedsRefueling,Unpowered
+PoweredRollerShutter,Powered Roller Shutter
+AK-47HittoPickup,AK-47\n(Hit to Pickup)
+QuadRocketLauncherHittoPickup,Quad Rocket Launcher\n(Hit to Pickup)
+LockedSuperRocket,Press switch first
+PumpShotgunHittoPickup,Pump Shotgun\n(Hit to Pickup)
+MagnumRevolverHittoPickup,Magnum Revolver\n(Hit to Pickup)
+RocketLauncherHittoPickup,Rocket Launcher\n(Hit to Pickup)
+HandgunAmmoHittoPickup,Handgun Ammo\n(Hit to Pickup)
+ShotgunAmmoHittoPickup,Shotgun Ammo\n(Hit to Pickup)
+MagnumAmmoHittoPickup,Magnum Ammo\n(Hit to Pickup)
+RocketAmmoHittoPickup,Rocket Ammo\n(Hit to Pickup)
+SuperRocket,Rocket Ammo\n(Hit to Pickup)
+AssaultRifleAmmoHittoPickup,Assault Rifle Ammo\n(Hit to Pickup)
+HandGrenadeHittoPickup,Sticky Grenade\n(Hit to Pickup)
+9mmBullet,9×19mm Parabellum Round
+Dismantle9mmAmmo,Dismantle 9×19mm Parabellum Round
+9mmHPBullet,HiPower 9×19mm Parabellum Round
+44MagnumBullet,.357 Magnum Round
+Dismantle.44Ammo,Dismantle .357 Magnum Round
+44MagnumHPBullet,HiPower .357 Magnum Round
+762Bullet,7.62 Rifle Round
+Dismantle7.62Ammo,Dismantle 7.62 Rifle Round
+762HPBullet,HiPower 7.62 Rifle Round
+ShotgunShell,12 Gauge Shotgun Shell
+DismantleShotgunShells,Dismantle 12 Gauge Shotgun Shell
+ShotgunSlug,Shotgun Slug
+LockedAmmoChest,Locked Ammo Chest
+questRewardAmmoCraftingBundleDesc,A box full of ammo crafting supplies.\n\nBe sure to have at least 4 empty inventory slots before opening!
+S.T.A.R.STrainingManual,S.T.A.R.S Training Manual
+TrainingManualDesc,You've had special training as a member of S.T.A.R.S. And now you have to use your training to fight for your survival!\n\nRead over what each of the 6 available perks do.\n\nThere are only 3 Training Manuals so choose wisely!\nUse the secondary action on unwanted Training Books to get a S.T.A.R.S Training Manual back. 
+PainToleranceTraining,Pain Tolerance Training
+PassiveHealingTraining,Passive Healing Training
+MedicalKnowledgeTraining,Medical Knowledge Training
+KnifeTrainedTraining,Knife Training
+ChemistExpertTraining,Chemist Expert Training
+CardioTraining,Cardio Training
+perkPainToleranceNameRE,Pain Tolerance
+perkPainToleranceDescRE,Increases your max health by 600.\n\n(Also heals)
+perkPassiveHealingName,Passive Healing
+perkPassiveHealingDesc,Passively heal 1 health every 5 seconds.
+perkCardioName,Cardio
+perkCardioDesc,Stamina drains 50% slower while sprinting.\nSprint 10% faster.
+perkKnifeTrainedName,Knife Trained
+perkKnifeTrainedDesc,Inflict 25% more damage.\nAttack 25% faster.\nDrain 4 less stamina with normal attacks\nand 8 less stamina with power attacks.
+perkMedicalKnowledgeName,Medical Knowledge
+perkMedicalKnowledgeDesc,Medical items are 25% more potent.\n\nIn multiplayer you can heal your partner for the same benefit.
+perkChemistExpertName,Chemist Expert
+perkChemistExpertDesc,When crafting ammo you require 25% less gunpowder.\nWhen crafting gunpowder you require 20% less Nitrate and Coal.
+meleeTorchRE,Torch
+Torchdesc,Turn on/off with [F]
+SurvivalKnife,Survival Knife
+SurvivalKnifedesc,"Jill's custom made knife, great for close quarter combat and harvesting animals."
+S.T.A.R.SHandgun,S.T.A.R.S Handgun
+Handgundesc,"A Custom S.T.A.R.S. Standard Handgun, fires 9×19mm parabellum rounds."
+MagnumRevolver,Magnum Revolver
+Magnumdesc,"A heavy magnum revolver, an extremely powerful handgun. It fires .357 magnum rounds"
+PumpShotgun,Pump Shotgun
+Shotgundesc,Fires 12 Gauge Shells and Slugs. A weapon that is capable of firing wide-range.\nIt's old and worn so has a slow fire rate.\n\nA great chance to remove a leg!
+AK-47,AK-47 Assault Rifle
+Rifledesc,An automatic assault rifle that can help you in desperate situations.
+RocketLauncher,Rocket Launcher
+Launcherdesc,"A destructive weapon, try not to blow yourself up, alright!"
+QuadRocketLauncher,Quad Rocket Launcher
+MilitaryGoods,Military Goods
+MilitaryGoodsdesc,Some military-grade gear you found in a secret closet.\n\nA bullet proof vest for protection.\nA bandolier for efficient reloading.\nA suppressor to increase critical hit rate.
+BulletProofVest,Bullet Proof Vest
+Vestdesc,This protective vest will mitigate 33.34% damage.
+Bandolier,Bandolier
+Bandolierdesc,"While wearing this, your reload time is reduced by 40% and you'll no longer suffer mobility penalty while reloading."
+modGunSoundSuppressorSilencerRE,Handgun Suppressor
+SuppressorDesc,Installing this suppressor on your handgun will quadruple your critical hit rate.\nDoes not increase damage.\n\nWon't work on tough hostiles.
+apparelToughGuySunglasses,Wesker's Sunglasses
+ammo9mmBulletBallRE,9x19mm Parabellum Bullet
+ammo9mmBulletHPRE,HiPower 9x19mm Parabellum Bullet
+ammo44MagnumBulletBallRE,.357 Magnum Bullet
+ammo44MagnumBulletHPRE,HiPower .357 Magnum Bullet
+ammo762mmBulletBallRE,7.62 Rifle Bullet
+ammo762mmBulletHPRE,HiPower 7.62 Rifle Bullet
+ammoShotgunShellRE,12 Gauge Shotgun Shell
+ammoShotgunSlugRE,Shotgun Slug
+ammoRocketHERE,Anti-Tyrant Fragmentation Rocket
+ammoRocketFragRE,Fragmentation Rocket
+thrownGrenadeRE,Sticky Grenage
+GrenadeDesc,This grenade will stick to anything when thrown.
+Kerosene,Kerosene
+Kerosenedesc,"A flammable liquid, with enough I'll be able to make a molotov. I'll need something to light it with."
+thrownAmmoMolotovCocktailRE,Molotov Cocktail
+mineCandyTinRE,Makeshift Mine
+perkEnforcerHPAmmoDesc,You can craft HiPower .357 Magnum ammunition.
+perkEnforcerHPAmmoLongDesc,The most powerful handgun in the world just got more powerful. You can craft HiPower .357 Magnum ammunition.
+
+plantedRedHerb1,Red Herb (Seed)
+plantedBlueHerb1,Blue Herb (Seed)
+plantedRedHerb2,Red Herb (Growing)
+plantedBlueHerb2,Blue Herb (Growing)
+plantedRedHerb3Harvest,Red Herb
+plantedBlueHerb3Harvest,Blue Herb
+plantedRedHerb3HarvestPlayer,Red Herb
+plantedBlueHerb3HarvestPlayer,Blue Herb
+buffPoisonedName,Poisoned!
+buffPoisonedDesc,You're poisoned and are slowly taking damage.\n\nUse a Blue Herb to cure your poison.
+buffPoisonedTooltip,You've been poisoned!
+buffDeadlyPoisonedName,Game Over!
+buffDeadlyPoisonedDesc,Jill Valentine was never heard from again...
+questStartup_offer,Quest
+questStartup_desc,"It's July 1998, you're Jill Valentine, a member of the S.T.A.R.S Alpha Team. Your team was sent in to investigate the disappearance of your fellow Bravo Team after you lost contact with them.\n\nYour team flew over the forest area in the Arklay Mountains and discovered a crashed helicopter.\nThe helicopter belongs to Bravo Team and everyone is dead. Your team is attacked by vicious dogs and are chased through the forest, you see a mansion in the distance and call it out to your team and you all make a break for it!\n\nYou're now trapped inside, it's too dangerous out there!"
+BookOfCurses_offer,The four masks.\n\nA mask that speaks no evil...\nA mask that smells no evil...\nA mask that sees no evil...\nA mask that cannot speak. smell. or see evil...\n\nWhen all four fall into place. evil will awaken.\n\n\nYou see a key embedded on the back. will you remove it?
+Quest_SwordKey_tip_title,Cracked Key
+Quest_SwordKey_tip,"As you remove the key, it slips and falls onto the floor. You notice that it has a crack now and looks like it could snap easily."
+DogWhistle_offer,Today. Sir Spencer told me to hide something where no one could find it.\n\nWell. I had this idea. I figured if I could somehow have it protected by a dangerous animal like the vicious canine that lives here. no one would be able to get near it!\n\nAs far as I can tell. the mutt is always hanging around the second floor balcony on the west side of the terrace. and he ought to come running at the sound of a dog whistle.\n\nThis is where you come in. The thing is. I reckon you're the only person that can get near that damn dog without risking a serious mauling.\n\nWhich means only you can put this collar on him. The object that Sir Spencer wants hidden is concealed inside.\n\nYou're the only person I can trust with this. Of course. you'll get something out of it as well. Remember that certain item that you've always wanted to get hold of?\n\nWell. in exchange for your services. I just might be able to get it for you. This could work out well for both of us...\n\nJon Toleman.
+JillLockpick,With her lockpick set Jill is the master of unlocking.
+FilesDesc,You can read this note from your Journal.
+modMeleeErgonomicGripRE,Ergonomic Grip
+KnifeGripDesc,"Reduces normal attack stamina consumption by 3 and power attack stamina consumption by 6."
+modGunFlashlightRE,Firearm Torch Attachment
+modMeleeWeightedHeadRE,Weighted Head
+WeightedHeadDesc,A modification for your knife.\nAdds a 15% chance to stun and slow victims.
+SamuraiEdgeParts,Samurai Edge Parts
+SamuraiEdgeDesc,Special custom parts that drastically increases fire rate and allow for a 3-round burst.\n\nOverall makes your handgun easier to wield.
+AssaultShotgunParts,Assault Shotgun Parts
+AssaultShotgunDesc,A S.T.A.R.S. custom arsenal and also Richard's favourite.\n\nHolds 10 rounds. Has a tighter spread. Longer range and faster fire rate. But slower reload speed.
+MagnumSpeedloader,Magnum Speedloader
+MagnumSpeedloaderDesc,This assists in a 25% faster reload and overall makes it easier to wield the revolver.
+AK-47MuzzleBrake,AK-47 Muzzle Brake
+MuzzleBreakDesc,Makes the assault rifle more accurate and overall easier to wield.
+modGunMeleeBlessedMetalTyrant,T-Virus neutraliser
+modGunMeleeBlessedMetalTyrantDesc,Greatly increases damage to Tyrant\n\nKnife Only.
+modGunMeleeBlessedMetalPlant,V-Jolt Chemical
+modGunMeleeBlessedMetalPlantDesc,Soak your knife in V-Jolt to inflict extra damage to Plant 42.
+drugBoulderBusters,"Chris Redfield secretly has these in his protein shake.\n\nIncreases brawling damage by 400%.\nStacks with Skull Crushers and Beer!"
+drugBoulderBustersDesc,"Your Brawling damage is increased by 400%.\nStacks with Skull Crushers and Beer!"
+drugRockBusters,Boulder Buster!
+SuperGogglesDesc,These bad boys will stop you from becoming a Jill Sandwich.\n\n\nFortitude +2\nAgility +2.\nCrafting time -40%.
+Note from Barry,Note from Barry
+BarryNote,"Jill, I've left you some supplies.\n\nBarry"
+Jill Sandwich,Jill Sandwich
+JillSandwichDesc,You were almost a Jill Sandwich
+Watch your step,Watch your step
+PuzzleDesc,Facing to the south.\n\nSide by side is safe.\n\nUp and down is explosive!
+Researcher'sWill,Researcher's Will
+ResearcherWillTip_title,Researcher's Will
+ResearcherWillTip,"A letter is slipped inside.\nJune 3, 1998\nMy dearest Alma,\n\nLet me first apologize for not being able to call you. A man wearing sunglasses didn't permit any phone calls. Sorry Alma.\n\nI sit here trying to think of where to begin, of how to explain in a few simple words all that's happened in my life since we last spoke, and already I fail. I hope this letter finds you well, and that you'll forgive the tangents of my pen; this isn't easy for me.\n\nEven as I write, I can feel the simplest of concepts slipping away, lost to feelings of despair and confusion -- but I have to tell you what's in my heart before I can rest. Alma, please believe that what I'm telling you is the truth. The entire story would take hours for me to tell you, and time is short, so accept these things as fact: last month there was an accident in the lab and the virus we were studying leaked.\n\nAll my colleagues who were infected are dead or dying, and the nature of the disease is such that those still living have lost their senses. This virus robs its victims of their humanity, forcing them in their sickness to seek out and destroy life. Even as I write these words, I can hear them, pressing against my door like mindless, hungry animals.\n\nAlma, I have tried to survive only to see you again. But my efforts only delayed the inevitable; I am infected, and there is no cure for what will follow - except to end my life before I lose the only thing that separates me from them.\n\nMy love for you.\n\nIn an hour I'll have entered my eternal sleep where there is peace. Please understand. Please know that I'm sorry.\nMartin Crackhorn"
+Trevor'sDiary,Trevor's Diary
+TrevorDiaryTip_title,Trevor's Diary
+TrevorDiaryTip,"Nov. 24, 1967\nEleven days have past since arriving on this estate. How did I end up like this? A guy in a lab coat came with a plate of skimpy meal and said to me, 'Sorry to put you through this but it's for security reasons.' That's when it hit me. It all makes sense now. There are only two people that know the secret of this mansion, Sir Spencer and myself. If they kill me, Sir Spencer will be the only person that knows the secret. But for what purpose? It doesn't matter now. It's too dangerous here. My family... I hope they are all right. I've decided to escape... Jessica, Lisa, I pray you are safe.\n\nNov. 26, 1967\nHow could I be so careless? I lost my favorite lighter - the one Jessica gave me for my birthday. Now it's going to be that much harder to get out this dark place.\nNov. 13th, the date when my fate was sealed. My aunt was hospitalized just three days before that. Jessica and Lisa said that they were going to visit her. I wish I could be there with them. But wait, even as I'm writing my memory is coming back to me more vividly. Just before I passed out, I remember the men in the lab coats said something like, 'Most likely your family is already...' I pray for their safety.\n\nNov. 27, 1967\nSomehow I managed to get out that room. But getting out of this mansion won't be as easy. I have to get past all the booby-traps. Tiger Eyes, Gold Emblem... I have to try and remember for my own sake...."
+Trevor'sDiary2,Trevor's Diary
+TrevorDiaryTip2_title,Trevor's Diary
+TrevorDiaryTip2,"There's something handwritten. it's not dated.\n\nNothing's changed. I never thought that this room I designed as an experiment would pay off like this.\n\nI can hide here safely for a while, because nobody knows about the secret behind this painting. Not even Sir Spencer.\n\nPainting of a mansion... in the back of the art room."
+Trevor'sDiary3,Trevor's Diary
+TrevorDiaryTip3_title,Trevor's Diary
+TrevorDiaryTip3,"Nov. 29, 1967\nI can't get out. I have tried every possible way to escape but only to be faced with the reality that I'm trapped. I've been everywhere. The laboratory with the large glass tubes filled with formaldehyde and those dark, wet and eerie caves... What can I do?\nAt first I didn't want to believe my eyes. But that familiar high-heeled shoe in the corridor... It was like reflex. One name came to my mind, Jessica!\nI don't want to believe they share the same fate as me. No! I can't give up hope. I have to hope they're alive.\n\nNov. 30, 1967\nI haven't had anything to eat or drink for the past few days. I feel like I'm going crazy. Why is this happening to me? Why do I have to die like this? I was too obsessed with designing this ghastly mansion. I should have known better.\n\nNov. 31, 1967\nIt was a dark and damp underground tunnel. And another dead end. But even in the darkness something caught my eye. Carefully, I lit the last match, I had to see what it was. A grave! But deeply engraved into the stone was my name! 'George Trevor'. At that instant, it all became clear to me. Those bastards knew from the beginning that I'd die here and I fell right into their trap. But it's too late now. I'm losing it. Everything is becoming so far away. Jessica... Lisa... Forgive me. Because of my ego, I got both of you involved in this whole damn conspiracy. Forgive me. May God justify my death in exchange for your safety.\n\nGeorge Trevor"
+BotanyBook,Botany Book
+BotanyBookTip_title,Botany Book
+BotanyBookTip,"Uses of Medicinal Herbs\n\nIt is a well-known fact that there exist many plants that are credited with medicinal healing powers. Since ancient times, mankind has been healing wounds and diseases using various plants.\n\nIn this book, we will sample three herbs that are native of the Arklay Mountains and briefly outline each of their medicinal qualities. Each herb has a distinct color and a distinct medicinal quality.\n\nThe green herb recovers physical strength. The blue herb neutralizes natural toxins. However, the red herb has no real effect by itself. We have found that mixing green and red herbs results in a magnified effect.\n\nWe will outline the effects of red herbs when mixed with other herbs when we have more data. Meanwhile feel free to experiment on your own, for true knowledge is best acquired through own experience."
+BodyDisposal,Body Disposal
+BodyDisposalTip_title,Body Disposal
+BodyDisposalTip,"Special instructions when disposing of dead bodies.\n\nWe have new information regarding those 'beings'. They may appear to be dead but in fact they are able to come back to life. However, there are ways to prevent them from becoming active again.\n\nCurrently there are two known methods to cease their resurrection.\n\n1. DESTRUCTION OF THE HEAD\n2. DISMEMBERMENT OF EITHER LEG\n\nIf further methods are discovered, they will be notified immediately.\n\nMeanwhile to those of you who still have the will to live, kerosene has been placed around the mansion and surrounding areas. Take as much as you need.\n\nYou'll need something to light it with, which you'll need to find by yourself.\n\n[FF4F00]WARNING: Exiting your game session will instantly reanimate intact dead bodies upon loading your save.[-]"
+Keeper'sDiary,Keeper's Diary
+KeeperDiaryTip_title,Keeper's Diary
+KeeperDiaryTip,"May 9, 1998\nPlayed poker tonight with Scott and Alias from Security, and Steve from Research. Steve was the big winner, but I think he was cheating. Scumbag.\n\nMay 10, 1998\nOne of the higher-ups assigned me to take care of a new creature. It looks like a skinned gorilla. Feeding instructions were to give it live animals. When I threw in a pig, the creature seemed to play with it... tearing off the pig's legs and pulling out the guts before it actually started eating.\n\nMay 11, 1998\nAt around 5 A.M., Scott woke me up. Scared the shit out me, too. He was wearing a protective suit. He handed me another one and told me to put it on. Said there'd been an accident in the basement lab. I just knew something like this would happen. Those bastards in Research never sleep, even on holiday\n\nMay 12, 1998\nI've been wearing the damn space suit since yesterday. My skin's getting grimy and feels itchy all over. The goddamn dogs have been looking at me funny, so I decided not to feed them today. Screw 'em.\n\nMay 13, 1998\nWent to the Infirmary because my back is all swollen and feels itchy. They put a big bandage on it and told me I didn't need to wear the suit anymore. All I wanna do is sleep.\n\nMay 14, 1998\nFound another big blister on my foot this morning. I ended up dragging my foot all the way to the dog's pen. They were quiet all day, which is weird. Then I realized some of them had escaped. Maybe this is their way of getting back at me for not feeding them the last three days. If anybody finds out, I'll have my head handed to me.\n\nMay 16, 1998\nRumors going around that a researcher who tried to escape the estate last night was shot. My entire body feels hot and itchy and I'm sweating all the time now. I scratched the swelling on my arm and a piece of rotten flesh just dropped off. What the hell's happening to me?\n\nMay 19, 1998\nFever gone but itchy. Today hungry and eat doggie food.\n\nMay 21, 1998\n Itchy itchy Scott came ugly face so killed him. Tasty. 4 / / Itchy. Tasty."
+MailtotheChiefofSecurity,Mail to the Chief of Security
+MailToTheChiefOfSecurityTip_title,Mail to the Chief of Security
+MailToTheChiefOfSecurityTip,"CONFIDENTIAL\n\nAttn: Chief of Security\n\nDate: July 22, 1998 2:13\n\nX Day is drawing upon us. Execute the following procedures within one week. Prompt actions are demanded.\n\nLure S.T.A.R.S. to the estate, and obtain B.O.W.'s raw combat data against S.T.A.R.S.\n\nCollect two embryos of each mutated specimens as samples, excluding the Tyrant. Dispose of the Tyrant.\n\nEnsure complete disposal of the Arklay Laboratory including all personnel and test animals. Disguise their deaths as an accident.
+When the above procedures are executed, report to headquarters for further instructions.\n\nIf for some reason you are unable to execute the procedure by the deadline, report immediately. In case of emergency situations, report directly to the extension number 5691.\n\nGood luck.\nUmbrella Headquarters,\nUmbrella Inc."
+Researcher'sLetter,Researcher's Letter
+ResearcherLetterTip_title,Researcher's Letter
+ResearcherLetterTip,"June 8th 1998\nMy dearest Ada.\n\nBy the time you read this letter, I will no longer be the person you once knew. The results of my test came out today, and as I suspected, it came out positive.\n\nI feel like I am teetering on the edge of reason just thinking about my impending doom. I would give anything not to have to become one of them.\n\nAs far as I know, you are not infected. I sincerely hope things do not reach such a desperate pass, but if it has turned out that you are now the last person remaining alive, I want you to get the material from the Visual Data Room.\n\nThen, activate the Self-Destruct System in the Power Room, and escape from here. Please do everything in your power to make this whole accident public.\n\nIf everything is still running normally, you should be able to release all the locks using the Security System.\n\nI have set up the terminal in the small security room so that you can log in to the system using my name and your name as the password.\n\nYou will need another password to release the lock of the door in Basement Level Two where the Visual Data Room is located.\n\nAs a safety measure I have coded that password into an X-ray picture; a roentgenogram. I know you, and I'm sure you will be able to work it out without any trouble.\n\nThere is just one more thing... and it is my last request. I hope you never have to lay eyes on me in this state, but if you do happen to run into me in my hideous form, I beg you to put me out of my misery. I hope you understand.\n\nThank you, Ada.\nYours truly,\nJohn"
+ObservationNote,Observation Note
+ObservationNoteTip_title,Observation Note
+ObservationNoteTip,"The discovery of the G-Virus was in fact 21 years after the administration of the progenitor virus.\n\nThe 'Prototype Parasite' which we had delivered from a laboratory in France was administered to the sample specimen. The sample specimen took in the parasite without showing any signs of adverse reaction.\n\nThe lack of any reaction was an unsolved mystery. But now everything is clear to me now.\n\nThe 'Prototype Parasite' was incubating in the sample specimen's body for 21 years. Then from that incubating state the prototype suddenly mutated. ('Evolved' may be a more appropriate word to describe it.)\n\nThis observation gave me more insight in my research. Through further modification and testing, I was able to derive a method to create the 'G' that surpasses the performance of the 'T'.\n\nThis was the breakthrough that would change the future of the B.O.W.'s history.\n\nI can't wait to see the look on Alexia's annoying face when I finally announce my research. But unfortunately I'll have to wait a few more years to completely verify my findings.\n\nWilliam Birkin"
+SuicideNote,Suicide Note
+SuicideNoteTip_title,Suicide Note
+SuicideNoteTip,"June 22, 1998\n\nI had to do it. We ran from those things - helping each other to survive. But Robert started to show the symptoms. I had to do it. Those damn things are pure evil.\n\nThere was no other way. He would have done the same if it were the other way around. After I put him out of his misery I had to just put him in the bathroom. Now I'm probably the last one...\n\nHow could this happen? I'll never forgive myself for being part of this project. Eventually I'll get what's coming to me, though. There's no way to escape from this nut house, it's just a matter of time now.\n\nEverything is set. All I need is a little courage to get it done. Knowing that I'll leave many things undone is regret beyond words.\n\nBut, this is better than just waiting to turn into one of them. Please understand and at least let me end my life as a person.\n\nThere's a message on the back.\n\nLinda, please forgive me..."
+Plant42Report,Plant 42 Report
+Plant42ReportTip_title,Plant 42 Report
+Plant42ReportTip,"Four days have passed since the accident. The plant at Point 42 is growing at an amazing rate.\n\nAlthough there are many unknown aspects about this plant, we know that in comparison with the other group of plants, the T-Virus has had a substantially stronger affect on this one.\n\nThe T-Virus has drastically morphed its host's anatomy as well as its size. Looking at its current state, it's difficult to imagine its original appearance. Nowhere on Earth will you find anything like it.\n\nWe've also found that PLANT 42 has two main sources of acquiring its necessary nutrients. One source is through its root. Somehow it has rooted itself down into the basement.\n\nImmediately after the accident, a scientist went mad and destroyed the Aqua Ring. Ever since, the basement has been like a pool. There is a high possibility that it's one of the chemicals in the water that's promoting the PLANT 42's rapid growth.\n\nHowever, we have yet to determine the specific chemical.\n\nA bulb-like body of the PLANT 42 has been sighted hanging from the ceiling of the first floor. We are sure that it used the air ducts to reach the first floor. Numerous long tentacle-like vines are protruding from the bulb.\n\nWe believe the vines are the second means of acquiring its nutrients. When the PLANT 42 senses prey, it uses the tentacle-like vines to capture its prey. After doing so, suckers on the vine drain the prey of its blood.\n\nWe've also noticed that it has some intelligence. When it captures its prey or when it's inactive, the vines twine around the door to stop possible intruders.\n\nUnfortunately, several of our scientists have already fallen victim to this PLANT 42. When we heard the stories from the survivors, they all observed one thing in common:\n\nWhen the uniform petal-like flaps open and reveal its vital internals, it has a tendency to become more aggressive.\n\nOne witness reported that it was as if it was trying to protect itself. Why it behaves the way it does is still unknown.\n\nMay 21, 1998\nHenry Sarton"
+OrganicChemistryLabExperiment,Organic Chemistry Lab Experiment
+OrganicChemistryLabExperimentTip_title,Organic Chemistry Lab Experiment
+OrganicChemistryLabExperimentTip,"The similarities in the cellular characteristics of the rapidly growing plant infected by the Tyrant Virus have been reported in previous papers. However, while repeating these experiments, an interesting new fact became clear.\n\nWe learned that a chemical in the UMB family, UMB No. 20, contains a compound that is toxic to the cells of the plant.\n\nWe have given UMB No. 20 a new name: V-JOLT. If calculations prove correct, when V-JOLT is applied directly to the root of the plant, the entire plant should be dead within 5 seconds.\n\nThe V-JOLT can be made by simply mixing the VP and UMB chemicals in a specific ratio. However, extra care must be taken when handling these UMB chemicals. They have been known to generate toxic gases if mishandled.\n\nThe characteristics of each UMB chemical are as follows:\n\nUMB No. 3   red\nYellow-6   yellow\nUMB No. 7   green\nUMB No. 10   orange\nVP-017   blue\nV-JOLT   dark brown"
+Family Picture and Notes,Family Picture and Notes
+FamilyPicture1Tip_title,Family Picture and Notes
+FamilyPicture1Tip,"There's something written on the back\n\n\nNov. 10, 1967\n-Progenitor virus administered\n\nJessica\nAdministered virus: Type-A\nPlasmolyzing of tissue during cell activation.\n\nVirus fusion: Negative\n\nAction: Disposed\n\n\nLisa\n\nAdministered virus: Type-B\nPlasmolyzing of tissue during cell activation.\n\nVirus fusion: Positive but delayed fusion.\n\nBody modification: Observed constant results.\n\nStatus: Continue protective observation.\n\n\nGeorge\nAction: Terminated (Nov. 30, 1967)"
+Lisa'sJournal,Lisa's Journal
+FamilyPicture2Tip_title,Lisa's Journal
+FamilyPicture2Tip,"Nov. 14, 1967\nI feel dizzy after that shot they gave me. I don't see Mom. Where did they take her?\nShe promised that we would escape together. Did she escape alone and leave me behind?\n\nNov. 15, 1967\nI found Mom. We ate together. I was very happy.\n\nBut she was a fake. Not my real Mom. Same face but different inside.\n\nHave to find Mom. Have to give face back to mother.\n\nI got Mom's face back.\nNobody can have my Mom except me. I attach her face to me so she doesn't go away.\nBecause Mom sad when I meet her without her face.\n\nNov. 17, 19 7\nfrom inside box, scent of mommy. maybe true mother there.\nstone box hard. It hurt. steel rope in the way.\ncan't see mother becuz 4 stones.\n\n19\ndadddy atached first\nmomm atached scond\n\niNside reD and sLimy\nwhiTe and haRd\n\nnot true moM wheRe\n\ndunno dadd\nfound mum again\n\nwhne atachd momMy\nshe moved no more\nshe screaming\n\nwhy?\nJst want to b with her\n\n4\nmom\nwhere?\n\nI mis yuo"
+Jessica'sLetter,Jessica's Letter
+FamilyPicture3Tip_title,Jessica's Letter
+FamilyPicture3Tip,"To my Lisa,\n\nDay by day I can feel my consciousness drifting further and further away.\nThe shots given to me by men in white clothes made some of mommy's itching go away. Today they gave me another shot saying it was 'nutrition'.\n\nWhen they give me the shots mommy can think straight, but mommy's shocked and sad because mommy's unable to think of you all the time.\n\nMommy's afraid. Afraid of forgetting everything, especially the memories of you and daddy... What your faces look like, how we used to be together... They're all starting to disappear into somewhere dark in my mind.\n\nOh Lisa, I wish I could touch your face and hold you in my arms right now, so that I can hold on to our wonderful memories of you and daddy.\n\nLisa we can't stay here any longer. We have to escape!\n\nListen to me Lisa. Our chance to escape is the next time we go to that lab together. We'll both pretend that we are both unconscious and when that man in white clothes is off guard that will be our chance.\n\nWhen we're on the outside, let's look for daddy together. Okay sweetie? Be strong, Lisa.\n\nNov. 13, 1967\nJessica Trevor"
+V-ACT,V-ACT
+VACTTip_title,V-ACT
+VACTTip,"Researcher's note\n\nThere is now evidence that when the host loses consciousness, the body goes into a dormant state. During this time the virus becomes active and rapidly transforms and reconstructs the basic composition of the body.\n\nThe host eventually mutated into a humanoid creature. (We call them V-ACTs)\n\nIts speed and amazing muscular development are particularly noteworthy. After transformation, it becomes more agile and aggressive.\n\nAlready four of our researchers have died from trying to feed it, turning the place into an instant blood bath. (Ever since this tragic and barbaric accident, we have decided to call its kind 'Crimson Heads')\n\nThat dangerous and precious prototype specimen can't be left there. We have to figure out a way to deal with it. Termination is definitely not an option.\n\nWe finally decided to freeze the specimen and confine the body inside the basement of the backyard cemetery."
+FAX,FAX
+FAXTip_title,FAX
+FAXTip,"To: Sanitation Division\nAttn: Manager of Sanitation\nFrom: Raccoon Disaster Contingency Committee\n\nThe contents of this fax are confidential and intended for the named addressee only. Any copying, or disclosure of the contents of this fax to any third party is strictly forbidden by the sender.\n\nAfter reading the contents of this fax, it must be destroyed immediately.\n\nWe expect significant increase in the damage done by the recent T-Virus' outbreak than initially estimated. There are several concerns.\n\nFirst concern\nMore than half of the researchers have been infected by the T-Virus and died. It has also been reported that almost all of the survivors of this accident are starting to show symptoms of the T-Virus infection.\n\nSecond concern\nOur Secret Security Patrol Team has also been completely eradicated. Therefore, our most secret research is in danger of public disclosure. Quick actions are demanded to prevent mass media coverage.\n\nThird concern\nThere is a high possibility that most of the specimens are running loose inside the compound. We expect many casualties to follow.\n\nHowever yet unfortunate, these casualties underscore the success of our research results. Actions must be taken to prevent our research results from being made public.\n\nWe suspect the first official intervention will come from the State Police and S.T.A.R.S. We strongly recommend taking measures against them first."
+SecurityProtocols,Security Protocols
+SecurityProtocolsTip_title,Security Protocols
+SecurityProtocolsTip,"BASEMENT LEVEL TWO\n\nVisual Data Room/ For use by the Special Research Division only. All other access to the Visual Data Room must be cleared with Keith Arving, Room Manager.\n\n\nBASEMENT LEVEL THREE\n\nPrison/ Sanitation Division controls the use of the prison. At least one Consultant Researcher (E. Smith, S. Ross, A. Wesker) must be present if viral use is authorized.\n\n\nTriple Lock Door/ Entry into the room is limited to the sole person who deactivates the lock with all of the Pass Codes. Accessing the exclusive Output Terminals located in each section of the Senior Researchers deactivates the lock.\n\nPower Room/ In this room nitro compound is used as the primary fuel source of power. Access is limited to Headquarters Supervisors. This restriction may not apply to Consultant Researchers with special authorization.\n\nPass Code Output Terminals/ Use and access of the Output Terminals is limited to authorized Senior Researchers.\n\n\nBASEMENT LEVEL FOUR\n\nRegarding the progress of 'Tyrant' after the administration of T- Virus...\n(Illegible hereafter...)"
+Quest_Completion_tip_title,Challenge Completed!
+Completion_desc,Jill Valentine managed to escape the mansion. Little did she know that the nightmare has only just begun!\n\nCongratulations!!\nYou have successfully completed the Spencer Mansion Challenge.\n\nI hope you had a blast playing it as much as I did creating it!\n\nFrantic Dan
+Quest_Completion_tip,Congratulations!!\nYou have successfully completed the Spencer Mansion Challenge.\n\nI hope you had a blast playing it as much as I did creating it!\n\nFrantic Dan
+zombieArlene,JaWoodle's Girl
+zombieMarlene,Misterri
+zombieNurse,Umbrella Surgeon
+zombieJoe,Glock9's Dealer
+zombieSteve,Draycko
+zombieBusinessMan,Aviose
+zombieBoe,DD1GG
+zombieJanitor,HellsJanitorTV
+zombieMoe,TheOrigamiGuru
+zombieLab,Umbrella Scientist
+zombieDarlene,Lois Griffin
+zombieYo,NotOnly25
+zombieUtilityWorker,Aquarium Worker
+zombieBiker,Games4Kickz
+zombieLumberjack,JonahBirch
+zombieFemaleFat,Rambunctious Red
+zombieFatHawaiian,Peter Griffin
+zombieMaleHazmat,Umbrella Hazmat Technician
+zombieSkateboarder,DoctorBest85
+zombieSoldier,Umbrella Security Service Officer
+animalZombieDog,Cerberus
+ZombieDog,Cerberus
+animalZombieVulture,Flappy Fuck
+animalSnake,Adder
+animalChicken,Oskurd
+WebSpinner,Web Spinner
+CrimsonHead,Jagz's Victim
+CrimsonHeadPrototype,Crimson Head Prototype
+CrimsonHeadPrototype2,Crimson Head Prototype
+ForestSpeyer,Forest Speyer
+ForestSpeyer2,Forest Speyer
+Hunter,Hunter
+FailedTestSubject,Failed Test Subject
+Plant42,Plant 42
+YawntheBoar,Yawn the Boar
+BlackTigerSpider,Black Tiger Spider
+LisaTrevor,Lisa Trevor
+Tyrant,Tyrant
+SuperTyrant,Super Tyrant
+BoeCrawler,Crippled DD1GG
+JoeCrawler,Glock9's Crippled Dealer
+JanitorCrawler,Crippled HellsJanitorTV
+ArleneCrawler,JaWoodle's Crippled Girl
+LabWorkerCrawler,Crippled Umbrella Scientist
+DarleneCrawler,Crippled Lois Griffin
+MarleneCrawler,Crippled Misterri
+YoCrawler,Crippled NotOnly25
+SteveCrawler,Crippled Draycko
+BusinessManCrawler,Crippled Aviose
+BurntCrawler,Jagz's Crippled Victim
+NurseCrawler,Crippled Umbrella Surgeon
+HazmatCrawler,Crippled Umbrella Hazmat Technician
+SkateboarderCrawler,Crippled DoctorBest85
+zombieMarleneRadiated,Misterri
+zombieJoeRadiated,Glock9's Dealer
+zombieJanitorRadiated,HellsJanitorTV
+zombieYoRadiated,NotOnly25
+BoeCrimsonHead,Crimson Head
+JoeCrimsonHead,Crimson Head
+SteveCrimsonHead,Crimson Head
+TomCrimsonHead,Crimson Head
+YoCrimsonHead,Crimson Head
+BusinessManCrimsonHead,Crimson Head
+ArleneCrimsonHead,Crimson Head
+DarleneCrimsonHead,Crimson Head
+MarleneCrimsonHead,Crimson Head
+JanitorCrimsonHead,Crimson Head
+MoeCrimsonHead,Crimson Head
+BikerCrimsonHead,Crimson Head
+LumberjackCrimsonHead,Crimson Head
+FemaleFatCrimsonHead,Crimson Head
+FatHawaiianCrimsonHead,Crimson Head
+SkateboarderCrimsonHead,Crimson Head
+UtilityWorkerCrimsonHead,Crimson Head
+LabCrimsonHead,Crimson Head
+NurseCrimsonHead,Crimson Head
+MaleHazmatCrimsonHead,Crimson Head
+SoldierCrimsonHead,Crimson Head
+
+STARSTrainingManual,S.T.A.R.S Training Manual
+BrawlerTraining,Brawler Training
+BoomstickTraining,Boomstick Training
+ArmourToleranceTraining,Armour Tolerance Training
+SexualTrexTraining,Sexual Trex Training
+MachineGunnnerTraining,Machine Gunnner Training
+PainToleranceTraining,Pain Tolerance Training
+WellnessTraining,Wellness Training
+HealingFactorTraining,Healing Factor Training
+PhysicianTraining,Physician Training
+DeepCutsTraining,Deep Cuts Training
+GunslingerTraining,Gunslinger Training
+RunandGunTraining,Run and Gun Training
+FlurryofBlowsTraining,Flurry of Blows Training
+CardioTraining,Cardio Training
+
+"FinalEscape","Escape This Nightmare!!"
+"FinalEscapekey","Escape This Nightmare!!"
+"FinalEscapename","Escape This Nightmare!!"
+"FinalEscapedesc","It's finally time for you to escape this hell!"
+
+ObjectiveGoto_keyword,Head to the Helipad!
+
+
+attStrengthRank01LongDescRE,"Deal 250% head shot damage and have a 15% greater chance to dismember with shotguns and fists."
+perkDemolitionsExpertRank1LongDescRE,"You are now a grenadier initiate, be careful with those explosives. Increase damage 17%, reload speed 10%, aim 15% faster, 15% greater chance to dismember."
+perkDemolitionsExpertRank2LongDescRE,"Increase damage by 34%, reload speed 20%, aim 30% faster, 30% greater chance to dismember."
+perkDemolitionsExpertRank3LongDescRE,"You are now an explosives handler. Increase damage 51%, increase reload speed by 30%, aim 45% faster, 45% greater chance to dismember."
+perkBoomstickRank1LongDescRE,"Deal 8.5% more damage.\n+8% faster fire rate.\n+8% faster reload.\nStun enemies for 4 seconds."
+perkBoomstickRank2LongDescRE,"Deal 17% more damage.\n16% faster fire rate.\n+16% faster reload.\nStun enemies for 6 seconds."
+perkBoomstickRank3LongDescRE,"Deal 25.5% more damage.\n24% faster fire rate.\n+24% faster reload.\nStun enemies for 8 seconds."
+perkBoomstickRank4LongDescRE,"Deal 34% more damage.\n32% faster fire rate.\n+32% faster reload.\nStun enemies for 8 seconds.\nLegs shots cripple opponents."
+perkBrawlerNameRE,Brawler (Slots 7 8 9 0)
+perkBrawlerRank1LongDescRE,Deal 12.5% more damage. Block damage +50%.\nPunches to the head negate infection ability.
+perkBrawlerRank2LongDescRE,Deal 25% more damage. Block damage +100%.\nPunches to the head negate infection ability.\n30% chance to stun opponents with power attacks.
+perkBrawlerRank3LongDescRE,Deal 37.5% more damage. Block damage +150%.\nPunches to the head negate infection ability.\n30% chance to stun opponents with power attacks.\nPower attacks to the head have a 30% chance to knock down your opponent.
+perkBrawlerRank4LongDescRE,Deal 50% more damage. Block damage +200%.\nPunches to the head negate infection ability.\n30% chance to stun opponents with power attacks.\nPower attacks to the head have a 30% chance to knock down your opponent.\n+10% dismember chance.
+perkSexualTrexRank1LongDescRE,Reduce melee and tool stamina usage by 6%\nPower attacks by 10%.\nKilling blows grant 10 stamina.
+perkSexualTrexRank2LongDescRE,Reduce melee and tool stamina usage by 12%\nPower attacks by 20%.\nKilling blows grant 15 stamina.
+perkSexualTrexRank3LongDescRE,Reduce melee and tool stamina usage by 18%\nPower attacks by 30%.\nKilling blows grant 20 stamina.
+perkSexualTrexRank4LongDescRE,Reduce melee and tool stamina usage by 24%\nPower attacks by 40%.\nKilling blows grant 25 stamina.
+perkHeavyArmorNameRE,Armour Tolerance
+perkHeavyArmorRank1LongDescRE,+1 Armour Rating for each armour piece worn.\nReduces Stamina and Mobility penalties by 10%.
+perkHeavyArmorRank2LongDescRE,+2 Armour Rating for each armour piece worn.\nReduces Stamina and Mobility penalties by 20%.
+perkHeavyArmorRank3LongDescRE,+3 Armour Rating for each armour piece worn.\nReduces Stamina and Mobility penalties by 30%.
+perkHeavyArmorRank4LongDescRE,+4 Armour Rating for each armour piece worn.\nReduces Stamina and Mobility penalties by 40%.
+attFortitudeRank01LongDescRE,Deal 250% head shot damage and have a 15% chance to dismember with machine guns.
+perkMachineGunnerRank1LongDescRE,"Deal 8.5% more damage.\n8% faster fire rate.\n8% faster reload.\n8% less projectile spread.\nCommando Adrenaline: Each shot scored with automatic weapons gives you 1 stamina."
+perkMachineGunnerRank2LongDescRE,"Deal 17% more damage.\n16% faster fire rate.\n16% faster reload.\n16% less projectile spread.\nCommando Adrenaline: Each shot scored with automatic weapons gives you 2 stamina."
+perkMachineGunnerRank3LongDescRE,"Deal 25.5% more damage.\n24% faster fire rate.\n24% faster reload.\n24% less projectile spread.\nCommando Adrenaline: Each shot scored with automatic weapons gives you 3 stamina."
+perkMachineGunnerRank4LongDescRE,"Deal 34% more damage.\n32% faster fire rate.\n32% faster reload.\n32% less projectile spread.\nCommando Adrenaline: Each shot scored with automatic weapons gives you 4 stamina."
+perkPainToleranceRank1LongDescRE,7.5% Damage Resistance (Calculates after Armour Rating)\n40% Stun Resistance.
+perkPainToleranceRank2LongDescRE,15% Damage Resistance (Calculates after Armour Rating)\n60% Stun Resistance.
+perkPainToleranceRank3LongDescRE,22.5% Damage Resistance (Calculates after Armour Rating)\n80% Stun Resistance.
+perkPainToleranceRank4LongDescRE,30% Damage Resistance (Calculates after Armour Rating)\n100% Stun Resistance.
+buffPerkCharismaticNatureDescRE,You live a healthy lifestyle! Increased Max Health.
+perkCharismaticNatureDescRE,You have increased Max Health.
+perkCharismaticNatureNameRE,Wellness
+perkCharismaticNatureRank1DescRE,Morning Workout
+perkCharismaticNatureRank2DescRE,No Sugar
+perkCharismaticNatureRank3DescRE,Vitamins
+perkCharismaticNatureRank4DescRE,Nutritious Diet
+perkCharismaticNatureRank1LongDescRE,Your wellness gains you +10 Max Health.
+perkCharismaticNatureRank2LongDescRE,Your wellness gains you +20 Max Health.
+perkCharismaticNatureRank3LongDescRE,Your wellness gains you +30 Max Health.
+perkCharismaticNatureRank4LongDescRE,Your wellness gains you +40 Max Health.
+perkHealingFactorRank1LongDescRE,Passively heal 24 health every real hour. Critical injuries heal 20% faster.
+perkHealingFactorRank2LongDescRE,Passively heal 36 health every real hour. Critical injuries heal 50% faster.
+perkHealingFactorRank3LongDescRE,Passively heal 48 health every real hour. Critical injuries heal 100% faster.
+perkPhysicianRank1LongDescRE,Increases Medical healing by 10%.
+perkPhysicianRank2LongDescRE,Increases Medical healing by 20%.
+perkPhysicianRank3LongDescRE,Increases Medical healing by 30%.
+perkPhysicianRank4LongDescRE,Increases Medical healing by 40%.
+attAgilityRank01LongDescRE,"Deal 250% head shot damage and have a 15% chance to dismember with handguns and knives."
+perkGunslingerDescRE,Increase your skill in using your handgun and magnum revolvers.
+perkGunslingerRank1LongDescRE,"Deal 8.5% more damage.\n8% faster fire rate.\n8% faster reload.\n8% less projectile spread."
+perkGunslingerRank2LongDescRE,"Deal 17% more damage.\n16% faster fire rate.\n16% faster reload.\n16% less projectile spread.\nCritical Damage: 5 successive hits in a short time cause critical damage."
+perkGunslingerRank3LongDescRE,"Deal 25.5% more damage.\n24% faster fire rate.\n24% faster reload.\n24% less projectile spread.\nCritical Damage: 4 successive hits in a short time cause critical damage."
+perkGunslingerRank4LongDescRE,"Deal 34% more damage.\n32% faster fire rate.\n32% faster reload.\n32% less projectile spread.\nCritical Damage: 3 successive hits in a short time cause critical damage."
+perkDeepCutsDescRE,Specialise in using your Survival Knife.
+perkDeepCutsRank1LongDescRE,Deal 8.5% more damage.\nIncreases block damage with knives by 50%.
+perkDeepCutsRank2LongDescRE,Deal 17% more damage.\nIncreases block damage with knives by 100%.
+perkDeepCutsRank3LongDescRE,Deal 25.5% more damage.\nIncreases block damage with knives by 150%.
+perkDeepCutsRank4LongDescRE,Deal 34% more damage.\nIncreases block damage with knives by 200%.
+perkRunAndGunRank1LongDescRE,"Hip fire accuracy is improved by 10% and movement penalty when reloading is reduced 25%."
+perkRunAndGunRank2LongDescRE,"Hip fire accuracy is improved by 20% and movement penalty when reloading is reduced 50%."
+perkRunAndGunRank3LongDescRE,"Hip fire accuracy is improved by 30% and movement penalty when reloading is reduced 75%."
+perkFlurryOfBlowsRank1LongDescRE,Melee attack speeds are increased by 15%. Each kill recharges stamina by 10 points.
+perkFlurryOfBlowsRank2LongDescRE,Melee attack speeds are increased by 30%. Each kill recharges stamina by 15 points.
+perkFlurryOfBlowsRank3LongDescRE,Melee attack speeds are increased by 45%. Each kill recharges stamina by 20 points.
