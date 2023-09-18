@@ -1,0 +1,109 @@
+<FranticDan>
+<append xpath="/lootcontainers">
+<!--<configs>-->
+
+<!-- Locked Doors -->
+<lootcontainer name="doorNest" count="0" size="6,1" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage">
+	<item name="cobweb" count="0"/>
+</lootcontainer>
+
+<lootgroup name="DogLoot" count="all">
+	<item name="DogCollar"/>
+	<item name="modMeleeErgonomicGripRE"/>
+	<item name="modMeleeErgonomicGripRE"/>
+</lootgroup>
+
+<!-- Dog with Collar -->
+<lootcontainer name="ZombieDogLoot" size="5,1" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1">
+	<item group="DogLoot"/>
+</lootcontainer>
+
+<lootgroup name="ForestLoot" count="1">
+	<item name="questRewardAmmoCraftingBundle" count="1"/>
+</lootgroup>
+
+<!-- Forest Speyer -->
+<lootcontainer name="ForestSpeyer" size="5,1" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1">
+	<item group="ForestLoot"/>
+</lootcontainer>
+
+<lootgroup name="PrototypeLoot" count="all">
+	<item name="MetalObject" count="1"/>
+	<item name="ClosetKey" count="1"/>
+</lootgroup>
+
+<!-- First boss -->
+<lootcontainer name="CrimsonPrototype" size="5,1" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1">
+	<item group="PrototypeLoot"/>
+</lootcontainer>
+
+<lootgroup name="Plant42Loot" count="1">
+	<item name="ShieldKey" count="4"/>
+</lootgroup>
+
+<!-- Second boss -->
+<lootcontainer name="Plant42" size="5,1" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1">
+	<item group="Plant42Loot"/>
+</lootcontainer>
+
+<lootgroup name="YawnLoot" count="1">
+	<item name="ClawHammer" count="3"/>
+</lootgroup>
+
+<!-- Third boss -->
+<lootcontainer name="Yawn" size="5,1" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1">
+	<item group="YawnLoot"/>
+</lootcontainer>
+
+<lootgroup name="BlackTigerLoot" count="all">
+	<item name="WD-40Spray" count="1"/>
+</lootgroup>
+
+<!-- Fourth boss -->
+<lootcontainer name="BlackTiger" size="5,1" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1">
+	<item group="BlackTigerLoot"/>
+</lootcontainer>
+
+<lootgroup name="TyrantLoot" count="all">
+	<item name="modGunMeleeBlessedMetalTyrant"/>
+	<!-- <item name="drugRockBusters"/> -->
+	<!-- <item name="WorkbenchRepairKit"/> -->
+	<item name="MasterKey"/>
+
+</lootgroup>
+
+<!-- Fifth boss -->
+<lootcontainer name="Tyrant" size="5,1" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1">
+	<item group="TyrantLoot"/>
+</lootcontainer>
+
+<lootgroup name="HiPowerBooks" count="all">
+<!-- 	<item name="bookPistolPeteHPAmmo" count="2"/>
+	<item name="bookShotgunMessiahSlugs" count="2"/>
+	<item name="bookEnforcerHPAmmo" count="2"/>
+	<item name="bookSniperHPAmmo" count="2"/> -->
+</lootgroup>
+
+<lootcontainer name="HiPowerAmmo" size="6,1" destroy_on_close="true" sound_open="UseActions/chest_tier2_open" sound_close="UseActions/chest_tier2_close" open_time="1">
+	<item group="HiPowerBooks"/>
+</lootcontainer>
+
+<lootgroup name="SpecialClothes" count="all">
+<!-- 	<item name="apparelToughGuySunglasses"/>
+	<item name="apparelToughGuySunglasses"/>
+	<item name="AthleticJacketModSchematic" count="2"/>
+	<item name="HighPermormanceRunningSolesSchematic" count="2"/>
+	<item name="modArmorBandolierSchematic" count="2"/> -->
+</lootgroup>
+
+<lootcontainer name="SpecialClothing" size="6,1" destroy_on_close="true" sound_open="UseActions/chest_tier2_open" sound_close="UseActions/chest_tier2_close" open_time="1">
+	<item group="SpecialClothes"/>
+</lootcontainer>
+
+<lootcontainer name="TheVault" size="6,10" destroy_on_close="false" sound_open="UseActions/chest_tier5_open" sound_close="UseActions/chest_tier5_close" open_time="0.1">
+	<item name="cobweb" count="0"/>
+</lootcontainer>
+
+
+</append>
+</FranticDan>
