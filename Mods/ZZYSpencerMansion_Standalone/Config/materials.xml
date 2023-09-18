@@ -1,0 +1,88 @@
+<FranticDan>
+
+<set xpath="/materials/material[@id='MresourceCoal']//property[3]/@value">0</set>
+<set xpath="/materials/material[@id='MresourceScrapLeadSmall']//property[4]/@value">0</set>
+<set xpath="/materials/material[@id='MresourceCrop']//property[5]/@value">0</set>
+<set xpath="/materials/material[@id='MfertilizedClayPlanter']//property[9]/@value">0</set>
+<set xpath="/materials/material[@id='Mfarmland']//property[8]/@value">5</set>
+<set xpath="/materials/material[@id='MoreMetal']//property[8]/@value">20</set>
+
+<append xpath="/materials">
+
+<material id="MwoodMansion">
+	<property name="damage_category" value="wood"/>
+	<property name="surface_category" value="wood"/>
+	<property name="forge_category" value="wood"/>
+	<property name="Hardness" type="float" value="10000"/>
+	<property name="stepsound" value="wood"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="5"/>
+	<property name="MaxDamage" value="50000"/>
+	<property name="Experience" value="0"/>
+</material>
+
+<material id="MmetalMansion">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="iron"/>
+	<property name="Hardness" type="float" value="10000"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="5"/>
+	<property name="MaxDamage" value="10000"/>
+	<property name="Experience" value="0"/>
+</material>
+
+<material id="MstoneMansion">
+	<property name="damage_category" value="stone"/>
+	<property name="surface_category" value="stone"/>
+	<property name="forge_category" value="stone"/>
+	<property name="Hardness" type="float" value="10000"/>
+	<property name="stepsound" value="stone"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="5"/>
+	<property name="MaxDamage" value="50000"/>
+	<property name="Experience" value="0"/>
+</material>
+
+<material id="MglassMansion">
+	<property name="damage_category" value="glass"/>
+	<property name="surface_category" value="glass"/>
+	<property name="forge_category" value="glass"/>
+	<property name="Hardness" type="float" value="10000"/>
+	<property name="lightopacity" value="2"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="5"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="MaxDamage" value="50000"/>
+	<property name="Experience" value="0"/>
+</material>
+
+<material id="MdirtTough">
+	<property name="damage_category" value="earth"/>
+	<property name="surface_category" value="earth"/>
+	<property name="Hardness" type="float" value="10000"/>
+	<property name="stepsound" value="dirt"/>
+	<property name="fertile_level" value="5"/>
+	<property name="stability_glue" value="150"/>
+	<property name="Mass" type="int" value="10"/>
+	<property name="MaxDamage" value="50000"/>
+	<property name="Experience" value="0"/>
+</material>
+	
+<material id="MfarmplotMansion">
+	<property name="damage_category" value="earth"/>
+	<property name="surface_category" value="earth"/>
+	<property name="Hardness" type="float" value="10000"/>
+	<property name="stepsound" value="dirt"/>
+	<property name="fertile_level" value="5"/>
+	<property name="stability_glue" value="150"/>
+	<property name="Mass" type="int" value="10"/>
+	<property name="MaxDamage" value="5"/>
+	<property name="Experience" value="0"/>
+</material>
+
+
+</append>
+</FranticDan>
