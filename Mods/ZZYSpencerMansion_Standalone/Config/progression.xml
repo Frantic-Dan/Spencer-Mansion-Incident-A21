@@ -39,7 +39,7 @@
 
 <perks min_level="0" max_level="1" base_skill_point_cost="1">
 
-	<perk name="perkPainToleranceRE" parent="skillTrainingSurvival" name_key="perkPainToleranceNameRE" desc_key="perkPainToleranceDescRE" icon="ui_game_symbol_character">
+	<perk name="perkPainToleranceRE" parent="skillTrainingSurvival" name_key="perkPainToleranceNameRE" desc_key="perkPainToleranceDescRE" base_skill_point_cost="0" icon="ui_game_symbol_character">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTraining" operation="GTE" value="1" /></level_requirements>
 
 		<effect_group>
@@ -49,7 +49,7 @@
 
 	</perk>
 
-	<perk name="perkPassiveHealing" parent="skillTrainingSurvival" name_key="perkPassiveHealingName" desc_key="perkPassiveHealingDesc" icon="ui_game_symbol_healing_factor">
+	<perk name="perkPassiveHealing" parent="skillTrainingSurvival" name_key="perkPassiveHealingName" desc_key="perkPassiveHealingDesc" base_skill_point_cost="0" icon="ui_game_symbol_healing_factor">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTraining" operation="GTE" value="1" /></level_requirements>
 
 		<effect_group>
@@ -62,7 +62,7 @@
 		</effect_group>
 	</perk>
 
-	<perk name="perkCardio" parent="skillTrainingSurvival" name_key="perkCardioName" desc_key="perkCardioDesc" icon="ui_game_symbol_cardio">
+	<perk name="perkCardio" parent="skillTrainingSurvival" name_key="perkCardioName" desc_key="perkCardioDesc" base_skill_point_cost="0" icon="ui_game_symbol_cardio">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTraining" operation="GTE" value="1" /></level_requirements>
 
 		<effect_group>
@@ -72,7 +72,7 @@
 		</effect_group>
 	</perk>
 
-	<perk name="perkKnifeTrained" parent="skillTrainingSurvival" name_key="perkKnifeTrainedName" desc_key="perkKnifeTrainedDesc" icon="ui_game_symbol_deep_cuts">
+	<perk name="perkKnifeTrained" parent="skillTrainingSurvival" name_key="perkKnifeTrainedName" desc_key="perkKnifeTrainedDesc" base_skill_point_cost="0" icon="ui_game_symbol_deep_cuts">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTraining" operation="GTE" value="1" /></level_requirements>
 
 		<effect_group>
@@ -100,7 +100,7 @@
 
 	</perk>
 
-	<perk name="perkMedicalKnowledge" parent="skillTrainingSurvival" name_key="perkMedicalKnowledgeName" desc_key="perkMedicalKnowledgeDesc" icon="ui_game_symbol_medical">
+	<perk name="perkMedicalKnowledge" parent="skillTrainingSurvival" name_key="perkMedicalKnowledgeName" desc_key="perkMedicalKnowledgeDesc" base_skill_point_cost="0" icon="ui_game_symbol_medical">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTraining" operation="GTE" value="1" /></level_requirements>
 
 		<effect_group>
@@ -114,7 +114,7 @@
 		
 	</perk>
 
-	<perk name="perkChemistExpert" parent="skillTrainingSurvival" name_key="perkChemistExpertName" desc_key="perkChemistExpertDesc" icon="ui_game_symbol_explosion">
+	<perk name="perkChemistExpert" parent="skillTrainingSurvival" name_key="perkChemistExpertName" desc_key="perkChemistExpertDesc" base_skill_point_cost="0" icon="ui_game_symbol_explosion">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTraining" operation="GTE" value="1" /></level_requirements>
 
 		<effect_group>
