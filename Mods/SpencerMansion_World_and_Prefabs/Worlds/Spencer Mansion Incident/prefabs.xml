@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefabs>
+  <decoration type="model" name="Resident_Evil_Mansion_A21(by_Frantic_Dan)" position="22,35,518" rotation="0" y_is_groundlevel="true" />
+  <decoration type="model" name="DummyTrader" position="19,35,561" rotation="0" y_is_groundlevel="true" />
+</prefabs>
