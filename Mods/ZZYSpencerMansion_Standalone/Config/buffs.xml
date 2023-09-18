@@ -76,6 +76,7 @@
 		</effect_group>
 	</buff>	
 	
+
 	<buff name="twitch_buffNoTimeRE" hidden="true">
 		<stack_type value="replace"/>
 		<duration value="0"/>
