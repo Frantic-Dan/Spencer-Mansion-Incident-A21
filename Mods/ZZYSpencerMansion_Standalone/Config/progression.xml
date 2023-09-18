@@ -1,0 +1,170 @@
+<configs>
+
+<set xpath="/progression/level[@max_level='300']/@max_level">1</set>
+
+<remove xpath="/progression/attributes"/>
+
+<!-- <remove xpath="/progression/attributes[@min_level='1']//attribute[@name='attPerception']"/> -->
+
+<remove xpath="/progression/skills[@min_level='1']"/>
+
+<remove xpath="/progression/crafting_skills"/>
+
+<remove xpath="/progression/perks"/>
+
+
+<append xpath="/progression">
+
+<attributes min_level="1" max_level="1" base_skill_point_cost="0">
+
+	<attribute name="attTraining" name_key="attTrainingName" desc_key="attTrainingDesc" icon="ui_game_symbol_add">
+		<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+
+		<effect_group>
+			<effect_description level="1" desc_key="attTraining01Desc" long_desc_key="attTrainingRank01LongDesc"/>
+		</effect_group>
+	</attribute>
+
+	<attribute name="attBooks" name_key="attBooks" desc_key="attBooks" icon="ui_game_symbol_book" min_level="0" max_level="0" base_skill_point_cost="0"/>
+
+</attributes>
+
+
+<skills min_level="1" max_level="1">
+	<skill name="skillTrainingSurvival" parent="attTraining" name_key="skillTrainingSurvivalName" desc_key="skillTrainingSurvivalDesc" icon="ui_game_symbol_survival"><effect_group/></skill>
+	<book_group name="skillUrbanCombat" parent="attBooks" name_key="" desc_key="" long_desc_key="" icon="ui_game_symbol_explosion"><effect_group/></book_group>
+	
+</skills>
+
+
+<perks min_level="0" max_level="1" base_skill_point_cost="1">
+
+	<perk name="perkPainToleranceRE" parent="skillTrainingSurvival" name_key="perkPainToleranceNameRE" desc_key="perkPainToleranceDescRE" icon="ui_game_symbol_character">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTraining" operation="GTE" value="1" /></level_requirements>
+
+		<effect_group>
+			<passive_effect name="HealthMax" operation="base_add" level="1" value="600"/>
+			<!-- <effect_description level="1" desc_key="perkPainToleranceRank1DescRE" long_desc_key="perkPainToleranceRank1LongDescRE"/> -->
+		</effect_group>
+
+	</perk>
+
+	<perk name="perkPassiveHealing" parent="skillTrainingSurvival" name_key="perkPassiveHealingName" desc_key="perkPassiveHealingDesc" icon="ui_game_symbol_healing_factor">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTraining" operation="GTE" value="1" /></level_requirements>
+
+		<effect_group>
+			<!-- crit hit effects heal rate is assigned in  buffStatusCheck02 -->
+
+			<!-- You cannot regen without food or water -->
+			<passive_effect name="HealthChangeOT" operation="base_add" level="1" value=".2"/>
+
+			<!-- <effect_description level="1" desc_key="perkPassiveHealingRank1Desc" long_desc_key="perkPassiveHealingRank1LongDesc"/> -->
+		</effect_group>
+	</perk>
+
+	<perk name="perkCardio" parent="skillTrainingSurvival" name_key="perkCardioName" desc_key="perkCardioDesc" icon="ui_game_symbol_cardio">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTraining" operation="GTE" value="1" /></level_requirements>
+
+		<effect_group>
+			<passive_effect name="RunSpeed" operation="perc_add" level="1" value=".1"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" level="1" value="0.2" tags="running,swimmingRun"/>
+			<!-- <effect_description level="1" desc_key="perkCardioNameRank1Desc" long_desc_key="perkCardioNameRank1LongDesc"/> -->
+		</effect_group>
+	</perk>
+
+	<perk name="perkKnifeTrained" parent="skillTrainingSurvival" name_key="perkKnifeTrainedName" desc_key="perkKnifeTrainedDesc" icon="ui_game_symbol_deep_cuts">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTraining" operation="GTE" value="1" /></level_requirements>
+
+		<effect_group>
+			<requirement name="ItemHasTags" tags="perkKnifeTrained"/>
+			<passive_effect name="BlockDamage" operation="perc_add" level="1" value=".28" tags="perkKnifeTrained"/>
+			<passive_effect name="EntityDamage" operation="perc_add" level="1" value=".25" tags="perkKnifeTrained"/>
+			<!-- <passive_effect name="BlockDamage" operation="base_add" level="1" value="5" tags="perkKnifeTrained,primary"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="2" tags="perkKnifeTrained,primary"/>
+			<passive_effect name="BlockDamage" operation="base_add" level="1" value="5" tags="secondary"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="2" tags="secondary"/> -->
+		</effect_group>	
+		
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkFlurryOfAgility"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="1" value=".25" tags="perkFlurryOfAgility"/>
+			<!-- <effect_description level="1" desc_key="perkKnifeTrainedRank1Desc" long_desc_key="perkKnifeTrainedRank1LongDesc"/> -->
+		</effect_group>
+
+		<!-- DEEP_CUTS:SEXREX_REPLACEMENT -->
+		<effect_group>
+			<requirement name="ItemHasTags" tags="perkKnifeTrained"/>
+			<passive_effect name="StaminaLoss" operation="base_subtract" level="1" value="4" tags="primary"/>
+			<passive_effect name="StaminaLoss" operation="base_subtract" level="1" value="8" tags="secondary"/>
+		</effect_group>
+
+	</perk>
+
+	<perk name="perkMedicalKnowledge" parent="skillTrainingSurvival" name_key="perkMedicalKnowledgeName" desc_key="perkMedicalKnowledgeDesc" icon="ui_game_symbol_medical">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTraining" operation="GTE" value="1" /></level_requirements>
+
+		<effect_group>
+
+			<!-- see <buff name="buffPerkAbilityUpdate"> for cvar based ability changes -->
+			<triggered_effect trigger="onPerkLevelChanged" action="AddBuff" buff="buffPerkAbilityUpdate"/>
+
+			<!-- <effect_description level="1" desc_key="perkMedicalKnowledgeRank1Desc" long_desc_key="perkMedicalKnowledgeRank1LongDesc"/> -->
+
+		</effect_group>
+		
+	</perk>
+
+	<perk name="perkChemistExpert" parent="skillTrainingSurvival" name_key="perkChemistExpertName" desc_key="perkChemistExpertDesc" icon="ui_game_symbol_explosion">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTraining" operation="GTE" value="1" /></level_requirements>
+
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="0,1" value="0,1" tags="perkChemistExpert"/>		
+			<!-- <effect_description level="1" desc_key="perkChemistExpertRank1Desc" long_desc_key="perkChemistExpertRank1LongDesc"/> -->
+		</effect_group>
+		<effect_group>
+			<requirement name="ItemHasTags" tags="perkBoomstick"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryStunned01Shotgun">
+					<requirement name="ProgressionLevel" progression_name="perkChemistExpert" operation="GTE" value="0"/>
+					<requirement name="ProgressionLevel" progression_name="perkChemistExpert" operation="LTE" value="1"/>					
+				</triggered_effect>
+		</effect_group>
+	</perk>
+
+
+	<perk name="perkPistolPeteHPAmmo" parent="attTraining" max_level="1" base_skill_point_cost="0" name_key="bookPistolPeteHPAmmo" desc_key="perkPistolPeteHPAmmoDesc" long_desc_key="perkPistolPeteHPAmmoLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo9mmBulletHPRE,9mmHPBullet"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkShotgunMessiahSlugs" parent="attTraining" max_level="1" base_skill_point_cost="0" name_key="bookShotgunMessiahSlugs" desc_key="perkShotgunMessiahSlugsDesc" long_desc_key="perkShotgunMessiahSlugsLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoShotgunSlugRE,ShotgunSlug"/>
+		</effect_group>
+	</perk>	
+	
+	<perk name="perkEnforcerHPAmmo" parent="attTraining" max_level="1" base_skill_point_cost="0" name_key="bookEnforcerHPAmmo" desc_key="perkEnforcerHPAmmoDesc" long_desc_key="perkEnforcerHPAmmoLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="44MagnumHPBullet,ammo44MagnumBulletHPRE"/>
+		</effect_group>
+	</perk>	
+	
+	<perk name="perkSniperHPAmmo" parent="attTraining" max_level="1" base_skill_point_cost="0" name_key="bookSniperHPAmmo" desc_key="perkSniperHPAmmoDesc" long_desc_key="perkSniperHPAmmoLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo762mmBulletHPRE,762HPBullet"/>
+		</effect_group>
+	</perk>	
+
+
+	
+
+	
+</perks>
+	
+
+<!-- <insertafter xpath="/progression/attributes[@min_level='1']">
+
+</insertafter> -->
+
+</append>
+</configs>
