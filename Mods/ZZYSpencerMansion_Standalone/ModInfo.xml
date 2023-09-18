@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<SpencerMansion_Standalone>
+
+	<ModInfo>
+		<Name value="SpencerMansion_Standalone"/>
+		<Description value="A modlet that adds The Spencer Mansion as a standalone POI that must be placed in the world manually with the world editor in a nongenerated world"/>
+		<Author value="FranticDan"/>
+		<Version value="1.0"/>
+	</ModInfo>
+	
+</SpencerMansion_Standalone>
