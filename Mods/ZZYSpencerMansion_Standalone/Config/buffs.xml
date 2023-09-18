@@ -1,0 +1,296 @@
+<configs>
+
+	<!-- newbie coat -->
+	<set xpath="/buffs/buff[@name='buffNewbieCoat']/effect_group[2]//passive_effect[3]/@value">200,200</set>
+	<set xpath="/buffs/buff[@name='buffNewbieCoat']/effect_group[2]//passive_effect[3]/@duration">0,9</set>
+	<set xpath="/buffs/buff[@name='buffNewbieCoat']/effect_group[2]//passive_effect[2]/@value">200,200</set>
+	<set xpath="/buffs/buff[@name='buffNewbieCoat']/@name_key">buffNewbieCoatNameRE</set>
+	<set xpath="/buffs/buff[@name='buffNewbieCoat']/@description_key">buffNewbieCoatDescRE</set>
+	<set xpath="/buffs/buff[@name='buffNewbieCoat']/@icon">ui_game_symbol_lightbulb</set>	
+	<set xpath="/buffs/buff[@name='buffNearDeathTraumaTrigger']/effect_group//triggered_effect[1]/@buff">buffDeadlyPoisoned</set>
+	<remove xpath="/buffs/buff[@name='buffNearDeathTraumaTrigger']/effect_group//triggered_effect[2]"/>
+	<!-- Healing rate -->
+	<set xpath="/buffs/buff[@name='buffPerkAbilityUpdate']/effect_group//triggered_effect[22]/@value">80</set>
+	<set xpath="/buffs/buff[@name='buffPerkAbilityUpdate']/effect_group//triggered_effect[23]/@value">100</set>
+	<set xpath="/buffs/buff[@name='buffPerkAbilityUpdate']/effect_group/triggered_effect[23]/requirement[@name='ProgressionLevel']/@progression_name">perkMedicalKnowledge</set>
+	<set xpath="/buffs/buff[@name='buffHealHealth']/effect_group[2]//triggered_effect[2]/@value">80</set>
+	<set xpath="/buffs/buff[@name='buffHealHealth']/effect_group[3]//triggered_effect[2]/@value">80</set>
+	<set xpath="/buffs/buff[@name='buffHealHealth']/effect_group[3]//triggered_effect[6]/@value">80</set>
+	
+	<!-- trap -->
+	<set xpath="/buffs/buff[@name='buffHazard_Slow']/duration[@value='5']/@value">10</set>
+	<set xpath="/buffs/buff[@name='buffHazard_Slow']/effect_group//passive_effect[@name='Mobility']/@value">-.99</set>
+	<set xpath="/buffs/buff[@name='buffHazardBurningElement']/effect_group[1]/requirement[@name='CVarCompare']/@value">10</set>
+	<set xpath="/buffs/buff[@name='buffHazardBurningElement']/effect_group[1]//triggered_effect[1]/@value">10</set>
+	<set xpath="/buffs/buff[@name='buffHazardBurningElement']/effect_group[1]//triggered_effect[2]/@value">10</set>
+	<set xpath="/buffs/buff[@name='buffHazardBurningElement']/effect_group[3]//passive_effect[1]/@value">120</set>
+	<set xpath="/buffs/buff[@name='buffHazardBurningElement']/effect_group[3]//passive_effect[2]/@value">6</set>	
+	
+	
+		<!--remove stamina regen pause on power attack-->	
+	<set xpath="/buffs/buff[@name='buffPowerAttackStaminaStunt']/duration/@value">0.01</set>
+	<!-- reduce stamina drain while aiming -->
+	<set xpath="/buffs/buff[@name='buffHoldBreathAiming01']/effect_group[1]//passive_effect[1]/@value">-1.2,-1.2</set>
+	<set xpath="/buffs/buff[@name='buffHoldBreathAiming01']/effect_group[1]//passive_effect[2]/@value">-1.2,-1.2</set>
+	<!-- Remove Bleed -->
+	<set xpath="/buffs/buff[@name='buffInjuryBleeding']/effect_group//triggered_effect[1]/@value">0</set>
+	<set xpath="/buffs/buff[@name='buffInjuryBleeding']/effect_group//triggered_effect[2]/@value">0</set>
+	<remove xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group[1]//triggered_effect[29][@buff='buffEncumberedInv']"/>
+
+	<remove xpath="/buffs/buff[@name='buffInjuryBleeding']"/>
+	<remove xpath="/buffs/buff[@name='buffJournalUnlocks']"/>
+	
+	
+	<set xpath="/buffs/buff[@name='buffBandolierLegs']/effect_group/passive_effect[@name='ReloadSpeedMultiplier']/@value">.667</set>
+	
+	<set xpath="/buffs/buff[@name='buffRadiationPool']/effect_group//triggered_effect[3]/@intensity">0.3</set>
+	
+<append xpath="/buffs">
+
+	<buff name="twitch_buffCritImmuneRE" hidden="true">
+		<stack_type value="replace"/>
+		<duration value="0"/>
+		<display_value value="duration"/>
+		<tags value="twitch_bits" />
+
+		<effect_group>
+			<!-- Blinks the display -->
+			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="twitch_buffCritImmune"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="twitch_buffCritImmune"/>
+
+			<triggered_effect trigger="onSelfBuffFinish" action="PlaySound" sound="twitch_good_buff_ended" play_in_head="true" />
+		</effect_group>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$dysenteryCounter" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$dysenteryCureCounter" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInfectionCatch,buffInfection01Main,buffInjuryBleeding,buffArmorShredding,buffInjuryAbrasion,buffInjuryAbrasionTreated,buffLegSprained,buffLegBroken,buffLegSplinted,buffLegCast,buffArmSprained"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffArmBroken,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffInjuryCrippled01,buffInjuryKnockdown01,buffInjuryKnockdown01,buffInjuryUnconscious,buffLaceration,buffFatigued"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryConcussion,buffShocked,buffBurningElement,buffBurningEnvironment,buffBurningFlamingArrow,buffBurning"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffLegSplinted,buffLegCast,buffArmSprained,buffArmBroken,buffArmSplinted,buffArmCast"/>
+
+			<passive_effect name="BuffResistance" operation="base_set" value="100" tags="buffInfectionCatch,buffInfection01Main,buffInjuryBleeding,buffArmorShredding,buffInjuryAbrasion,buffInjuryAbrasionTreated,buffLegSprained,buffLegBroken,buffLegSplinted,buffLegCast,buffArmSprained"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="100" tags="buffArmBroken,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffInjuryCrippled01,buffInjuryKnockdown01,buffInjuryKnockdown01,buffInjuryUnconscious,buffLaceration,buffFatigued"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="100" tags="buffInjuryConcussion,buffShocked,buffBurningElement,buffBurningEnvironment,buffBurningFlamingArrow,buffBurning"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="100" tags="buffLegSplinted,buffLegCast,buffArmSprained,buffArmBroken,buffArmSplinted,buffArmCast"/>
+		</effect_group>
+	</buff>	
+	
+	<buff name="twitch_buffNoTimeRE" hidden="true">
+		<stack_type value="replace"/>
+		<duration value="0"/>
+		<display_value value="duration"/>
+
+		<effect_group>
+			<!-- Blinks the display -->
+			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="twitch_buffNoTime"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="twitch_buffNoTime"/>
+
+			<triggered_effect trigger="onSelfBuffFinish" action="PlaySound" sound="twitch_bad_buff_ended" play_in_head="true" />
+		</effect_group>
+
+		<effect_group>
+			<passive_effect name="NoTimeDisplay" operation="base_set" value="1"/>
+		</effect_group>
+	</buff>	
+	
+	<buff name="buffPoisoned" name_key="buffPoisonedName" description_key="buffPoisonedDesc" tooltip_key="buffPoisonedTooltip" icon="ui_game_symbol_critical" remove_on_death="false" icon_color="255,0,255" icon_blink="true">
+		<damage_type value="bloodloss"/>
+		<damage_source value="Internal"/>
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<!-- <display_value value=""/><display_value_format value="time"/> -->
+
+		<effect_group>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value=".4"/>
+
+
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="buff_bleeding" play_in_head="true"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="StopSound" sound="buff_bleeding" play_in_head="true"/>
+			<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="buff_bleeding" play_in_head="true"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="PlaySound" sound="buff_bleeding" play_in_head="true"/>
+
+			<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Infected" intensity="0" fade="0"/>
+
+
+		</effect_group>
+
+	</buff>
+	
+	<buff name="buffDeadlyPoisoned" name_key="buffDeadlyPoisonedName" description_key="buffDeadlyPoisonedDesc" tooltip_key="buffPoisonedTooltip" icon="ui_game_symbol_critical" remove_on_death="false" icon_color="255,0,255" icon_blink="true">
+		<damage_type value="bloodloss"/>
+		<damage_source value="Internal"/>
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<!-- <display_value value=""/><display_value_format value="time"/> -->
+
+		<effect_group>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value="20"/>
+
+
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="buff_bleeding" play_in_head="true"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="StopSound" sound="buff_bleeding" play_in_head="true"/>
+			<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="buff_bleeding" play_in_head="true"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="PlaySound" sound="buff_bleeding" play_in_head="true"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Infected" intensity="0.5" fade="0"/>
+
+	<!-- onSelfDied -->
+		</effect_group>
+
+	</buff>	
+	
+	<buff name="buffBurningMolotov" hidden="true">
+		<damage_type value="heat"/>
+		<stack_type value="replace"/><duration value="0"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffBurningMolotovDuration" operation="add" value="-1"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffBurningMolotovDuration" operation="set" value="0"/>
+		</effect_group>
+
+		<!-- If duration is LT 16, set or stack the duration -->
+		<effect_group>
+			<requirement name="CVarCompare" cvar="$buffBurningMolotovDuration" operation="LT" value="16"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffBurningMolotovDuration" operation="set" value="16"/>
+				<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$buffBurningMolotovDuration" operation="set" value="16"/>
+		</effect_group>
+
+		<!-- If duration LT 0, remove the buff and clear duration -->
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBurningMolotov">
+				<requirement name="CVarCompare" cvar="$buffBurningMolotovDuration" operation="LTE" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffBurningMolotovDuration" operation="set" value="0"/>
+		</effect_group>
+		
+		<effect_group>
+			<!-- Start the burning cycle -->
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffIsOnFire"/>
+
+			<!-- If tag = player, reduce health based on a time curve -->
+			<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,8,14,18" value="1,1,1,1">
+				<requirement name="EntityTagCompare" tags="player"/>
+			</passive_effect>
+			<!-- Reduce water and adjust thermal resistance stats  -->
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value="1"/>
+			<passive_effect name="HypothermalResist" operation="base_add" value="35"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="-15"/>
+		</effect_group>
+
+		<effect_group>
+			<requirement name="!EntityTagCompare" tags="player"/>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="25,25,25,25">
+					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="25,25,25,25">
+					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="25,25,25,25">
+					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="25,25,25,25">
+					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="25,25,25,25">
+					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="25,25,25,25">
+					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect>
+		</effect_group>
+	</buff>
+
+	<buff name="buffReloadMovementPenalty" name_key="Reloading" icon="ui_game_symbol_pack_mule" icon_color="255,128,0" hidden="true">
+		<stack_type value="ignore"/>
+		<damage_type value="stun"/>
+		<duration value="6.5"/>
+
+		<effect_group>
+			<triggered_effect trigger="onReloadStop" action="RemoveBuff" buff="buffReloadMovementPenalty"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffReloadMovementPenalty"/>
+		</effect_group>
+
+		<effect_group>
+			<requirement name="!HasBuff" buff="buffBandolierLegs"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".4"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value=".4"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value=".4"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="HasBuff" buff="buffBandolierLegs"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value="0"/>
+		</effect_group>
+	</buff>
+	
+	
+
+<buff name="buffHealthStatusCheck" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<update_rate value="2"/>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLowHealth">
+				<requirement name="StatComparePercCurrentToMax" stat="Health" operation="LTE" value=".4"/>
+				<requirement name="!HasBuff" buff="buffLowHealth"/>
+				<requirement name="!HasBuff" buff="buffCriticalHealth"/>
+			</triggered_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffCriticalHealth">
+				<requirement name="StatComparePercCurrentToMax" stat="Health" operation="LTE" value=".2"/>
+				<requirement name="!HasBuff" buff="buffCriticalHealth"/>
+			</triggered_effect>
+		</effect_group>
+</buff>
+
+
+	<buff name="buffLowHealth" hidden="true">
+		<damage_type value="Starvation"/>
+		<stack_type value="ignore"/>
+
+		<effect_group>
+			<requirement name="StatComparePercCurrentToMax" stat="Health" operation="GT" value="0.405"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffLowHealth"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="3" effect_name="Hot"/>
+		</effect_group>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="3" effect_name="Hot"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyScreenEffect" intensity="1" fade="3" effect_name="Hot"/>
+		</effect_group>
+	</buff>
+
+	<buff name="buffCriticalHealth" hidden="true">
+		<damage_type value="Starvation"/>
+		<stack_type value="ignore"/>
+
+		<effect_group>
+		
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffLowHealth"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLowHealth"/>
+				<requirement name="StatComparePercCurrentToMax" stat="Health" operation="GT" value="0.205"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffCriticalHealth"/>
+		</effect_group>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="3" effect_name="Hot2"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyScreenEffect" intensity="1" fade="3" effect_name="Hot2"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="3" effect_name="Hot2"/>
+		</effect_group>
+	</buff>
+
+	<buff name="buffTyrantMusic" hidden="true">
+		<duration value="0"/>
+
+		<effect_group>
+			<!-- <triggered_effect trigger="onSelfBuffStart" action="PlaySound" file="@modfolder:/KHA21-CustomMenuMusic/Assets/MenuMusic.unity3d" /> -->
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="buff_bleeding" />
+			
+				<!-- <requirement name="!HoldingItemHasTags" tags="thrownWeapon"/>
+				<requirement name="!HasBuff" buff="buffArmSprained"/>
+				<requirement name="!HasBuff" buff="buffArmBroken"/> -->
+			<!-- <triggered_effect trigger="onSelfBuffFinish" action="ModifyStats" stat="Health" operation="add" value="30000"/> -->
+		</effect_group>
+	</buff>
+
+</append>
+</configs>
