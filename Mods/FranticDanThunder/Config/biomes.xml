@@ -1,0 +1,6 @@
+﻿<worldgeneration>
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather/@prob">0</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']/@prob">100</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']/Precipitation/@min">0</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']/Precipitation/@max">0</set>
+</worldgeneration>
