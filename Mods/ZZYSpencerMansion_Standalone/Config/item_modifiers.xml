@@ -1,0 +1,710 @@
+<FranticDan>
+
+<set xpath="/item_modifiers/item_modifier[@name]/property[@name='CreativeMode']/@value">None</set>
+<insertafter xpath="/item_modifiers/item_modifier[@name]/property[1]">
+	<property name="CreativeMode" value="None"/>
+</insertafter>
+
+<append xpath="/item_modifiers">
+
+	
+	<item_modifier name="modGeneralMaster" type="attachment">
+		<property name="CreativeMode" value="None"/>
+		<property name="CustomIcon" value="missingIcon"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Group" value="Mods,Tool/Weapon Mods"/>
+		<!-- <property name="PickupJournalEntry" value="augmentGunsTip"/> -->
+	</item_modifier>	
+
+	<item_modifier name="modMeleeErgonomicGripRE" installable_tags="melee" modifier_tags="health" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="modMeleeErgonomicGrip"/>
+		<property name="DescriptionKey" value="KnifeGripDesc"/>
+		<property name="CreativeMode" value="None"/>
+		<property name="Candrop" value="false"/>
+		<property name="Weight" value="0"/>
+		<effect_group tiered="false">
+			<passive_effect name="EntityDamage" operation="base_add" value="3"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="3" tags="secondary"/>
+		</effect_group>
+		<!-- Reduces Stamina usage on all attacks, all melee -->
+		<effect_group tiered="false">
+			<!-- <requirement name="!HoldingItemHasTags" tags="perkArchery"/> -->
+			<requirement name="ItemHasTags" tags="perkKnifeTrained"/>
+			<passive_effect name="StaminaLoss" operation="base_subtract" value="3" tags="primary"/>
+			<passive_effect name="StaminaLoss" operation="base_subtract" value="6" tags="secondary"/>
+			<!-- <passive_effect name="EntityDamage" operation="perc_add" value=".25"/> -->
+			<!-- <passive_effect name="StaminaLoss" operation="perc_add" value="-.15" tags="primary,secondary"/> -->
+		</effect_group>
+	</item_modifier>
+
+<item_modifier name="modGunFlashlightRE" installable_tags="sideAttachments" modifier_tags="sideAttachment" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="modGunFlashlight"/>
+		<property name="DescriptionKey" value="GunLightDesc"/>
+		<property name="LightValue" value=".25"/>
+		<property name="Material" value="Mplastics"/>
+		<property name="CreativeMode" value="None"/>
+		<property name="Candrop" value="false"/>
+		<property name="Weight" value="0"/>	
+
+		<item_property_overrides name="S.T.A.R.SHandgun">
+			<property name="SideOffset" value="0,.0198,.0475"/>
+			<property name="SideScale" value=".75,.75,.75"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="PumpShotgun">
+			<property name="SideOffset" value="0,0,.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47">
+			<property name="SideOffset" value="0,0,.28"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MagnumRevolver">
+			<property name="SideOffset" value="0,.0621,.095"/>
+			<property name="SideScale" value=".75,.75,.75"/>
+		</item_property_overrides>
+
+
+		<item_property_overrides name="gunExplosivesT3RocketLauncher">
+			<property name="SideOffset" value=".037,-.1,.16"/>
+			<property name="SideScale" value="1,1,1"/>
+			<property name="SideRotation" value="0,0,20"/>
+		</item_property_overrides>
+
+		<!-- visible attachment: flashlight -->
+		<effect_group tiered="false" name="external attachment prefab (old way)">
+			<requirement name="!HoldingItemHasTags" tags="attachmentsIncluded"/>
+				<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="@:Other/Items/Mods/Sides/side_attachment_flashlightPrefab.prefab" parent_transform="Attachments/Side"/>
+				<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="Side" transform_path="lightSource"/>
+				<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="Side" transform_path="lightSource"/>
+				<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="Side" transform_path="lightSource"/>
+		</effect_group>
+		<effect_group tiered="false" name="internal attachment prefab (A19)">
+			<requirement name="HoldingItemHasTags" tags="attachmentsIncluded"/>
+				<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="flashlight"/>
+
+				<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="Gunjoint" transform_path="flashlight_lightSource"/>
+				<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="Gunjoint" transform_path="flashlight_lightSource"/>
+				<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="Gunjoint" transform_path="flashlight_lightSource"/>
+		</effect_group>
+		<effect_group tiered="false" name="mod effects">
+			<passive_effect name="EntityDamage" operation="perc_add" value="-.25"/>
+		</effect_group>
+	</item_modifier>
+
+
+	<item_modifier name="modMeleeWeightedHeadRE" installable_tags="knife" modifier_tags="damage" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="modMeleeWeightedHead"/>
+		<property name="DescriptionKey" value="WeightedHeadDesc"/>
+		<property name="CreativeMode" value="None"/>
+		<property name="Candrop" value="false"/>
+		<property name="Weight" value="0"/>
+		<effect_group tiered="false">
+			<passive_effect name="EntityDamage" operation="base_add" value="3"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="3" tags="secondary"/>
+		</effect_group>
+		<!-- Increases stun chance; increases stamina use, axe, hammer, club -->
+		<effect_group tiered="false">
+			<!-- <passive_effect name="EntityDamage" operation="perc_add" value=".25"/> -->
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="15"/>
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryStunned01"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="modGunSoundSuppressorSilencerRE" installable_tags="pistol" modifier_tags="barrelAttachment" blocked_tags="noMods,noSilencer" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="modGunSoundSuppressorSilencer"/>
+		<property name="DescriptionKey" value="SuppressorDesc"/>
+		<property name="CreativeMode" value="None"/>
+		<property name="Candrop" value="false"/>
+		<property name="Weight" value="0"/>
+		<!--Decreases sound footprint by x% -->
+		<item_property_overrides name="*">
+			<property name="Sound_start" value="pistol_s_fire"/>
+			<property name="Sound_end" value=""/>
+			<property name="Sound_loop" value="pistol_s_fire"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="S.T.A.R.SHandgun">
+			<property name="Sound_start" value="pistol_s_fire"/>
+			<property name="BarrelOffset" value="0,-.006,.127"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<!-- visible attachment: silencer -->
+		<effect_group tiered="false" name="external attachment prefab (old way)">
+			<requirement name="!HoldingItemHasTags" tags="dBarrel"/>
+			<requirement name="!HoldingItemHasTags" tags="attachmentsIncluded"/>
+				<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="@:Other/Items/Mods/Barrels/SilencerPrefab.prefab" parent_transform="Attachments/Barrel"/>
+		</effect_group>
+		<effect_group tiered="false" name="internal attachment prefab (A19)">
+			<requirement name="HoldingItemHasTags" tags="attachmentsIncluded"/>
+				<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="silencer"/>
+		</effect_group>
+
+		<effect_group tiered="false" name="mod effects">
+			<passive_effect name="EntityDamage" operation="perc_add" value="-.25"/>
+			<passive_effect name="DismemberChance" operation="perc_add" value="3"/>
+
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="SamuraiEdgeParts" installable_tags="pistol" modifier_tags="trigger" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="samurai-edge"/>
+		<property name="DescriptionKey" value="SamuraiEdgeDesc"/>
+		<property name="CreativeMode" value="None"/>
+		<property name="Candrop" value="false"/>
+		<property name="Weight" value="0"/>
+		<effect_group tiered="false">
+			<passive_effect name="BurstRoundCount" operation="base_set" value="3"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".67"/>
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.2"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="-.2"/>
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.2"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.2"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.2"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.2"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value=".2"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="AssaultShotgunParts" installable_tags="modGunShotgunTubeExtenderMagazine" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="assault-shotgun"/>
+		<property name="DescriptionKey" value="AssaultShotgunDesc"/>
+		<property name="CreativeMode" value="None"/>
+		<property name="Candrop" value="false"/>
+		<property name="Weight" value="0"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="perc_add" value=".667"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="-.15"/>
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.3"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="-.3"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".5"/>
+			<passive_effect name="DamageFalloffRange" operation="perc_add" value=".4"/>
+			<passive_effect name="MaxRange" operation="perc_add" value=".4"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value=".2"/>
+			<!-- <passive_effect name="EntityDamage" operation="perc_add" value=".25"/> -->
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="MagnumSpeedloader" installable_tags="revolver" modifier_tags="trigger" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="magnum-rounds"/>
+		<property name="DescriptionKey" value="MagnumSpeedloaderDesc"/>
+		<property name="CreativeMode" value="None"/>
+		<property name="Candrop" value="false"/>
+		<property name="Weight" value="0"/>
+		<effect_group tiered="false">
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".334"/>
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.25"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.25"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.25"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.25"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value=".2"/>
+			<!-- <passive_effect name="EntityDamage" operation="perc_add" value=".25"/> -->
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="AK-47MuzzleBrake" installable_tags="drumMagazine" modifier_tags="magazine" blocked_tags="noMods,shotgun" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="modGunMuzzleBrake"/>
+		<property name="DescriptionKey" value="MuzzleBreakDesc"/>
+		<property name="CreativeMode" value="None"/>
+		<property name="Candrop" value="false"/>
+		<property name="Weight" value="0"/>
+		<!-- Muzzle brake: Directs some of the gases upwards to reduce recoil. Typically increases visibility of the gun/shooter as a result. -->
+		<effect_group tiered="false">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.25"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="-.25"/>
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.25"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.25"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.25"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.25"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value=".25"/>
+			<!-- <passive_effect name="EntityDamage" operation="perc_add" value=".25"/> -->
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="modArmorBandolier" installable_tags="armorChest,armorLegs" modifier_tags="ammo" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CreativeMode" value="None"/>
+		<property name="Candrop" value="false"/>
+		<property name="Weight" value="0"/>
+		<!-- Reload Guns X% faster;  would like to add it to "legs" but buffs dont stack like that -->
+		<effect_group tiered="false">
+			<requirement name="ItemHasTags" tags="armorChest"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffBandolierChest"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffBandolierChest"/>
+		</effect_group>
+		<effect_group tiered="false">
+			<requirement name="ItemHasTags" tags="armorLegs"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffBandolierLegs"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffBandolierLegs"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="modGunMeleeBlessedMetalPlant" installable_tags="knife" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="modMeleeTemperedBlade"/>		
+		<property name="CustomIconTint" value="964B00"/>
+		<property name="CreativeMode" value="None"/>
+		<property name="Candrop" value="false"/>
+		<property name="Weight" value="0"/>
+		
+		<effect_group tiered="false">
+			<requirement name="EntityTagCompare" target="other" tags="plant"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="10"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="10" tags="secondary"/>
+		</effect_group>
+		<!-- <effect_group tiered="false">
+			<passive_effect name="EntityDamage" operation="perc_add" value="-.25"/>
+		</effect_group>	 -->	
+	</item_modifier>
+
+	<item_modifier name="modGunMeleeBlessedMetalTyrant" installable_tags="knife" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="modMeleeSerratedBlade"/>
+		<property name="CustomIconTint" value="873260"/>
+		<property name="CreativeMode" value="None"/>
+		<property name="Candrop" value="false"/>
+		<property name="Weight" value="0"/>
+		
+		<effect_group tiered="false">
+			<requirement name="EntityTagCompare" target="other" tags="tyrant"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="48"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="48" tags="secondary"/>
+		</effect_group>
+		<!-- <effect_group tiered="false">
+			<passive_effect name="EntityDamage" operation="perc_add" value="-.25"/>
+		</effect_group> -->
+	</item_modifier>
+
+	<item_modifier name="modDyeWhite" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance="0">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CreativeMode" value="None"/>
+		<property name="DescriptionKey" value="modDyeGroupDesc"/>
+		<property name="Material" value="Mpaint"/>
+		<property name="Weight" value="20"/>
+	</item_modifier>
+
+	<item_modifier name="modDyeRed" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".12">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modDyeGroupDesc"/>
+		<property name="CustomIcon" value="modDyeWhite"/>
+		<property name="CustomIconTint" value="149,52,54"/>
+		<property name="Material" value="Mplastics"/>
+		<property name="Weight" value="2"/>
+
+		<item_property_overrides name="*">
+			<property name="TintColor" value="212,84,84"/>
+			<property name="CustomIconTint" value="149,52,54"/>
+			<property name="UMA.Overlay0Tint" value="180,52,54"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTankTop">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="149,52,54"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtPlain">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="149,52,54"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtZU">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="149,52,54"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelCoatJacketLetterZU">
+			<property name="UMA.Overlay0Tint" value="149,52,54,255"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelDenimShortsPants">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="149,52,54"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelFlannelShirt">
+			<property name="UMA.Overlay0Tint" value="149,52,54"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelSuitPants">
+			<property name="UMA.Overlay0Tint" value="60,19,19"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelSuitJacket">
+			<property name="UMA.Overlay0Tint" value="60,19,19"/>
+		</item_property_overrides>
+	</item_modifier>
+
+	<item_modifier name="modDyeGreen" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".12">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modDyeGroupDesc"/>
+		<property name="CustomIcon" value="modDyeWhite"/>
+		<property name="CustomIconTint" value="128,152,120"/>
+		<property name="Material" value="Mplastics"/>
+		<property name="Weight" value="2"/>
+
+		<item_property_overrides name="*">
+			<property name="TintColor" value="74,130,74"/>
+			<property name="CustomIconTint" value="128,152,120"/>
+			<property name="UMA.Overlay0Tint" value="128,152,120"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTankTop">
+			<property name="CustomIconTint" value="184,241,164"/>
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="184,241,164"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtPlain">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="128,152,120"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtZU">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="128,152,120"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelCoatJacketLetterZU">
+			<property name="UMA.Overlay0Tint" value="128,152,120,255"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelDenimShortsPants">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="128,152,120"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelCoatPufferCoat">
+			<property name="CustomIconTint" value="200,255,200"/>
+			<property name="UMA.Overlay0Tint" value="200,255,200"/>
+		</item_property_overrides>
+	</item_modifier>
+
+	<item_modifier name="modDyeBlack" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".12">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modDyeGroupDesc"/>
+		<property name="CustomIcon" value="modDyeWhite"/>
+		<property name="CustomIconTint" value="47,47,47"/>
+		<property name="Material" value="Mplastics"/>
+		<property name="Weight" value="2"/>
+
+		<item_property_overrides name="*">
+			<property name="TintColor" value="70,70,70"/>
+			<property name="CustomIconTint" value="47,47,47"/>
+			<property name="UMA.Overlay0Tint" value="47,47,47"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTankTop">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="57,57,57"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtPlain">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="47,47,47"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelFlannelShirt">
+			<property name="UMA.Overlay0Tint" value="87,87,87"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtZU">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="47,47,47"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelCoatJacketLetterZU">
+			<property name="UMA.Overlay0Tint" value="47,47,47,255"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelDenimShortsPants">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="47,47,47"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelCoatJacketGeneric">
+			<property name="CustomIconTint" value="31,31,34"/>
+			<property name="UMA.Overlay0Tint" value="47,47,47"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelCowboyBoots">
+			<property name="UMA.Overlay0Tint" value="147,147,147"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelCoatLeatherDuster">
+			<property name="UMA.Overlay0Tint" value="210,210,210"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelSuitJacket">
+			<property name="CustomIconTint" value="37,37,37"/>
+			<property name="UMA.Overlay0Tint" value="37,37,37"/>
+			<property name="UMA.Overlay1Tint" value="85,74,96"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelSuitPants">
+			<property name="CustomIconTint" value="37,37,37"/>
+			<property name="UMA.Overlay0Tint" value="37,37,37"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelSuitDressShoes">
+			<property name="CustomIconTint" value="57,57,57"/>
+			<property name="UMA.Overlay0Tint" value="27,27,27"/>
+		</item_property_overrides>
+	</item_modifier>
+
+	<item_modifier name="modDyeBlue" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".12">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modDyeGroupDesc"/>
+		<property name="CustomIcon" value="modDyeWhite"/>
+		<property name="CustomIconTint" value="74,93,134"/>
+		<property name="Material" value="Mplastics"/>
+		<property name="Weight" value="2"/>
+
+		<item_property_overrides name="*">
+			<property name="TintColor" value="70,89,127"/><!-- this if for guns and handheld items -->
+			<property name="CustomIconTint" value="74,93,134"/>
+			<property name="UMA.Overlay0Tint" value="74,93,134"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTankTop">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="74,93,134"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtPlain">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="74,93,134"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelFlannelShirt">
+			<property name="UMA.Overlay0Tint" value="84,119,178"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelSuitPants">
+			<property name="UMA.Overlay0Tint" value="58,64,77"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelSuitJacket">
+			<property name="UMA.Overlay0Tint" value="58,64,77"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtZU">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="74,93,134"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelCoatJacketLetterZU">
+			<property name="UMA.Overlay0Tint" value="110,173,255,255"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelCoatLeatherDuster">
+			<property name="UMA.Overlay0Tint" value="112,132,160"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelCoatPufferCoat">
+			<property name="UMA.Overlay0Tint" value="115,135,172"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelDenimShortsPants">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="110,173,255"/>
+		</item_property_overrides>
+	</item_modifier>
+
+	<item_modifier name="modDyeBrown" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".12">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modDyeGroupDesc"/>
+		<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="132,105,84"/>
+		<property name="Material" value="Mplastics"/>
+		<property name="Weight" value="2"/>
+
+		<item_property_overrides name="*">
+			<property name="TintColor" value="132,105,84"/>
+			<property name="CustomIconTint" value="132,105,84"/>
+			<property name="UMA.Overlay0Tint" value="132,105,84"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTankTop">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="132,105,84"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtPlain">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="132,105,84"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtZU">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="132,105,84"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelCoatJacketLetterZU">
+			<property name="UMA.Overlay0Tint" value="132,105,84,255"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelDenimShortsPants">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="132,105,84"/>
+		</item_property_overrides>
+	</item_modifier>
+
+	<item_modifier name="modDyePink" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".12">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modDyeGroupDesc"/>
+		<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="240,162,251"/>
+		<property name="Material" value="Mplastics"/>
+		<property name="Weight" value="2"/>
+
+		<item_property_overrides name="*">
+			<property name="TintColor" value="188,148,188"/>
+			<property name="CustomIconTint" value="188,148,188"/>
+			<property name="UMA.Overlay0Tint" value="188,148,188"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTankTop">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="240,162,251"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtPlain">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="240,162,251"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelLongShirt">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="182,170,126"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtZU">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="240,162,251"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelCoatJacketLetterZU">
+			<property name="UMA.Overlay0Tint" value="240,162,251,255"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelDenimShortsPants">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="240,162,251"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelSuitPants">
+			<property name="UMA.Overlay0Tint" value="159,101,168"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelSuitJacket">
+			<property name="UMA.Overlay0Tint" value="159,101,168"/>
+		</item_property_overrides>
+	</item_modifier>
+
+	<item_modifier name="modDyePurple" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".12">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modDyeGroupDesc"/>
+		<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="113,97,129"/>
+		<property name="Material" value="Mplastics"/>
+		<property name="Weight" value="2"/>
+
+		<item_property_overrides name="*">
+			<property name="TintColor" value="113,97,129"/>
+			<property name="CustomIconTint" value="113,97,129"/>
+			<property name="UMA.Overlay0Tint" value="113,97,129"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTankTop">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="113,97,129"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtPlain">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="113,97,129"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtZU">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="113,97,129"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelCoatJacketLetterZU">
+			<property name="UMA.Overlay0Tint" value="113,97,129,255"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelDenimShortsPants">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="113,97,129"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelSuitPants">
+			<property name="UMA.Overlay0Tint" value="93,77,99"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelSuitJacket">
+			<property name="UMA.Overlay0Tint" value="93,77,99"/>
+		</item_property_overrides>
+	</item_modifier>
+
+	<item_modifier name="modDyeYellow" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".12">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modDyeGroupDesc"/>
+		<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="218,200,135"/>
+		<property name="Material" value="Mplastics"/>
+		<property name="Weight" value="2"/>
+
+		<item_property_overrides name="*">
+			<property name="TintColor" value="218,200,135"/>
+			<property name="CustomIconTint" value="218,200,135"/>
+			<property name="UMA.Overlay0Tint" value="218,200,135"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTankTop">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="218,200,135"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtPlain">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="218,200,135"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtZU">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="218,200,135"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelCoatJacketLetterZU">
+			<property name="UMA.Overlay0Tint" value="218,200,135,255"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelDenimShortsPants">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="218,200,135"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelSuitPants">
+			<property name="UMA.Overlay0Tint" value="152,149,93"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelSuitJacket">
+			<property name="UMA.Overlay0Tint" value="152,149,93"/>
+		</item_property_overrides>
+	</item_modifier>
+
+
+	</append>
+</FranticDan>
