@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ResidentEvilHerbs>
+
+	<ModInfo>
+		<Name value="ResidentEvilHerbs"/>
+		<Description value="This will add potted green, blue, and red herb plants with 3 game stages each to the game."/>
+		<Author value="Chikorina"/>
+		<Version value="1.0"/>
+	</ModInfo>
+	
+</ResidentEvilHerbs>
