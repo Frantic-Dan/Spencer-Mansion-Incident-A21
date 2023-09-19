@@ -412,6 +412,7 @@ plantedBlueHerb3HarvestPlayer,Blue Herb
 buffPoisonedName,Poisoned!
 buffPoisonedDesc,You're poisoned and are slowly taking damage.\n\nUse a Blue Herb to cure your poison.
 buffPoisonedTooltip,You've been poisoned!
+buffDeathTooltip,[FF4F00]Jill Valentine was never heard from again...[-]
 buffDeadlyPoisonedName,Game Over!
 buffDeadlyPoisonedDesc,Jill Valentine was never heard from again...
 questStartup_offer,Quest
