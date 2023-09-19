@@ -119,7 +119,7 @@
 
 	</buff>
 	
-	<buff name="buffDeadlyPoisoned" name_key="buffDeadlyPoisonedName" description_key="buffDeadlyPoisonedDesc" tooltip_key="buffPoisonedTooltip" icon="ui_game_symbol_critical" remove_on_death="false" icon_color="255,0,255" icon_blink="true">
+	<buff name="buffDeadlyPoisoned" name_key="buffDeadlyPoisonedName" description_key="buffDeadlyPoisonedDesc" tooltip_key="buffDeathTooltip" icon="ui_game_symbol_critical" remove_on_death="false" icon_color="255,0,255" icon_blink="true">
 		<damage_type value="bloodloss"/>
 		<damage_source value="Internal"/>
 		<stack_type value="ignore"/>
