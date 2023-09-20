@@ -544,11 +544,11 @@ zombieMaleHazmat,アンブレラ社危険物取扱者
 zombieSkateboarder,DoctorBest85
 zombieSoldier,アンブレラ社のガードマン
 animalZombieDog,ケルベロス
-Zombie Dog,ケルベロス
+ZombieDog,ケルベロス
 animalZombieVulture,Flappy Fuck
 animalSnake,アダ―
 animalChicken,Oskurd
-"Web Spinner",ウェブスピナー
+"WebSpinner",ウェブスピナー
 "CrimsonHead",クリムゾンヘッド
 "CrimsonHeadPrototype",クリムゾンヘッドプロト1
 "CrimsonHeadPrototype2",クリムゾンヘッドプロト1
