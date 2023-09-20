@@ -3091,6 +3091,7 @@
 	<property name="Collide" value="melee"/>
 	<drop event="Harvest" name="RocketLauncher" count="1"/>
 	<drop event="Harvest" name="ammoRocketFragRE" count="1"/>
+	<drop event="Destroy" name="DestroyedRocketLauncher" count="1"/>
 	<drop event="Fall" name="DestroyedRocketLauncher" count="1" prob="1" stick_chance="1"/>
 	<property name="FilterTags" value="floot"/>
 </block>
