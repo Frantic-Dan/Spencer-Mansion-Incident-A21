@@ -56,7 +56,7 @@
 			<!-- crit hit effects heal rate is assigned in  buffStatusCheck02 -->
 
 			<!-- You cannot regen without food or water -->
-			<passive_effect name="HealthChangeOT" operation="base_add" level="1" value=".2"/>
+			<passive_effect name="HealthChangeOT" operation="base_add" level="1" value=".25"/>
 
 			<!-- <effect_description level="1" desc_key="perkPassiveHealingRank1Desc" long_desc_key="perkPassiveHealingRank1LongDesc"/> -->
 		</effect_group>
