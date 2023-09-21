@@ -545,7 +545,7 @@ zombieSkateboarder,DoctorBest85
 zombieSoldier,アンブレラ社のガードマン
 animalZombieDog,ケルベロス
 ZombieDog,ケルベロス
-animalZombieVulture,Flappy Fuck
+animalZombieVulture,フラッピーファック
 animalSnake,アダ―
 animalChicken,Oskurd
 "WebSpinner",ウェブスピナー
