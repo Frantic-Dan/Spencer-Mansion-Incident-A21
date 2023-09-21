@@ -358,7 +358,7 @@ CardioTraining,有酸素トレーニング
 perkPainToleranceNameRE,痛みに対する耐性
 perkPainToleranceDescRE,最大体力が 600 増加します。\n\n(も癒されます)
 perkPassiveHealingName,パッシブヒーリング
-perkPassiveHealingDesc,5秒ごとに体力を1回復します。
+perkPassiveHealingDesc,4秒ごとに体力を1回復します。
 perkCardioName,有酸素運動
 perkCardioDesc,スプリント中のスタミナの消耗が 50% 遅くなります。\nスプリントが 10% 速くなります。
 perkKnifeTrainedName,訓練されたナイフ
