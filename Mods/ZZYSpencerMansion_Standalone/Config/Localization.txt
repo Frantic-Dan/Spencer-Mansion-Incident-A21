@@ -349,7 +349,7 @@ CardioTraining,Cardio Training
 perkPainToleranceNameRE,Pain Tolerance
 perkPainToleranceDescRE,Increases your max health by 600.\n\n(Also heals)
 perkPassiveHealingName,Passive Healing
-perkPassiveHealingDesc,Passively heal 1 health every 5 seconds.
+perkPassiveHealingDesc,Passively heal 1 health every 4 seconds.
 perkCardioName,Cardio
 perkCardioDesc,Stamina drains 50% slower while sprinting.\nSprint 10% faster.
 perkKnifeTrainedName,Knife Trained
