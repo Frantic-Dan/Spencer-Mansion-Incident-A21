@@ -3320,6 +3320,18 @@
 	<property name="CanPickup" value="true" param1="JewelryBox"/>
 </block>
 
+<block name="SpencerMansionReloadToolSingle">
+	<property name="Extends" value="cntToolBoxOpenWhite"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="MaxDamage" value="5000"/>
+	<property name="Material" value="Mbedrock"/>
+	<property name="ModelOffset" value="2,.5,.5"/>
+	<!-- <property name="GndAlign" value="1"/> -->
+	<property class="RepairItems"> <property name="resourceScrapIron" value="1"/> </property>
+	<property name="Model" value="@:Entities/LootContainers/woodenChestRotten_01Prefab Variant.prefab"/>
+	<property name="CanPickup" value="true" param1="ReloadingTool"/>
+</block>
+
 <block name="GyroWheelBlock">
 	<property name="Extends" value="cntToolBoxOpenWhite"/>
 	<property name="CreativeMode" value="None"/>
