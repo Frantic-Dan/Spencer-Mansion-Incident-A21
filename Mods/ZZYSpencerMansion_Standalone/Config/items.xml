@@ -188,7 +188,7 @@
 	<property name="CustomIcon" value="reloading-tool"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="Weight" value="0"/>
-	<property name="Stacknumber" value="10"/>
+	<property name="Stacknumber" value="11"/>
 	<property name="DescriptionKey" value="Reloading_Tooldesc"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="EconomicValue" value="0"/>
