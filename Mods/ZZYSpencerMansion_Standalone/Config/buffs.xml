@@ -11,7 +11,7 @@
 	<remove xpath="/buffs/buff[@name='buffNearDeathTraumaTrigger']/effect_group//triggered_effect[2]"/>
 	<!-- Healing rate -->
 	<set xpath="/buffs/buff[@name='buffPerkAbilityUpdate']/effect_group//triggered_effect[22]/@value">80</set>
-	<set xpath="/buffs/buff[@name='buffPerkAbilityUpdate']/effect_group//triggered_effect[23]/@value">100</set>
+	<set xpath="/buffs/buff[@name='buffPerkAbilityUpdate']/effect_group//triggered_effect[23]/@value">108</set>
 	<set xpath="/buffs/buff[@name='buffPerkAbilityUpdate']/effect_group/triggered_effect[23]/requirement[@name='ProgressionLevel']/@progression_name">perkMedicalKnowledge</set>
 	<set xpath="/buffs/buff[@name='buffHealHealth']/effect_group[2]//triggered_effect[2]/@value">80</set>
 	<set xpath="/buffs/buff[@name='buffHealHealth']/effect_group[3]//triggered_effect[2]/@value">80</set>
