@@ -43,7 +43,7 @@ loadingTipRE6,"本家と同じように、ゾンビは痛みを感じません�
 loadingTipRE6_title,ゾンビは痛みを感じない：
 loadingTipRE7,"この破壊的な武器は簡単に足を奪うことができます."
 loadingTipRE7_title,ポンプショットガン:
-loadingTipRE8,"次の方達に大きな感謝： Mythix,AuroraGiggleFairy, wOOkie nOOkie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox"
+loadingTipRE8,"次の方達に大きな感謝： Mythix,AuroraGiggleFairy, wOOkie nOOkie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard"
 loadingTipRE8_title,スペシャルサンクス！
 SpencerMansionSpawnText,"あなたはこれからスペンサー邸での出来事を一人称視点で体験する事になります。\n\nバイオハザードの体験を忠実に保つために、次の点に注意してください。\n1) 所持品は10スロットのみになるので、館内のアイテムボックスをご利用ください。\nこれらのボックスは古典的なバイオハザードのようにリンクされていないため、アイテムを保管する場所に注意してください。\n2) ジャンプをする事は出来ません。\n3) ほとんどの敵は痛みを感じないため、いつもの戦い方では難しいかもしれません。\n4) あなたの人生は一つです！\n\n[FFC800]より楽しいチャレンジになる用、周囲の音量を上げて、常に音楽を再生することをお勧めします。[-]\n\nこのModとは関連性のないモドレットの導入はせず、オレンジ色になっているゲーム設定を修正してください。"
 TwitchAction_SpawnCrawlerCommand,#crawler
@@ -84,17 +84,17 @@ InkRibbondesc,"現在は使用できませんが、 マニュアルセーブが�
 DeathMaskDesc,この仮面専用の扉を開くために使用します。\n\n第二アクションで使用します。
 MansionBattery,庭のドアを作動させるために使用します。
 Green_Herb,グリーンハーブ
-GreenHerbDesc,少量の体力回復。\n\n2秒間で体力を160回復します。\n医学知識: 2秒間で体力を200回復します。
+GreenHerbDesc,少量の体力回復。\n\n2秒間で体力を160回復します。\n医学知識: 2秒間で体力を216回復します。
 Red_Herb,レッドハーブ
 RedHerbdesc,グリーンハーブの効果を上げます。\n\nそのままでは使用できません。
-MixedGreenHerbDesc,程よい量の体力回復。\n\n5秒間で体力を400回復します。\n医学知識: 5秒間で体力を500回復します。
-Green+RedHerbDesc,多めの体力回復。\n\n9秒間で体力を720回復します。\n医学知識: 9秒間で体力を900回復します。
+MixedGreenHerbDesc,程よい量の体力回復。\n\n5秒間で体力を400回復します。\n医学知識: 5秒間で体力を540回復します。
+Green+RedHerbDesc,多めの体力回復。\n\n9秒間で体力を720回復します。\n医学知識: 9秒間で体力を972回復します。
 Blue_Herb,ブルーハーブ
-BlueHerbDesc,毒の治療に使用します。\n\n1秒間で体力を80回復します。\n医学知識: 1秒間で体力を100回復します。
-Green+BlueHerbDesc,少量の体力回復と解毒治療。\n\n3秒間で体力を240回復します。\n医学知識: 3秒間で体力を300回復します。
-Green2+BlueHerbDesc,程よい量の体力回復と解毒治療。\n\n6秒間で体力を480回復します。\n医学知識: 6秒間で体力を600回復します。
-Green+Red+BlueHerbDesc,多めの量の体力回復と解毒治療。\n\n10秒間で体力を800回復します。\n医学知識: 10秒間で体力を1000回復します。
-FirstAidSprayDesc,完全に体力を回復します。\n\n20秒間で体力を1600回復します。\n医学知識: 20秒間で体力を2000回復します。
+BlueHerbDesc,毒の治療に使用します。\n\n1秒間で体力を80回復します。\n医学知識: 1秒間で体力を108回復します。
+Green+BlueHerbDesc,少量の体力回復と解毒治療。\n\n3秒間で体力を240回復します。\n医学知識: 3秒間で体力を324回復します。
+Green2+BlueHerbDesc,程よい量の体力回復と解毒治療。\n\n6秒間で体力を480回復します。\n医学知識: 6秒間で体力を648回復します。
+Green+Red+BlueHerbDesc,多めの量の体力回復と解毒治療。\n\n10秒間で体力を800回復します。\n医学知識: 10秒間で体力を1080回復します。
+FirstAidSprayDesc,完全に体力を回復します。\n\n20秒間で体力を1600回復します。\n医学知識: 20秒間で体力を2160回復します。
 PowerSource,地下の台所近くにあるエレベーターを動かすために使用します。\n\n手に「鍵用アップグレードツール」を持ち、鞄内にスペンサー邸エレベーター用電源が入っている状態で館のエレベータードアを右クリックし、使用可能にします。
 WolfBook,狼に関する、青色の本。
 WolfMedal,狼のメダル。\n\n第二アクションで使用します。
@@ -103,7 +103,7 @@ EagleMedal,鷲のメダル。\n\n第二アクションで使用します。
 "BookofCurses",呪いの本
 BookOfCursesdesc,3階に落ちていた、気持ちの悪い本。\n手に持ち、第一アクション(左クリック)でお読みください。
 "DogWhistle",犬笛
-DogWhistledesc,犬を呼ぶために使用する笛。\n\nマルチプレイの場合、ゲームホストがクエストを開始してください。
+DogWhistledesc,犬を呼ぶために使用する笛。
 "DogCollar",犬の首輪
 DogCollardesc,何かに使えるのでしょうか？
 Coin,コイン
@@ -346,7 +346,9 @@ LockedSuperRocket,まずスイッチを押してください
 LockedAmmoChest,ロックされた弾薬箱
 "WorkbenchRepairKit",作業台修理キット
 Lighter,ライター
-
+attTrainingName, 
+attTrainingDesc, 
+skillTrainingSurvivalName, 
 S.T.A.R.STrainingManual,S.T.A.R.S訓練マニュアル
 TrainingManualDesc,S.T.A.R.S.の一員として特別な訓練を受けたあなたは、その訓練を生かして生き残りをかけて戦うのです！\n\n6種類ある特典の内容をよく読んで、特典のレベル数を把握し、貴重な「訓練マニュアル」を無駄にしないようにしましょう。\n\n訓練マニュアルは3しか無いので、注意深く選択してください。\n不要な訓練本に第二アクションを使用する事で、S.T.A.R.S訓練マニュアルを再入手することが出来ます。
 PainToleranceTraining,疼痛耐性トレーニング
@@ -364,7 +366,7 @@ perkCardioDesc,スプリント中のスタミナの消耗が 50% 遅くなりま
 perkKnifeTrainedName,訓練されたナイフ
 perkKnifeTrainedDesc,与えるダメージが 25% 増加します。\n攻撃が25%速くなります。\n通常攻撃でのスタミナ消耗が 4 減少する\nパワーアタックのスタミナが 8 減少します。
 perkMedicalKnowledgeName,医学知識
-perkMedicalKnowledgeDesc,医療アイテムの効果は 25% 高くなります。\n\nマルチプレイヤーでは、同じ利益を得るためにパートナーを回復することができます。
+perkMedicalKnowledgeDesc,医療アイテムの効果は 35% 高くなります。\n\nマルチプレイヤーでは、同じ利益を得るためにパートナーを回復することができます。
 perkChemistExpertName,化学の専門家
 perkChemistExpertDesc,弾薬を作成する際に必要な火薬が 25% 減少します。\n火薬を作成する際に必要な硝酸塩と石炭の量は 20% 削減されます。
 meleeTorchRE,松明
