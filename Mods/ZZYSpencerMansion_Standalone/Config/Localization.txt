@@ -39,7 +39,7 @@ loadingTipRE6,"Zombies don't feel pain, just like in Resident Evil, so they won'
 loadingTipRE6_title,Zombies Feel No Pain:
 loadingTipRE7,"This devastating weapon can easily take off legs."
 loadingTipRE7_title,The Pump Shotgun:
-loadingTipRE8,"A huge thank you to the following people: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox."
+loadingTipRE8,"A huge thank you to the following people: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard."
 loadingTipRE8_title,Special Thanks!
 SpencerMansionSpawnText,"You're about to experience the Spencer Mansion Incident in a first person perspective.\n\nTo keep the experience true to Resident Evil, please note the following.\n1) You have limited inventory space of 10 slots. There are Item Storage Boxes to store your items. These boxes are not linked like in classic Resident Evil so be mindful of where you store your items.\n2) You cannot jump.\n3) Most enemies don't feel pain, so fighting them will be different to what you're used to.\n4) You have one life!\n\n[FFC800]For an immersive experience, I'd recommend turning up your ambient sound volume and your music to play all the time.[-]\n\nFor the intended experience, be sure to remove any non-related modlets and your orange game settings are correct."
 TwitchAction_SpawnCrawlerCommand,#crawler
@@ -80,17 +80,17 @@ InkRibbondesc,"Currently useless, but will be needed to save your progress when 
 DeathMaskDesc,This Death Mask is used on the Door of Evil.\n\nUse with the secondary action.
 MansionBattery,This will power the door in the courtyard.
 Green_Herb,Green Herb
-GreenHerbDesc,"Heals you slightly.\n\nHeals 160 health over 2 seconds.\nMedical Knowledge: Heals 200 health over 2 seconds."
+GreenHerbDesc,"Heals you slightly.\n\nHeals 160 health over 2 seconds.\nMedical Knowledge: Heals 216 health over 2 seconds."
 Red_Herb,Red Herb
 RedHerbdesc,"Amplifies the effect of Green Herbs.\n\nCan't be used on its own."
-MixedGreenHerbDesc,"Heals you moderately.\n\nHeals 400 health over 5 seconds.\nMedical Knowledge: Heals 500 health over 5 seconds."
-Green+RedHerbDesc,"Heals you substantially.\n\nHeals 720 health over 9 seconds.\nMedical Knowledge: Heals 900 health over 9 seconds."
+MixedGreenHerbDesc,"Heals you moderately.\n\nHeals 400 health over 5 seconds.\nMedical Knowledge: Heals 540 health over 5 seconds."
+Green+RedHerbDesc,"Heals you substantially.\n\nHeals 720 health over 9 seconds.\nMedical Knowledge: Heals 972 health over 9 seconds."
 Blue_Herb,Blue Herb
-BlueHerbDesc,"Cures Poison and heals you slightly.\n\nHeals 80 health over 1 second.\nMedical Knowledge: Heals 100 health over 1 second."
-Green+BlueHerbDesc,"Cures Poison and heals you slightly.\n\nHeals 240 health over 3 seconds.\nMedical Knowledge: Heals 300 health over 3 seconds."
-Green2+BlueHerbDesc,"Cures Poison and heals you moderately.\n\nHeals 480 health over 6 seconds.\nMedical Knowledge: Heals 600 health over 6 seconds."
-Green+Red+BlueHerbDesc,"Cures Poison and heals you substantially.\n\nHeals 800 health over 10 seconds.\nMedical Knowledge: Heals 1000 health over 10 seconds."
-FirstAidSprayDesc,"Greatly heals you.\n\nHeals 1600 health over 20 seconds.\nMedical Knowledge: Heals 2000 health over 20 seconds."
+BlueHerbDesc,"Cures Poison and heals you slightly.\n\nHeals 80 health over 1 second.\nMedical Knowledge: Heals 108 health over 1 second."
+Green+BlueHerbDesc,"Cures Poison and heals you slightly.\n\nHeals 240 health over 3 seconds.\nMedical Knowledge: Heals 324 health over 3 seconds."
+Green2+BlueHerbDesc,"Cures Poison and heals you moderately.\n\nHeals 480 health over 6 seconds.\nMedical Knowledge: Heals 648 health over 6 seconds."
+Green+Red+BlueHerbDesc,"Cures Poison and heals you substantially.\n\nHeals 800 health over 10 seconds.\nMedical Knowledge: Heals 1080 health over 10 seconds."
+FirstAidSprayDesc,"Greatly heals you.\n\nHeals 1600 health over 20 seconds.\nMedical Knowledge: Heals 2160 health over 20 seconds."
 WolfBook,A blue coloured book about a Wolf.
 WolfMedal,A medal of a Wolf.
 EagleBook,A red coloured book about an Eagle.
@@ -98,7 +98,7 @@ EagleMedal,A medal of an Eagle.
 BookofCurses,Book of Curses
 BookOfCursesdesc,A creepy looking book you found on the ground on the 3rd floor.
 DogWhistle,Dog Whistle
-DogWhistledesc,A whistle used to get the attention of dogs.\n\nIn multiplayer the person who is hosting the game should be the one to start this quest.
+DogWhistledesc,A whistle used to get the attention of dogs.
 DogCollar,Dog Collar
 DogCollardesc,Does this collar have some importance?
 Coin,Coin
@@ -187,8 +187,8 @@ MixedGreenHerb,Mixed Green Herb
 Mixed3GreenHerbs,Mixed 3 Green Herbs
 MixedGreen+RedHerb,Mixed Green+Red Herb
 MixedGreen+BlueHerb,Mixed Green+Blue Herb
-Mixed2Green+Blue Herb,Mixed 2 Green+Blue Herb
-MixedGreen+Red+Blue Herb,Mixed Green+Red+Blue Herb
+Mixed2Green+BlueHerb,Mixed 2 Green+Blue Herb
+MixedGreen+Red+BlueHerb,Mixed Green+Red+Blue Herb
 Red_Herb,Red Herb
 Blue_Herb,Blue Herb
 FirstAidSpray,First Aid Spray
@@ -339,6 +339,9 @@ ShotgunSlug,Shotgun Slug
 LockedAmmoChest,Locked Ammo Chest
 questRewardAmmoCraftingBundleDesc,A box full of ammo crafting supplies.\n\nBe sure to have at least 4 empty inventory slots before opening!
 S.T.A.R.STrainingManual,S.T.A.R.S Training Manual
+attTrainingName, 
+attTrainingDesc, 
+skillTrainingSurvivalName, 
 TrainingManualDesc,You've had special training as a member of S.T.A.R.S. And now you have to use your training to fight for your survival!\n\nRead over what each of the 6 available perks do.\n\nThere are only 3 Training Manuals so choose wisely!\nUse the secondary action on unwanted Training Books to get a S.T.A.R.S Training Manual back. 
 PainToleranceTraining,Pain Tolerance Training
 PassiveHealingTraining,Passive Healing Training
@@ -355,7 +358,7 @@ perkCardioDesc,Stamina drains 50% slower while sprinting.\nSprint 10% faster.
 perkKnifeTrainedName,Knife Trained
 perkKnifeTrainedDesc,Inflict 25% more damage.\nAttack 25% faster.\nDrain 4 less stamina with normal attacks\nand 8 less stamina with power attacks.
 perkMedicalKnowledgeName,Medical Knowledge
-perkMedicalKnowledgeDesc,Medical items are 25% more potent.\n\nIn multiplayer you can heal your partner for the same benefit.
+perkMedicalKnowledgeDesc,Medical items are 35% more potent.\n\nIn multiplayer you can heal your partner for the same benefit.
 perkChemistExpertName,Chemist Expert
 perkChemistExpertDesc,When crafting ammo you require 25% less gunpowder.\nWhen crafting gunpowder you require 20% less Nitrate and Coal.
 meleeTorchRE,Torch
