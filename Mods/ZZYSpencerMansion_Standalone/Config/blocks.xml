@@ -1733,6 +1733,12 @@
 	<property name="SortOrder2" value="0009"/>
 </block>
 
+<block name="ironMansionDoorBlack">
+	<property name="CreativeMode" value="None"/>
+	<property name="Extends" value="ironMansionDoorBlack"/>
+	<property name="Class" value="DoorSecure"/>
+</block>
+
 <block name="DoorThatSeesSpeaksSmellsNoEvil">
 	<property name="CreativeMode" value="None"/>
 	<property name="Extends" value="ironMansionDoorBlack"/>
