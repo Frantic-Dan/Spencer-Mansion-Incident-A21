@@ -1733,7 +1733,7 @@
 	<property name="SortOrder2" value="0009"/>
 </block>
 
-<block name="ironMansionDoorBlack">
+<block name="ironMansionDoorBlackLocked">
 	<property name="CreativeMode" value="None"/>
 	<property name="Extends" value="ironMansionDoorBlack"/>
 	<property name="Class" value="DoorSecure"/>
