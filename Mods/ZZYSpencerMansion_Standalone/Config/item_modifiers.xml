@@ -266,6 +266,11 @@
 			<passive_effect name="EntityDamage" operation="base_add" value="10"/>
 			<passive_effect name="EntityDamage" operation="base_add" value="10" tags="secondary"/>
 		</effect_group>
+		<effect_group tiered="false">
+			<requirement name="EntityTagCompare" target="other" tags="yawn"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="2"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="2" tags="secondary"/>
+		</effect_group>
 		<!-- <effect_group tiered="false">
 			<passive_effect name="EntityDamage" operation="perc_add" value="-.25"/>
 		</effect_group>	 -->	
