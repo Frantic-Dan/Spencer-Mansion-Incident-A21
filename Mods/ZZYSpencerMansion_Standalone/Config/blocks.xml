@@ -103,6 +103,9 @@
 	<drop event="Destroy" name="Kerosene" count="1"/>
 </insertafter>
 
+<set xpath="/blocks/block[@name='radiatorHouse01Player']//property[@name='Material']/@value">Mbedrock</set>
+<set xpath="/blocks/block[@name='cntIceMachine']//property[@name='MaxDamage']/@value">5000</set>
+
 <insertafter xpath="/blocks/block[@name='radiatorHouse01']/drop[@event='Destroy']">
 	<property name="CanPickup" value="true" param1="resourceRadiator"/>
 </insertafter>
@@ -3095,8 +3098,8 @@
 	<property name="StabilitySupport" value="false"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="melee"/>
-	<drop event="Destroy" name="RocketLauncher" count="1" />
-	<drop event="Destroy" name="ammoRocketFragRE" count="1" />	
+	<drop event="Harvest" name="RocketLauncher" count="1" tag="REMansionHarvest"/>
+	<drop event="Harvest" name="ammoRocketFragRE" count="1" tag="REMansionHarvest"/>	
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="DestroyedRocketLauncher" count="1" prob="1" stick_chance="1"/>
 	<property name="FilterTags" value="floot"/>
