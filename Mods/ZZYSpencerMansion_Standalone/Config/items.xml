@@ -923,8 +923,8 @@
 	<property name="CreativeMode" value="None"/>
 	<effect_group name="military armor">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_add" value="33.34" />
-		<passive_effect name="ElementalDamageResist" operation="base_add" value="33.34" tags="heat,electrical"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="27.5" />
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="27.5" tags="heat,electrical"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="0"/>
 	</effect_group>
 	<property class="UMA">
@@ -1056,8 +1056,8 @@
 	<effect_group name="SurvivalKnife" >
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="60" tags="perkDeepCuts,perkKnifeTrained,perkFlurryOfAgility"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="20" tags="primary"/>
-		<passive_effect name="MaxRange" operation="base_set" value="2.0" tags="perkKnifeTrained"/>
-		<passive_effect name="BlockRange" operation="base_set" value="2.5" tags="perkKnifeTrained"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.1" tags="perkKnifeTrained"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3" tags="perkKnifeTrained"/>
 		<passive_effect name="ModSlots" operation="base_set" value="3" />
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".28" tags="BlockDamage"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="10" tags="perkDeepCuts,perkKnifeTrained,knife"/> <!-- meleeWpnBladeT1HuntingKnife -->
@@ -1445,6 +1445,7 @@
 	<property name="HoldType" value="10"/>
 	<property name="CustomIcon" value="gunExplosivesT3RocketLauncher"/>
 	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab.prefab"/>
+	<property name="DescriptionKey" value="Launcherdesc"/>
 	<property name="Material" value="MRocketLauncherParts"/>
 	<property name="TintColor" value="77, 77, 51"/>
 	<property name="Weight" value="0"/>
@@ -1521,6 +1522,7 @@
 	<property name="HoldType" value="10"/>
 	<property name="CustomIcon" value="gunExplosivesT3RocketLauncher"/>
 	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab.prefab"/>
+	<property name="DescriptionKey" value="Launcher2desc"/>
 	<property name="Material" value="MRocketLauncherParts"/>
 	<property name="TintColor" value="77, 77, 51"/>
 	<property name="Weight" value="0"/>
@@ -1889,6 +1891,9 @@
 		<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" tags="perkBoomstick"/>
 		<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" tags="perkBoomstick"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-1" tags="earth"/>
+		<passive_effect name="DismemberChance" operation="base_add" value=".1">
+			<requirement name="HitLocation" body_parts="Head"/>
+		</passive_effect>
 		<passive_effect name="EntityPenetrationCount" operation="base_set" value="2" tags="perkBoomstick"/><display_value name="dTargetPenetration" value="2"/>
 	</effect_group>
 </item>
@@ -2823,7 +2828,7 @@
 	<property name="HoldType" value="35"/>
 	<property class="Action0">
 		<property name="Delay" value=".85"/>
-		<property name="Range" value="2.4"/>
+		<property name="Range" value="2.3"/>
 		<property name="Sphere" value=".2"/>
 		<property name="DamageEntity" value="280"/>
 		<property name="DamageBlock" value="1"/>
