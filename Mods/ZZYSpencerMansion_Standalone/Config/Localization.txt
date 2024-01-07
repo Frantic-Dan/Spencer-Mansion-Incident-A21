@@ -41,7 +41,7 @@ loadingTipRE7,"This devastating weapon can easily take off legs."
 loadingTipRE7_title,The Pump Shotgun:
 loadingTipRE8,"A huge thank you to the following people: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard."
 loadingTipRE8_title,Special Thanks!
-SpencerMansionSpawnText,"You're about to experience the Spencer Mansion Incident in a first person perspective.\n\nTo keep the experience true to Resident Evil, please note the following.\n1) You have limited inventory space of 10 slots. There are Item Storage Boxes to store your items. These boxes are not linked like in classic Resident Evil so be mindful of where you store your items.\n2) You cannot jump.\n3) Most enemies don't feel pain, so fighting them will be different to what you're used to.\n4) You have one life!\n\n[FFC800]For an immersive experience, I'd recommend turning up your ambient sound volume and your music to play all the time.[-]\n\nFor the intended experience, be sure to remove any non-related modlets and your orange game settings are correct."
+SpencerMansionSpawnText,"You're about to experience the Spencer Mansion Incident in a first person perspective.\n\nTo keep the experience true to Resident Evil, please note the following.\n1) You have limited inventory space of 10 slots. There are Item Storage Boxes to store your items. These boxes are not linked like in classic Resident Evil so be mindful of where you store your items.\n2) You cannot jump.\n3) Most enemies don't feel pain, so fighting them will be different to what you're used to.\n4) Ink Ribbon's are required to save your progress!\n\n[FFC800]For an immersive experience, I'd recommend turning up your ambient sound volume and your music to play all the time.[-]\n\nFor the intended experience, be sure to remove any non-related modlets and your orange game settings are correct."
 TwitchAction_SpawnCrawlerCommand,#crawler
 TwitchAction_SpawnToughCommand,#spawn_tough
 TwitchAction_SpawnSnakeCommand,#snake
@@ -147,8 +147,8 @@ LaboratoryKey,Key for the Power Area
 MODisc,MO Disk
 EmptyBottle,Empty Bottle
 EmptyWaterBottle,Empty Water Bottle
-EmptyUMB-No3 Bottle,Empty UMB-No3 Bottle
-EmptyYellow-6 Bottle,Empty Yellow-6 Bottle
+EmptyUMB-No3Bottle,Empty UMB-No3 Bottle
+EmptyYellow-6Bottle,Empty Yellow-6 Bottle
 WaterFilled,Water (Filled)
 UMB-No3Filled,UMB-No3 (Filled)
 Yellow-6Filled,Yellow-6 (Filled)
@@ -206,7 +206,7 @@ MasterKey,Master Key
 doors
 ttLockpickMissing,It won't budge...
 DoubleMansionDoorBrown,Unlocked
-DoubleMansionLockedDoorBrown,Locked
+DoubleMansionLockedDoorBrown,Jammed
 DoubleShieldDoorBrown,Locked
 DoubleMansionDoorBrownOld,Unlocked
 commercialMansionWindowDoorBlue,Unlocked
@@ -350,7 +350,7 @@ KnifeTrainedTraining,Knife Training
 ChemistExpertTraining,Chemist Expert Training
 CardioTraining,Cardio Training
 perkPainToleranceNameRE,Pain Tolerance
-perkPainToleranceDescRE,Increases your max health by 600.\nReduces damage received by 6.67%\n\n(Also heals)
+perkPainToleranceDescRE,Increases your max health by 600.\nReduces damage received by 12.5%\n\n(Also heals 600)
 perkPassiveHealingName,Passive Healing
 perkPassiveHealingDesc,Passively heal 1 health every 4 seconds.
 perkCardioName,Cardio
@@ -375,11 +375,13 @@ AK-47,AK-47 Assault Rifle
 Rifledesc,An automatic assault rifle that can help you in desperate situations.
 RocketLauncher,Rocket Launcher
 Launcherdesc,"A destructive weapon, try not to blow yourself up, alright!"
+DestroyedRocketLauncher,Destroyed Rocket Launcher
+Launcher2desc,"Destroyed beyond repair, whoops!"
 QuadRocketLauncher,Quad Rocket Launcher
 MilitaryGoods,Military Goods
 MilitaryGoodsdesc,Some military-grade gear you found in a secret closet.\n\nA bullet proof vest for protection.\nA bandolier for efficient reloading.\nA suppressor to increase critical hit rate.
 BulletProofVest,Bullet Proof Vest
-Vestdesc,This protective vest will mitigate 33.34% damage.\nStacks with Pain Tolerance.
+Vestdesc,This protective vest will mitigate 27.5% damage.\nStacks with Pain Tolerance.
 Bandolier,Bandolier
 Bandolierdesc,"While wearing this, your reload time is reduced by 40% and you'll no longer suffer mobility penalty while reloading."
 modGunSoundSuppressorSilencerRE,Handgun Suppressor
@@ -471,7 +473,7 @@ BotanyBookTip_title,Botany Book
 BotanyBookTip,"Uses of Medicinal Herbs\n\nIt is a well-known fact that there exist many plants that are credited with medicinal healing powers. Since ancient times, mankind has been healing wounds and diseases using various plants.\n\nIn this book, we will sample three herbs that are native of the Arklay Mountains and briefly outline each of their medicinal qualities. Each herb has a distinct color and a distinct medicinal quality.\n\nThe green herb recovers physical strength. The blue herb neutralizes natural toxins. However, the red herb has no real effect by itself. We have found that mixing green and red herbs results in a magnified effect.\n\nWe will outline the effects of red herbs when mixed with other herbs when we have more data. Meanwhile feel free to experiment on your own, for true knowledge is best acquired through own experience."
 BodyDisposal,Body Disposal
 BodyDisposalTip_title,Body Disposal
-BodyDisposalTip,"Special instructions when disposing of dead bodies.\n\nWe have new information regarding those 'beings'. They may appear to be dead but in fact they are able to come back to life. However, there are ways to prevent them from becoming active again.\n\nCurrently there are two known methods to cease their resurrection.\n\n1. DESTRUCTION OF THE HEAD\n2. DISMEMBERMENT OF EITHER LEG\n\nIf further methods are discovered, they will be notified immediately.\n\nMeanwhile to those of you who still have the will to live, kerosene has been placed around the mansion and surrounding areas. Take as much as you need.\n\nYou'll need something to light it with, which you'll need to find by yourself.\n\n[FF4F00]WARNING: Exiting your game session will instantly reanimate intact dead bodies upon loading your save.[-]"
+BodyDisposalTip,"Special instructions when disposing of dead bodies.\n\nWe have new information regarding those 'beings'. They may appear to be dead but in fact they are able to come back to life. However, there are ways to prevent them from becoming active again.\n\nCurrently there are two known methods to cease their resurrection.\n\n1. DESTRUCTION OF THE HEAD\n2. DISMEMBERMENT OF EITHER LEG\n(While they are alive)\n\nIf further methods are discovered, they will be notified immediately.\n\nMeanwhile to those of you who still have the will to live, kerosene has been placed around the mansion and surrounding areas. Take as much as you need.\n\nYou'll need something to light it with, which you'll need to find by yourself.\n\n[FF4F00]WARNING: Exiting your game session will instantly reanimate intact dead bodies upon loading your save.[-]"
 Keeper'sDiary,Keeper's Diary
 KeeperDiaryTip_title,Keeper's Diary
 KeeperDiaryTip,"May 9, 1998\nPlayed poker tonight with Scott and Alias from Security, and Steve from Research. Steve was the big winner, but I think he was cheating. Scumbag.\n\nMay 10, 1998\nOne of the higher-ups assigned me to take care of a new creature. It looks like a skinned gorilla. Feeding instructions were to give it live animals. When I threw in a pig, the creature seemed to play with it... tearing off the pig's legs and pulling out the guts before it actually started eating.\n\nMay 11, 1998\nAt around 5 A.M., Scott woke me up. Scared the shit out me, too. He was wearing a protective suit. He handed me another one and told me to put it on. Said there'd been an accident in the basement lab. I just knew something like this would happen. Those bastards in Research never sleep, even on holiday\n\nMay 12, 1998\nI've been wearing the damn space suit since yesterday. My skin's getting grimy and feels itchy all over. The goddamn dogs have been looking at me funny, so I decided not to feed them today. Screw 'em.\n\nMay 13, 1998\nWent to the Infirmary because my back is all swollen and feels itchy. They put a big bandage on it and told me I didn't need to wear the suit anymore. All I wanna do is sleep.\n\nMay 14, 1998\nFound another big blister on my foot this morning. I ended up dragging my foot all the way to the dog's pen. They were quiet all day, which is weird. Then I realized some of them had escaped. Maybe this is their way of getting back at me for not feeding them the last three days. If anybody finds out, I'll have my head handed to me.\n\nMay 16, 1998\nRumors going around that a researcher who tried to escape the estate last night was shot. My entire body feels hot and itchy and I'm sweating all the time now. I scratched the swelling on my arm and a piece of rotten flesh just dropped off. What the hell's happening to me?\n\nMay 19, 1998\nFever gone but itchy. Today hungry and eat doggie food.\n\nMay 21, 1998\n Itchy itchy Scott came ugly face so killed him. Tasty. 4 / / Itchy. Tasty."
@@ -494,7 +496,7 @@ Plant42ReportTip,"Four days have passed since the accident. The plant at Point 4
 OrganicChemistryLabExperiment,Organic Chemistry Lab Experiment
 OrganicChemistryLabExperimentTip_title,Organic Chemistry Lab Experiment
 OrganicChemistryLabExperimentTip,"The similarities in the cellular characteristics of the rapidly growing plant infected by the Tyrant Virus have been reported in previous papers. However, while repeating these experiments, an interesting new fact became clear.\n\nWe learned that a chemical in the UMB family, UMB No. 20, contains a compound that is toxic to the cells of the plant.\n\nWe have given UMB No. 20 a new name: V-JOLT. If calculations prove correct, when V-JOLT is applied directly to the root of the plant, the entire plant should be dead within 5 seconds.\n\nThe V-JOLT can be made by simply mixing the VP and UMB chemicals in a specific ratio. However, extra care must be taken when handling these UMB chemicals. They have been known to generate toxic gases if mishandled.\n\nThe characteristics of each UMB chemical are as follows:\n\nUMB No. 3   red\nYellow-6   yellow\nUMB No. 7   green\nUMB No. 10   orange\nVP-017   blue\nV-JOLT   dark brown"
-Family Picture and Notes,Family Picture and Notes
+FamilyPictureandNotes,Family Picture and Notes
 FamilyPicture1Tip_title,Family Picture and Notes
 FamilyPicture1Tip,"There's something written on the back\n\n\nNov. 10, 1967\n-Progenitor virus administered\n\nJessica\nAdministered virus: Type-A\nPlasmolyzing of tissue during cell activation.\n\nVirus fusion: Negative\n\nAction: Disposed\n\n\nLisa\n\nAdministered virus: Type-B\nPlasmolyzing of tissue during cell activation.\n\nVirus fusion: Positive but delayed fusion.\n\nBody modification: Observed constant results.\n\nStatus: Continue protective observation.\n\n\nGeorge\nAction: Terminated (Nov. 30, 1967)"
 Lisa'sJournal,Lisa's Journal
