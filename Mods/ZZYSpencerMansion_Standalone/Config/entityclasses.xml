@@ -696,7 +696,7 @@
 
 <entity_class name="YawntheBoar" extends="animalBossGrace">
 	<property name="SizeScale" value="0.9"/>
-
+		<property name="Tags" value="entity,animal,hostile,boar,perkAT03,boss,yawn"/>
 	<property name="AITask-1" value="Territorial"/>
 	<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=4;duration=5"/>
 	<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityPlayer,30,EntityZombie,10"/>
