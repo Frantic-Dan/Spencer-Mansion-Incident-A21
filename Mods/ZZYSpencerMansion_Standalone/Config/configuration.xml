@@ -4,7 +4,7 @@
 
        <ServerGroup Name="Spencer Mansion Incident - Resident Evil" Logo="" Description="">
 
-               <Server Name="Jill Valentines Story v3.15" Logo="">
+               <Server Name="Jill Valentines Story v3.16" Logo="">
 
                        <Description>
 Have you ever wanted to play Resident Evil in first person? Well now you can!
@@ -12,12 +12,11 @@ STORY: Experience the 1998 Spencer Mansion Incident as Jill Valentine. Collect k
 
 Setup:
 1) Requires version *** A21.2 *** vanilla files to work.
-2) I've made setup easy to follow by making the text orange for all settings you'll need to manually change for the intended Resident Evil experience.
-3) It will always be night, so be sure to change the Zombie Night Speed to your liking. (Walk is recommended)
+2) It will always be night, so be sure to change the Zombie Night Speed to your liking. (Walk is recommended)
 
 PLEASE NOTE: 
 1) The Spencer Mansion Incident is a *PERMADEATH* mod, and will test your combat and maneuverability skills.
-2) Multiplayer is supported! However, be mindful of possible softlocks!
+2) Multiplayer is supported! However, be mindful of possible softlocks! (You'll need to delete the ZZZZ-DefaultGamePrefs folder for MP, then make sure all orange game settings are correct)
 3) Twitch Integration is NOT supported!!
 
 KEY FEATURES:
