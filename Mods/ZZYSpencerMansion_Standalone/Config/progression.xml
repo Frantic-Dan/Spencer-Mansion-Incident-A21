@@ -44,8 +44,8 @@
 
 		<effect_group>
 			<passive_effect name="HealthMax" operation="base_add" level="1" value="600"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" level="1" value="6.67" />
-			<passive_effect name="ElementalDamageResist" operation="base_add" level="1" value="6.67" tags="heat,electrical"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" level="1" value="12.5" />
+			<passive_effect name="ElementalDamageResist" operation="base_add" level="1" value="12.5" tags="heat,electrical"/>
 			<!-- <effect_description level="1" desc_key="perkPainToleranceRank1DescRE" long_desc_key="perkPainToleranceRank1LongDescRE"/> -->
 		</effect_group>
 
