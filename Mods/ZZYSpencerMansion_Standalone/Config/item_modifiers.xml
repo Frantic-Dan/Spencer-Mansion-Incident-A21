@@ -152,7 +152,7 @@
 
 		<effect_group tiered="false" name="mod effects">
 			<passive_effect name="EntityDamage" operation="perc_add" value="-.25"/>
-			<passive_effect name="DismemberChance" operation="perc_add" value="3"/>
+			<passive_effect name="DismemberChance" operation="base_add" value=".6"/>
 
 		</effect_group>
 	</item_modifier>
