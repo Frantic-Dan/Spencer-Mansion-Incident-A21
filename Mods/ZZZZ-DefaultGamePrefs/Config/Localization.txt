@@ -1,4 +1,0 @@
-Key,NoTranslate,English
-xuiDifficultyHeader,,[ff4f00]DIFFICULTY[-]
-goDifficultyRENoTooltip,,[ff4f00]Difficulty[-]
-goDifficultyRENoTooltipDesc,,"Sets difficulty. See above text for more detailed information. "
