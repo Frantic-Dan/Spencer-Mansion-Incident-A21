@@ -1,0 +1,6 @@
+C:\7D2D\7 Days To Die - A21.2 b26 Spencer\Mods\ZZZZ-DefaultGamePrefs\obj\Debug\net48\DefaultGamePrefs.csproj.AssemblyReference.cache
+C:\7D2D\7 Days To Die - A21.2 b26 Spencer\Mods\ZZZZ-DefaultGamePrefs\obj\Debug\net48\DefaultGamePrefs.GeneratedMSBuildEditorConfig.editorconfig
+C:\7D2D\7 Days To Die - A21.2 b26 Spencer\Mods\ZZZZ-DefaultGamePrefs\obj\Debug\net48\DefaultGamePrefs.csproj.CoreCompileInputs.cache
+C:\7D2D\7 Days To Die - A21.2 b26 Spencer\Mods\ZZZZ-DefaultGamePrefs\obj\Debug\net48\DefaultGamePrefs.dll
+C:\7D2D\7 Days To Die - A21.2 b26 Spencer\Mods\ZZZZ-DefaultGamePrefs\obj\Debug\net48\DefaultGamePrefs.pdb
+C:\7D2D\7 Days To Die - A21.2 b26 Spencer\Mods\ZZZZ-DefaultGamePrefs\DefaultGamePrefs.dll
