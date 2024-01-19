@@ -45,7 +45,7 @@ loadingTipRE7,"この破壊的な武器は簡単に足を奪うことができ�
 loadingTipRE7_title,ポンプショットガン:
 loadingTipRE8,"次の方達に大きな感謝： Mythix,AuroraGiggleFairy, wOOkie nOOkie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard"
 loadingTipRE8_title,スペシャルサンクス！
-SpencerMansionSpawnText,"あなたはこれからスペンサー邸での出来事を一人称視点で体験する事になります。\n\nバイオハザードの体験を忠実に保つために、次の点に注意してください。\n1) 所持品は10スロットのみになるので、館内のアイテムボックスをご利用ください。\nこれらのボックスは古典的なバイオハザードのようにリンクされていないため、アイテムを保管する場所に注意してください。\n2) ジャンプをする事は出来ません。\n3) ほとんどの敵は痛みを感じないため、いつもの戦い方では難しいかもしれません。\n4) 進行状況を保存するにはインクリボンが必要です!\n\n[FFC800]より楽しいチャレンジになる用、周囲の音量を上げて、常に音楽を再生することをお勧めします。[-]\n\nこのModとは関連性のないモドレットの導入はせず、オレンジ色になっているゲーム設定を修正してください。"
+SpencerMansionSpawnText,"あなたはこれからスペンサー邸での出来事を一人称視点で体験する事になります。\n\nバイオハザードの体験を忠実に保つために、次の点に注意してください。\n1) 所持品は10スロットのみになるので、館内のアイテムボックスをご利用ください。\nこれらのボックスは古典的なバイオハザードのようにリンクされていないため、アイテムを保管する場所に注意してください。\n2) ジャンプをする事は出来ません。\n3) ほとんどの敵は痛みを感じないため、いつもの戦い方では難しいかもしれません。\n4) あなたの人生は一つです！\n\n[FFC800]より楽しいチャレンジになる用、周囲の音量を上げて、常に音楽を再生することをお勧めします。[-]\n\nこのModとは関連性のないモドレットの導入はせず、オレンジ色になっているゲーム設定を修正してください。"
 TwitchAction_SpawnCrawlerCommand,#crawler
 TwitchAction_SpawnToughCommand,#spawn_tough
 TwitchAction_SpawnSnakeCommand,#snake
