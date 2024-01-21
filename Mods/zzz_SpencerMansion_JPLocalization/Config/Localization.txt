@@ -537,7 +537,7 @@ zombieJanitor,HellsJanitorTV
 zombieMoe,TheOrigamiGuru
 zombieLab,アンブレラ社の科学者
 zombieDarlene,Lois Griffin
-zombieYo,NotOnly25
+zombieYo,YubiNashi
 zombieUtilityWorker,作業員
 zombieBiker,Games4Kickz
 zombieLumberjack,JonahBirch
