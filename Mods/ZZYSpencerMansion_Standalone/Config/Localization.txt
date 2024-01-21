@@ -528,7 +528,7 @@ zombieJanitor,HellsJanitorTV
 zombieMoe,TheOrigamiGuru
 zombieLab,Umbrella Scientist
 zombieDarlene,Lois Griffin
-zombieYo,NotOnly25
+zombieYo,YubiNashi
 zombieUtilityWorker,Aquarium Worker
 zombieBiker,Games4Kickz
 zombieLumberjack,JonahBirch
