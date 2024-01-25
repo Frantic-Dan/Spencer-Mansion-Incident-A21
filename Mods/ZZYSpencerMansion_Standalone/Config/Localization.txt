@@ -77,7 +77,7 @@ ReloadingTool,Reloading Tool
 Reloading_Tooldesc,"A useful tool that you can make ammunition with.\n\nAllows you to dismantle Ammo in the field.\n\nMake sure your have enough empty inventory slots when crafting."
 InkRibbon,Ink Ribbon
 InkRibbondesc,"Currently useless, but will be needed to save your progress when manual saving is implemented.\n\nHold onto it for now."
-DeathMaskDesc,This Death Mask is used on the Door of Evil.\n\nUse with the secondary action.
+DeathMaskDesc,This Death Mask is used on the Door of Evil.
 MansionBattery,This will power the door in the courtyard.
 Green_Herb,Green Herb
 GreenHerbDesc,"Heals you slightly.\n\nHeals 160 health over 2 seconds.\nMedical Knowledge: Heals 216 health over 2 seconds."
