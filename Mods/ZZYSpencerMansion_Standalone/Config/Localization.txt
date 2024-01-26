@@ -417,7 +417,7 @@ plantedBlueHerb3HarvestPlayer,Blue Herb
 buffInvincibilityFramesName,Temporary Invincibility
 buffInvincibilityFramesDesc,Invincibility Frames
 buffPerfectHerbMixName,Perfect Herb Mix
-buffPerfectHerbMixDesc,"The herb mixure of Green, Red and Blue herbs have temporarily given you resistance to pain.\n\nDamage mitigation: 20%"
+buffPerfectHerbMixDesc,"The herb mixture of Green, Red and Blue have temporarily given you resistance to pain.\n\nDamage mitigation: 20%"
 buffPoisonedName,Poisoned!
 buffPoisonedDesc,You're poisoned and are slowly taking damage.\n\nUse a Blue Herb to cure your poison.
 buffPoisonedTooltip,You've been poisoned!
