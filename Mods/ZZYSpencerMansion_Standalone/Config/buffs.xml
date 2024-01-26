@@ -293,5 +293,38 @@
 		</effect_group>
 	</buff>
 
+
+<buff name="buffInvincibilityFrames" name_key="buffInvincibilityFramesName" description_key="buffInvincibilityFramesDesc" icon="ui_game_symbol_twitch_tough" icon_color="155,155,255">
+		<stack_type value="ignore"/>
+		<duration value="1.25"/>
+		<display_value value="duration"/>
+
+		<effect_group>
+			<!-- Blinks the display -->
+			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffInvincibilityFrames"/>
+
+		</effect_group>
+
+		<effect_group>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="100"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="buffPerfectHerbMix" name_key="buffPerfectHerbMixName" description_key="buffPerfectHerbMixDesc" icon="ui_game_symbol_twitch_tough" icon_color="155,255,155">
+		<stack_type value="replace"/>
+		<duration value="75"/>
+		<display_value value="duration"/>
+
+		<effect_group>
+			<!-- Blinks the display -->
+			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffPerfectHerbMix"/>
+
+		</effect_group>
+
+		<effect_group>
+			<passive_effect name="GeneralDamageResist" operation="base_add" value="0.2"/>
+		</effect_group>
+	</buff>
+
 </append>
 </configs>
