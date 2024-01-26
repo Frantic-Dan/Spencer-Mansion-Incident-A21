@@ -2483,6 +2483,8 @@
 	<effect_group name="meleeHandZombieREcrawler" tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="120"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+			buff="buffInvincibilityFrames"/>
 	</effect_group>
 </item>
 
@@ -2498,6 +2500,8 @@
 	<effect_group name="meleeHandZombieREmansion" tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="120"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+			buff="buffInvincibilityFrames"/>
 	</effect_group>
 </item>
 
@@ -2508,11 +2512,13 @@
 	<property class="Action0">
 		<property name="DamageEntity" value="160"/>
 		<property name="DamageBlock" value="10"/>
-		<property name="Range" value="1.6"/>
+		<property name="Range" value="1.55"/>
 	</property>
 	<effect_group name="meleeHandZombieREguardhouse" tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="160"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+			buff="buffInvincibilityFrames"/>
 	</effect_group>
 </item>
 
@@ -2528,6 +2534,8 @@
 	<effect_group name="meleeHandZombieREguardcrawler" tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="160"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+			buff="buffInvincibilityFrames"/>
 	</effect_group>
 </item>
 
@@ -2538,11 +2546,13 @@
 	<property class="Action0">
 		<property name="DamageEntity" value="200"/>
 		<property name="DamageBlock" value="10"/>
-		<property name="Range" value="1.6"/>
+		<property name="Range" value="1.55"/>
 	</property>
 	<effect_group name="meleeHandZombieRElaboratory" tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="200"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+			buff="buffInvincibilityFrames"/>
 	</effect_group>
 </item>
 
@@ -2558,6 +2568,8 @@
 	<effect_group name="meleeHandZombieRElabcrawler" tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="200"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+			buff="buffInvincibilityFrames"/>
 	</effect_group>
 </item>
 
@@ -2568,11 +2580,13 @@
 	<property class="Action0">
 		<property name="DamageEntity" value="240"/>
 		<property name="DamageBlock" value="10"/>
-		<property name="Range" value="1.6"/>
+		<property name="Range" value="1.55"/>
 	</property>
 	<effect_group name="meleeHandZombieREhunter" tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="240"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+			buff="buffInvincibilityFrames"/>
 	</effect_group>
 </item>
 
@@ -2589,6 +2603,8 @@
 	<effect_group name="meleeHandAnimalflappyFuck" tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="80"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+			buff="buffInvincibilityFrames"/>
 	</effect_group>
 </item>
 
@@ -2608,7 +2624,8 @@
 		<!-- <passive_effect name="BuffProcChance" operation="base_set" value="1" tags="buffPoisoned"/> -->
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
 			buff="buffPoisoned"/>
-			<!-- weights="1" -->
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+			buff="buffInvincibilityFrames"/>
 	</effect_group>
 </item>
 
@@ -2625,6 +2642,8 @@
 	<effect_group name="meleeHandAnimalCerberus" tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="120"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+			buff="buffInvincibilityFrames"/>
 	</effect_group>
 </item>
 
@@ -2662,6 +2681,8 @@
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
 		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+			buff="buffInvincibilityFrames"/>
 	</effect_group>
 </item>
 
@@ -3559,7 +3580,7 @@
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medRegHealthIncSpeed" operation="set" value="@medicRegHealthIncreaseSpeed"/>
 		<display_value name="foodHealthAmount" value="800"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffPerfectHerbMix"/>
 	
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffPoisoned"/>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="healAbrasionMult" operation="set" value="3"/>
@@ -3572,6 +3593,7 @@
 			<requirement name="ProgressionLevel" progression_name="perkMedicalKnowledge" operation="Equals" value="1"/></triggered_effect>
 
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffProcessConsumables"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="buffPerfectHerbMix"/>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffInjuryAbrasionTreated">
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffPoisoned"/>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="GiveExp" exp="0"/>
