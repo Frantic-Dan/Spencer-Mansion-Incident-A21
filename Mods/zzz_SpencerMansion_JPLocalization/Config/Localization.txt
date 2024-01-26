@@ -93,7 +93,7 @@ Blue_Herb,ブルーハーブ
 BlueHerbDesc,毒の治療に使用します。\n\n1秒間で体力を80回復します。\n医学知識: 1秒間で体力を108回復します。
 Green+BlueHerbDesc,少量の体力回復と解毒治療。\n\n3秒間で体力を240回復します。\n医学知識: 3秒間で体力を324回復します。
 Green2+BlueHerbDesc,程よい量の体力回復と解毒治療。\n\n6秒間で体力を480回復します。\n医学知識: 6秒間で体力を648回復します。
-Green+Red+BlueHerbDesc,多めの量の体力回復と解毒治療。\n\n10秒間で体力を800回復します。\n医学知識: 10秒間で体力を1080回復します。
+Green+Red+BlueHerbDesc,多めの量の体力回復と解毒治療。\n\n10秒間で体力を800回復します。\n医学知識: 10秒間で体力を1080回復します。\n\n防御: この奇跡のハーブ混合物は、75 秒間、ダメージを 20% 軽減します。
 FirstAidSprayDesc,完全に体力を回復します。\n\n20秒間で体力を1600回復します。\n医学知識: 20秒間で体力を2160回復します。
 PowerSource,地下の台所近くにあるエレベーターを動かすために使用します。\n\n手に「鍵用アップグレードツール」を持ち、鞄内にスペンサー邸エレベーター用電源が入っている状態で館のエレベータードアを右クリックし、使用可能にします。
 WolfBook,狼に関する、青色の本。
@@ -424,6 +424,10 @@ plantedRedHerb3Harvest,レッドハーブ
 plantedBlueHerb3Harvest,ブルーハーブ
 plantedRedHerb3HarvestPlayer,レッドハーブ
 plantedBlueHerb3HarvestPlayer,ブルーハーブ
+buffInvincibilityFramesName,一時的な無敵
+buffInvincibilityFramesDesc,無敵フレーム
+buffPerfectHerbMixName,完璧なハーブミックス
+buffPerfectHerbMixDesc,"緑、赤、青のハーブの混合物は、一時的に痛みに対する抵抗力を与えます。\n\nダメージ軽減: 20%"
 buffPoisonedName,毒にかかった！
 buffPoisonedDesc,毒にかかってしまったため、ゆっくりと体力が失われています。\n\nブルーハーブを使って解毒しましょう。
 buffPoisonedTooltip,毒にかかってしまいました！
