@@ -89,7 +89,7 @@ Blue_Herb,Blue Herb
 BlueHerbDesc,"Cures Poison and heals you slightly.\n\nHeals 80 health over 1 second.\nMedical Knowledge: Heals 108 health over 1 second."
 Green+BlueHerbDesc,"Cures Poison and heals you slightly.\n\nHeals 240 health over 3 seconds.\nMedical Knowledge: Heals 324 health over 3 seconds."
 Green2+BlueHerbDesc,"Cures Poison and heals you moderately.\n\nHeals 480 health over 6 seconds.\nMedical Knowledge: Heals 648 health over 6 seconds."
-Green+Red+BlueHerbDesc,"Cures Poison and heals you substantially.\n\nHeals 800 health over 10 seconds.\nMedical Knowledge: Heals 1080 health over 10 seconds."
+Green+Red+BlueHerbDesc,"Cures Poison and heals you substantially.\n\nHeals 800 health over 10 seconds.\nMedical Knowledge: Heals 1080 health over 10 seconds.\n\nProtection: This miraculous herbal mixture reduces damage by 20% for 75 seconds."
 FirstAidSprayDesc,"Greatly heals you.\n\nHeals 1600 health over 20 seconds.\nMedical Knowledge: Heals 2160 health over 20 seconds."
 WolfBook,A blue coloured book about a Wolf.
 WolfMedal,A medal of a Wolf.
@@ -414,6 +414,10 @@ plantedRedHerb3Harvest,Red Herb
 plantedBlueHerb3Harvest,Blue Herb
 plantedRedHerb3HarvestPlayer,Red Herb
 plantedBlueHerb3HarvestPlayer,Blue Herb
+buffInvincibilityFramesName,Temporary Invincibility
+buffInvincibilityFramesDesc,Invincibility Frames
+buffPerfectHerbMixName,Perfect Herb Mix
+buffPerfectHerbMixDesc,"The herb mixure of Green, Red and Blue herbs have temporarily given you resistence to pain.\n\nDamage mitigation: 20%"
 buffPoisonedName,Poisoned!
 buffPoisonedDesc,You're poisoned and are slowly taking damage.\n\nUse a Blue Herb to cure your poison.
 buffPoisonedTooltip,You've been poisoned!
@@ -422,7 +426,7 @@ buffDeadlyPoisonedName,Game Over!
 buffDeadlyPoisonedDesc,Jill Valentine was never heard from again...
 questStartup_offer,Quest
 questStartup_desc,"It's July 1998, you're Jill Valentine, a member of the S.T.A.R.S Alpha Team. Your team was sent in to investigate the disappearance of your fellow Bravo Team after you lost contact with them.\n\nYour team flew over the forest area in the Arklay Mountains and discovered a crashed helicopter.\nThe helicopter belongs to Bravo Team and everyone is dead. Your team is attacked by vicious dogs and are chased through the forest, you see a mansion in the distance and call it out to your team and you all make a break for it!\n\nYou're now trapped inside, it's too dangerous out there!"
-BookOfCurses_offer,The four masks.\n\nA mask that speaks no evil...\nA mask that smells no evil...\nA mask that sees no evil...\nA mask that cannot speak. smell. or see evil...\n\nWhen all four fall into place. evil will awaken.\n\n\nYou see a key embedded on the back. will you remove it?
+BookOfCurses_offer,"The four masks.\n\nA mask that speaks no evil...\nA mask that smells no evil...\nA mask that sees no evil...\nA mask that cannot speak, smell, or see evil...\n\nWhen all four fall into place, evil will awaken.\n\n\nYou see a key embedded on the back, Will you remove it?"
 Quest_SwordKey_tip_title,Cracked Key
 Quest_SwordKey_tip,"As you remove the key, it slips and falls onto the floor. You notice that it has a crack now and looks like it could snap easily."
 DogWhistle_offer,Today. Sir Spencer told me to hide something where no one could find it.\n\nWell. I had this idea. I figured if I could somehow have it protected by a dangerous animal like the vicious canine that lives here. no one would be able to get near it!\n\nAs far as I can tell. the mutt is always hanging around the second floor balcony on the west side of the terrace. and he ought to come running at the sound of a dog whistle.\n\nThis is where you come in. The thing is. I reckon you're the only person that can get near that damn dog without risking a serious mauling.\n\nWhich means only you can put this collar on him. The object that Sir Spencer wants hidden is concealed inside.\n\nYou're the only person I can trust with this. Of course. you'll get something out of it as well. Remember that certain item that you've always wanted to get hold of?\n\nWell. in exchange for your services. I just might be able to get it for you. This could work out well for both of us...\n\nJon Toleman.
