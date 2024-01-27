@@ -91,10 +91,10 @@ Green+BlueHerbDesc,"Cures Poison and heals you slightly.\n\nHeals 240 health ove
 Green2+BlueHerbDesc,"Cures Poison and heals you moderately.\n\nHeals 480 health over 6 seconds.\nMedical Knowledge: Heals 648 health over 6 seconds."
 Green+Red+BlueHerbDesc,"Cures Poison and heals you substantially.\n\nHeals 800 health over 10 seconds.\nMedical Knowledge: Heals 1080 health over 10 seconds.\n\nProtection: This miraculous herbal mixture reduces damage by 20% for 75 seconds."
 FirstAidSprayDesc,"Greatly heals you.\n\nHeals 1600 health over 20 seconds.\nMedical Knowledge: Heals 2160 health over 20 seconds."
-WolfBook,A blue coloured book about a Wolf.
-WolfMedal,A medal of a Wolf.
-EagleBook,A red coloured book about an Eagle.
-EagleMedal,A medal of an Eagle.
+WolfBookdesc,A blue coloured book about a Wolf.
+WolfMedaldesc,A medal of a Wolf.
+EagleBookdesc,A red coloured book about an Eagle.
+EagleMedaldesc,A medal of an Eagle.
 BookofCurses,Book of Curses
 BookOfCursesdesc,A creepy looking book you found on the ground on the 3rd floor.
 DogWhistle,Dog Whistle
