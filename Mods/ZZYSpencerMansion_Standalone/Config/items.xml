@@ -3981,7 +3981,7 @@
 	<property name="CustomIcon" value="last-book-vol-2"/>
 	<property name="Candrop" value="false"/>
 	<property name="Stacknumber" value="1"/>
-	<property name="DescriptionKey" value="WolfBook"/>
+	<property name="DescriptionKey" value="WolfBookdesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 		<property name="Create_item" value="WolfMedal"/>
@@ -3995,7 +3995,7 @@
 	<property name="CustomIcon" value="last-book-vol-1"/>
 	<property name="Candrop" value="false"/>
 	<property name="Stacknumber" value="1"/>
-	<property name="DescriptionKey" value="EagleBook"/>
+	<property name="DescriptionKey" value="EagleBookdesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 		<property name="Create_item" value="EagleMedal"/>
