@@ -533,7 +533,7 @@ zombieMoe,TheOrigamiGuru
 zombieLab,Umbrella Scientist
 zombieDarlene,Lois Griffin
 zombieYo,YubiNashi
-zombieUtilityWorker,Aquarium Worker
+zombieUtilityWorker,"Guns, Nerds, and Steel"
 zombieBiker,Games4Kickz
 zombieLumberjack,JonahBirch
 zombieFemaleFat,Rambunctious Red
