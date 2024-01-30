@@ -1105,7 +1105,7 @@
 	<!-- <property name="LootList" value="doorNest"/> -->
 	<property name="Collide" value="melee"/>
 	<drop event="Destroy" name="MagnumRevolver" count="1"/>
-	<drop event="Destroy" name="ammo44MagnumBulletBallRE" count="6"/>
+	<drop event="Destroy" name="ammo44MagnumBulletBallRE" count="6" tag="REMansionHarvest"/>
 	<property name="FilterTags" value="floot"/>
 </block>
 
@@ -3120,7 +3120,7 @@
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="melee"/>
 	<drop event="Destroy" name="AK-47" count="1"/>
-	<drop event="Destroy" name="ammo762mmBulletBallRE" count="30"/>
+	<drop event="Destroy" name="ammo762mmBulletBallRE" count="30" tag="REMansionHarvest"/>
 	<property name="FilterTags" value="floot"/>
 </block>
 
@@ -3157,7 +3157,7 @@
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<drop event="Destroy" name="ammo9mmBulletBallRE" count="15"/>
+	<drop event="Destroy" name="ammo9mmBulletBallRE" count="15" tag="REMansionHarvest"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="FilterTags" value="floot,ftrash"/>
 	<property name="DescriptionKey" value="cntLootPileGroupDesc"/>
@@ -3176,7 +3176,7 @@
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<drop event="Destroy" name="ammoShotgunShellRE" count="6"/>
+	<drop event="Destroy" name="ammoShotgunShellRE" count="6" tag="REMansionHarvest"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="FilterTags" value="floot,ftrash"/>
 	<property name="DescriptionKey" value="cntLootPileGroupDesc"/>
@@ -3195,7 +3195,7 @@
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<drop event="Destroy" name="ammo44MagnumBulletBallRE" count="6"/>
+	<drop event="Destroy" name="ammo44MagnumBulletBallRE" count="6" tag="REMansionHarvest"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="FilterTags" value="floot,ftrash"/>
 	<property name="DescriptionKey" value="cntLootPileGroupDesc"/>
@@ -3233,7 +3233,7 @@
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<drop event="Destroy" name="ammo762mmBulletBallRE" count="30"/>
+	<drop event="Destroy" name="ammo762mmBulletBallRE" count="30" tag="REMansionHarvest"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="FilterTags" value="floot,ftrash"/>
 	<property name="DescriptionKey" value="cntLootPileGroupDesc"/>
