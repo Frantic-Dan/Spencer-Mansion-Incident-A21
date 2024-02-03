@@ -397,7 +397,7 @@ ammoShotgunShellRE,12 Gauge Shotgun Shell
 ammoShotgunSlugRE,Shotgun Slug
 ammoRocketHERE,Anti-Tyrant Fragmentation Rocket
 ammoRocketFragRE,Fragmentation Rocket
-thrownGrenadeRE,Sticky Grenage
+thrownGrenadeRE,Sticky Grenade
 GrenadeDesc,This grenade will stick to anything when thrown.
 Kerosene,Kerosene
 Kerosenedesc,"A flammable liquid, with enough I'll be able to make a molotov. I'll need something to light it with."
