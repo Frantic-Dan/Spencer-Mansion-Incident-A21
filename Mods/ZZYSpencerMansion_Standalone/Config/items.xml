@@ -1966,6 +1966,8 @@
 	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Grenade/GrenadePrefab.prefab"/>
 	<property name="DisplayType" value="ammoGrenade"/>
 	<property name="DescriptionKey" value="GrenadeDesc"/>
+	<property name="CustomIconTint" value="200,0,255"/>
+    <property name="TintColor" value="200,0,255"/>
 	<property name="FuseTime" value="3"/>
 	<property name="StickPercent" value="1"/>
 	<property name="Stacknumber" value="3"/>
