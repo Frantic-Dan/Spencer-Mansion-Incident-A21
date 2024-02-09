@@ -1,0 +1,7 @@
+<xml>
+
+	<append xpath="//environment">
+		<property name="SaveItemName" value="InkRERibbon"/>
+	</append>
+
+</xml>
