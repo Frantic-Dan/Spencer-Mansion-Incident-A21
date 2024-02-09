@@ -46,7 +46,8 @@
 	<set xpath="/windows/window[@name='windowLocation']/@pos">-259, 1060</set>
 	<set xpath="/windows/window[@name='itemInfoPanel']/panel[@name='header']//label[2]/@pos">575,1008</set>
 	<set xpath="/windows/window[@name='itemInfoPanel']/panel[@name='header']//sprite[2]/@pos">577,1010</set>
-
+	<set xpath="/windows/window[@name='ingameMenu']/grid[@name='buttons']//simplebutton[1]/@height">-12</set>
+	<set xpath="/windows/window[@name='ingameMenu']/grid[@name='buttons']//simplebutton[1]/@font_size">0</set>
 	
 	<!-- Toolbelt -->
 	<remove xpath="/windows/window[@name='windowToolbelt']/rect//sprite[@name='backgroundMain']"/>
