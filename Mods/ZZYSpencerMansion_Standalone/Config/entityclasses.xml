@@ -59,8 +59,12 @@
 		<property name="EntityType" value="Zombie"/>
 		<property name="SizeScale" value=".95"/>
 </insertafter>
+
+<insertafter xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='Class']">
+		<property name="EntityType" value="Zombie"/>
+</insertafter>
 	
-<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']//property[@name='TimeStayAfterDeath']/@value">3600</set>
+<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']//property[@name='TimeStayAfterDeath']/@value">2400</set>
 <set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']//property[@name='DeadBodyHitPoints']/@value">10000</set>
 <insertafter xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='DeadBodyHitPoints']">
 		<property name="OpenDoorPercentage" value="0.1"/>
@@ -69,15 +73,19 @@
 <!-- Pain Resist -->
 <insertafter xpath="/entity_classes/entity_class[@name='zombieJoe']/property[@name='MoveSpeedAggro']">
 		<property name="PainResistPerHit" value="1.01"/>
+		<property name="TimeStayAfterDeath" value="2100"/>
 </insertafter>
 <insertafter xpath="/entity_classes/entity_class[@name='zombieYo']/property[@name='HasDeathAnim']">
 		<property name="PainResistPerHit" value="1.01"/>
+		<property name="TimeStayAfterDeath" value="2100"/>
 </insertafter>
 <insertafter xpath="/entity_classes/entity_class[@name='zombieMarlene']/property[@name='MoveSpeedAggro']">
 		<property name="PainResistPerHit" value="1.01"/>
+		<property name="TimeStayAfterDeath" value="2100"/>
 </insertafter>
 <insertafter xpath="/entity_classes/entity_class[@name='zombieJanitor']/property[@name='HasDeathAnim']">
 		<property name="PainResistPerHit" value="1.01"/>
+		<property name="TimeStayAfterDeath" value="2100"/>
 </insertafter>
 
 <!-- Health -->
@@ -110,45 +118,45 @@
 		<property name="HandItem" value="meleeHandZombieREguardhouse"/>
 		<property name="HandItemCrawler" value="meleeHandZombieREguardcrawler"/>
 		<property name="PainResistPerHit" value="3"/>
-		<property name="TimeStayAfterDeath" value="3000"/>
+		<property name="TimeStayAfterDeath" value="1800"/>
 		<property name="OpenDoorPercentage" value="0.15"/>
 </insertafter>
 <set xpath="/entity_classes/entity_class[@name='zombieBiker']//property[@name='HandItem']/@value">meleeHandZombieREguardhouse</set>
 <insertafter xpath="/entity_classes/entity_class[@name='zombieBiker']/property[@name='HandItem']">
 		<property name="HandItemCrawler" value="meleeHandZombieREguardcrawler"/>
-		<property name="TimeStayAfterDeath" value="3000"/>
+		<property name="TimeStayAfterDeath" value="1440"/>
 		<property name="OpenDoorPercentage" value="0.15"/>
 </insertafter>
 <set xpath="/entity_classes/entity_class[@name='zombieLumberjack']//property[@name='HandItem']/@value">meleeHandZombieREguardhouse</set>
 <insertafter xpath="/entity_classes/entity_class[@name='zombieLumberjack']/property[@name='HandItem']">
 		<property name="HandItemCrawler" value="meleeHandZombieREguardcrawler"/>
-		<property name="TimeStayAfterDeath" value="3000"/>
+		<property name="TimeStayAfterDeath" value="1560"/>
 		<property name="OpenDoorPercentage" value="0.15"/>
 </insertafter>
 <set xpath="/entity_classes/entity_class[@name='zombieFemaleFat']//property[@name='HandItem']/@value">meleeHandZombieREguardhouse</set>
 <insertafter xpath="/entity_classes/entity_class[@name='zombieFemaleFat']/property[@name='HandItem']">
 		<property name="HandItemCrawler" value="meleeHandZombieREguardcrawler"/>
 		<property name="PainResistPerHit" value="3"/>
-		<property name="TimeStayAfterDeath" value="3000"/>
+		<property name="TimeStayAfterDeath" value="1740"/>
 		<property name="OpenDoorPercentage" value="0.15"/>
 </insertafter>
 <set xpath="/entity_classes/entity_class[@name='zombieFatHawaiian']//property[@name='HandItem']/@value">meleeHandZombieREguardhouse</set>
 <insertafter xpath="/entity_classes/entity_class[@name='zombieFatHawaiian']/property[@name='HandItem']">
 		<property name="HandItemCrawler" value="meleeHandZombieREguardcrawler"/>
 		<property name="PainResistPerHit" value="3"/>
-		<property name="TimeStayAfterDeath" value="3000"/>
+		<property name="TimeStayAfterDeath" value="1680"/>
 		<property name="OpenDoorPercentage" value="0.15"/>
 </insertafter>
 <set xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']//property[@name='HandItem']/@value">meleeHandZombieREguardhouse</set>
 <insertafter xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']/property[@name='HandItem']">
 		<property name="HandItemCrawler" value="meleeHandZombieREguardcrawler"/>
-		<property name="TimeStayAfterDeath" value="3000"/>
+		<property name="TimeStayAfterDeath" value="1620"/>
 		<property name="OpenDoorPercentage" value="0.15"/>
 </insertafter>
 <insertafter xpath="/entity_classes/entity_class[@name='zombieSkateboarder']/property[@name='SoundSense']">
 		<property name="HandItem" value="meleeHandZombieREguardhouse"/>
 		<property name="HandItemCrawler" value="meleeHandZombieREguardcrawler"/>
-		<property name="TimeStayAfterDeath" value="3000"/>
+		<property name="TimeStayAfterDeath" value="1500"/>
 		<property name="OpenDoorPercentage" value="0.15"/>
 </insertafter>
 
@@ -172,25 +180,25 @@
 <insertafter xpath="/entity_classes/entity_class[@name='zombieLab']/property[@name='DanceType']">
 		<property name="HandItem" value="meleeHandZombieRElaboratory"/>
 		<property name="HandItemCrawler" value="meleeHandZombieRElabcrawler"/>
-		<property name="TimeStayAfterDeath" value="2400"/>
+		<property name="TimeStayAfterDeath" value="1380"/>
 		<property name="OpenDoorPercentage" value="0.2"/>
 </insertafter>
 <insertafter xpath="/entity_classes/entity_class[@name='zombieNurse']/property[@name='DanceType']">
 		<property name="HandItem" value="meleeHandZombieRElaboratory"/>
 		<property name="HandItemCrawler" value="meleeHandZombieRElabcrawler"/>
-		<property name="TimeStayAfterDeath" value="2400"/>
+		<property name="TimeStayAfterDeath" value="1320"/>
 		<property name="OpenDoorPercentage" value="0.2"/>
 </insertafter>
 <set xpath="/entity_classes/entity_class[@name='zombieMaleHazmat']//property[@name='HandItem']/@value">meleeHandZombieRElaboratory</set>
 <insertafter xpath="/entity_classes/entity_class[@name='zombieMaleHazmat']/property[@name='HandItem']">
 		<property name="HandItemCrawler" value="meleeHandZombieRElabcrawler"/>
-		<property name="TimeStayAfterDeath" value="2400"/>
+		<property name="TimeStayAfterDeath" value="1260"/>
 		<property name="OpenDoorPercentage" value="0.2"/>
 </insertafter>
 <set xpath="/entity_classes/entity_class[@name='zombieSoldier']//property[@name='HandItem']/@value">meleeHandZombieRElaboratory</set>
 <insertafter xpath="/entity_classes/entity_class[@name='zombieSoldier']/property[@name='HandItem']">
 		<property name="HandItemCrawler" value="meleeHandZombieRElabcrawler"/>
-		<property name="TimeStayAfterDeath" value="2400"/>
+		<property name="TimeStayAfterDeath" value="1200"/>
 		<property name="OpenDoorPercentage" value="0.2"/>
 </insertafter>
 <set xpath="/entity_classes/entity_class[@name='zombieMutated']//property[@name='HandItem']/@value">meleeHandFailedSubject</set>
@@ -234,6 +242,11 @@
 		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="REMansionHarvest"/>
 </insertafter>
 
+<!-- <insertafter xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[20][@name='JumpStrength']">
+		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="upperbody"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="arm,leg"/>
+</insertafter> -->
+
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[1]/@value">1800</set>
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[4]/@value">0</set>
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">1.5</set>
@@ -256,6 +269,7 @@
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//passive_effect[@name='CarryCapacity']/@value">0</set>
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//passive_effect[@name='BagSize']/@value">0</set>
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//triggered_effect[4]/@buff">buffStatusCheck01,buffStatusCheck02,buffHealthStatusCheck,twitch_buffNoTimeRE,twitch_buffCritImmuneRE</set>
+
 
 
 <!-- Crimson Triggers -->
@@ -582,8 +596,8 @@
 	<property name="TimeStayAfterDeath" value="30"/>
 	<property name="OpenDoorPercentage" value="0.65"/>
 	<property name="LootDropProb" value="0"/> <!-- Feral -->
-	<property name="KnockdownProneDamageThreshold" value=".5"/>
-	<property name="KnockdownKneelDamageThreshold" value=".5"/>
+	<property name="KnockdownProneDamageThreshold" value=".6"/>
+	<property name="KnockdownKneelDamageThreshold" value=".6"/>
 	<property name="AITask" value="
 	BreakBlock|
 	Territorial|
