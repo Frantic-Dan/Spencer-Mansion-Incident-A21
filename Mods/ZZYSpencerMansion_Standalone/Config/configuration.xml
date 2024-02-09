@@ -4,7 +4,7 @@
 
        <ServerGroup Name="Spencer Mansion Incident - Resident Evil" Logo="" Description="">
 
-               <Server Name="Spencer Mansion Incident - Jill Valentines Story v3.18" Logo="">
+               <Server Name="Spencer Mansion Incident - Jill Valentines Story v4.0" Logo="">
 
                        <Description>
 Have you ever wanted to play Resident Evil in first person? Well now you can!
@@ -15,15 +15,18 @@ Setup:
 2) It will always be night, so be sure to change the Zombie Night Speed to your liking. (Walk is recommended)
 
 PLEASE NOTE: 
-1) The Spencer Mansion Incident is a *PERMADEATH* mod, and will test your combat and maneuverability skills.
-2) Multiplayer is supported! However, be mindful of possible softlocks! (The ZZZZ-DefaultGamePrefs mod folder must be deleted for MP to work, just be sure to follow all orange game settings texts when setting up a world)
-3) Twitch Integration is NOT supported!!
+1) The Spencer Mansion Incident is a unique and challenging mod, and will test your combat and maneuverability skills.
+2) Are your observation skills good enough to make it out alive?
+3) Two-player is NOT supported anymore! (Custom code isn't compatible and bugs out, I'm sorry!)
+4) Twitch Integration is NOT supported!!
 
 KEY FEATURES:
 1) Limited Inventory: You'll be restricted to the 10 slot toolbelt.
 2) Doors are indestructible, however, zombies can open unlocked doors.
 3) You cannot jump.
-4) Crimson heads
+4) Crimson heads!
+5) Manual Saving!
+6) If you die, simply exit your game and reload your save.
 
 FOR EXTRA IMMERSION:
 1) Increase the volume of ambient sounds.
