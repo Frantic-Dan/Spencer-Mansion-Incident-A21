@@ -773,6 +773,7 @@
 	<property name="CustomIcon" value="ammo9mmBulletBall"/>
 	<property name="Stacknumber" value="30"/> <!-- STK ammobundle high -->
 	<property name="EconomicValue" value="0"/>
+	<property name="Group" value="Building"/>
 	<property class="Action0">
 		<property name="Create_item" value="resourceBulletCasing,resourceGunPowder,resourceBulletTip"/>
 		<property name="Create_item_count" value="1,30,1"/>
@@ -810,6 +811,7 @@
 	<property name="CustomIcon" value="ammo44MagnumBulletBall"/>
 	<property name="Stacknumber" value="30"/> <!-- STK ammobundle high -->
 	<property name="EconomicValue" value="0"/>
+	<property name="Group" value="Building"/>
 	<property class="Action0">
 		<property name="Create_item" value="resourceBulletCasing,resourceGunPowder,resourceBulletTip"/>
 		<property name="Create_item_count" value="4,120,4"/>
@@ -847,6 +849,7 @@
 	<property name="CustomIcon" value="ammo762mmBulletBall"/>
 	<property name="Stacknumber" value="30"/> <!-- STK ammobundle high -->
 	<property name="EconomicValue" value="0"/>
+	<property name="Group" value="Building"/>
 	<property class="Action0">
 		<property name="Create_item" value="resourceBulletCasing,resourceGunPowder,resourceBulletTip"/>
 		<property name="Create_item_count" value="1,21,1"/>
@@ -884,6 +887,7 @@
 	<property name="CustomIcon" value="ammoShotgunShell"/>
 	<property name="Stacknumber" value="30"/> <!-- STK ammobundle high -->
 	<property name="EconomicValue" value="0"/>
+	<property name="Group" value="Building"/>
 	<property class="Action0">
 		<property name="Create_item" value="resourceBuckshot,resourceGunPowder,resourcePaper"/>
 		<property name="Create_item_count" value="1,90,1"/>
@@ -1000,7 +1004,6 @@
 	<property name="CustomIcon" value="meleeWpnBladeT1HuntingKnife"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="Weight" value="0"/>
-	<!-- <property name="Stacknumber" value="1"/> -->
 	<property name="TintColor" value="0,0,0"/>
 	<property name="RepairTools" value="resourceRepairKit"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -1015,7 +1018,7 @@
 	<property name="SoundUnholster" value="weapon_unholster"/>
 	<property name="SoundHolster" value="weapon_holster"/>
 	<property name="PickupJournalEntry" value="MeleeCombatTip"/>
-
+	
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Damage_type" value="Slashing"/>
@@ -1068,7 +1071,14 @@
 		<passive_effect name="DamageModifier" operation="perc_add" value="-1" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-1" tags="metal"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value=".6" tags="organic"/>
-		
+	</effect_group>
+	<effect_group>
+			<requirement name="EntityHasMovementTag" tags="running"/>
+			<passive_effect name="DismemberChance" operation="base_add" value=".1"/>
+	</effect_group>
+	<effect_group>
+			<requirement name="StatComparePercCurrentToMax" target="self" stat="stamina" operation="GTE" value=".49"/>
+			<passive_effect name="DismemberChance" operation="base_add" value=".1"/>
 	</effect_group>
 	<effect_group name="Power Attack" >
 		<passive_effect name="EntityDamage" operation="base_add" value="10" tags="secondary"/>
@@ -1096,7 +1106,6 @@
 	<property name="Material" value="Mmetal"/>
 	<property name="TintColor" value="66, 33, 0"/>
 	<property name="Weight" value="0"/>
-	<!-- <property name="Stacknumber" value="1"/> -->
 	<property name="RepairTools" value="resourceRepairKit"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="weapon_jam"/>
@@ -1117,7 +1126,8 @@
     <property name="ShowQuality" value="false"/>
     <property name="SoundUnholster" value="weapon_unholster"/>
 	<property name="SoundHolster" value="weapon_holster"/>
-
+	<property name="PickupJournalEntry" value="AchievementsTip"/>
+	
 	<property class="Action0">
 		<property name="Class" value="Ranged"/>
 		<property name="Magazine_items" value="ammo9mmBulletBallRE,ammo9mmBulletHPRE"/>	
@@ -1184,7 +1194,6 @@
 	<property name="Material" value="Mmetal"/>
 	<property name="TintColor" value="80, 80, 80"/>
 	<property name="Weight" value="0"/>
-	<!-- <property name="Stacknumber" value="1"/> -->
 	<property name="RepairTools" value="resourceRepairKit"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="weapon_jam"/>
@@ -1260,10 +1269,7 @@
 
 		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="3.2" tags="perkGunslinger"/>
 		<passive_effect name="WeaponHandling" operation="base_set" value=".6" tags="perkGunslinger"/>
-
-		<!-- <passive_effect name="DegradationMax" operation="base_set" value="400,500" tier="1,6" tags="perkGunslinger"/> -->
-		<!-- <passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkGunslinger"/> -->
-		<!-- <triggered_effect trigger="onSelfEquipStart" action="CVarLogValue" cvar="onSelfEquipStartMagnum"/> -->
+		<passive_effect name="DismemberChance" operation="base_add" value=".2"/>
 	</effect_group>
 </item>
 
@@ -1279,7 +1285,6 @@
 	<property name="Material" value="Mmetal"/>
 	<property name="TintColor" value="80, 80, 80"/>
 	<property name="Weight" value="0"/>
-	<!-- <property name="Stacknumber" value="1"/> -->
 	<property name="RepairTools" value="resourceRepairKit"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="weapon_jam"/>
@@ -1341,9 +1346,7 @@
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".5" tags="perkBoomstick"/> <!-- 2.3s -->
 		<passive_effect name="ModSlots" operation="base_set" value="2" />
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".25" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="DismemberChance" operation="base_add" value="1">
-			<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
-		</passive_effect>
+		
 		<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="4.2" tags="perkBoomstick"/>
 		<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="4.2" tags="perkBoomstick"/>
 		<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-2.5" tags="perkBoomstick"/>
@@ -1353,6 +1356,10 @@
 		<passive_effect name="WeaponHandling" operation="base_set" value="1.7" tags="perkBoomstick"/>
 
 		<display_value name="dStatStunEffect" value="4"/>
+	</effect_group>
+	<effect_group>
+			<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg" />
+			<passive_effect name="DismemberChance" operation="base_add" value="1"/>
 	</effect_group>
 </item>
 
@@ -1368,7 +1375,6 @@
 	<property name="Material" value="Mmetal"/>
 	<property name="TintColor" value="151, 81, 63"/>
 	<property name="Weight" value="0"/>
-	<!-- <property name="Stacknumber" value="1"/> -->
 	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
 	<property name="RepairTools" value="resourceRepairKit"/>
@@ -1452,7 +1458,6 @@
 	<property name="Material" value="MRocketLauncherParts"/>
 	<property name="TintColor" value="77, 77, 51"/>
 	<property name="Weight" value="0"/>
-	<!-- <property name="Stacknumber" value="1"/> -->
 	<property name="RepairTools" value="resourceRepairKit"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="weapon_jam"/>
@@ -1515,6 +1520,8 @@
 		<passive_effect name="WeaponHandling" operation="base_set" value=".4" tags="perkDemolitionsExpert"/>
 
 		<passive_effect name="DegradationMax" operation="base_set" value="0"/>
+
+		<passive_effect name="DismemberChance" operation="base_add" value="10000"/>
 	</effect_group>
 </item>
 
@@ -1582,7 +1589,6 @@
 	<property name="Material" value="MRocketLauncherParts"/>
 	<property name="TintColor" value="77, 77, 51"/>
 	<property name="Weight" value="0"/>
-	<!-- <property name="Stacknumber" value="1"/> -->
 	<property name="RepairTools" value="resourceRepairKit"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="weapon_jam"/>
@@ -1663,7 +1669,7 @@
 	<property name="MeltTimePerUnit" value=".4"/>
 	<property name="Stacknumber" value="75"/>
 	<property name="EconomicValue" value="0"/>
-	<property name="Group" value="Ammo/Weapons"/>
+	<property name="Group" value="Building"/>
 	<property class="Action0">
 		<property name="Class" value="OpenBundle"/>
 		<property name="Delay" value="0"/>
@@ -1769,7 +1775,7 @@
 <item name="ammo762mmBulletBallRE">
 	<property name="CreativeMode" value="None"/>
 	<property name="Extends" value="ammo9mmBulletBallRE"/>
-	<property name="Stacknumber" value="60"/>
+	<property name="Stacknumber" value="90"/>
 	<property name="CustomIcon" value="ammo762mmBulletBall"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
@@ -1827,7 +1833,7 @@
 	<property name="Weight" value="0"/>
 	<property name="Stacknumber" value="30"/>
 	<property name="EconomicValue" value="0"/>
-	<property name="Group" value="Ammo/Weapons"/>
+	<property name="Group" value="Building"/>
 	<property class="Action0">
 		<property name="Class" value="OpenBundle"/>
 		<property name="Delay" value="0"/>
@@ -1869,7 +1875,7 @@
 	<property name="Weight" value="0"/>
 	<property name="Stacknumber" value="30"/>
 	<property name="EconomicValue" value="0"/>
-	<property name="Group" value="Ammo/Weapons"/>
+	<property name="Group" value="Building"/>
 	<property name="UnlockedBy" value="perkShotgunMessiahSlugs"/>
 	<property class="Action0">
 		<property name="Class" value="OpenBundle"/>
@@ -1894,7 +1900,7 @@
 		<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" tags="perkBoomstick"/>
 		<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" tags="perkBoomstick"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-1" tags="earth"/>
-		<passive_effect name="DismemberChance" operation="base_add" value=".1">
+		<passive_effect name="DismemberChance" operation="base_add" value=".2">
 			<requirement name="HitLocation" body_parts="Head"/>
 		</passive_effect>
 		<passive_effect name="EntityPenetrationCount" operation="base_set" value="2" tags="perkBoomstick"/><display_value name="dTargetPenetration" value="2"/>
@@ -1920,7 +1926,7 @@
 		<property name="Class" value="Projectile"/>
 		<property name="Explosion.ParticleIndex" value="5"/> <!-- which Prefab/particle is used -->
 		<property name="Explosion.RadiusBlocks" value="1"/> <!-- damage radius for blocks -->
-		<property name="Explosion.RadiusEntities" value="4"/> <!-- damage radius for entities -->
+		<property name="Explosion.RadiusEntities" value="5"/> <!-- damage radius for entities -->
 		<property name="Explosion.DamageBonus.water" value="0"/>
 		<property name="Gravity" value="-6"/>
 		<property name="FlyTime" value=".2"/>
@@ -1931,7 +1937,7 @@
 		<passive_effect name="BlockDamage" operation="base_set" value="1" tags="perkDemolitionsExpert"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="1500" tags="perkDemolitionsExpert"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="50" tags="perkDemolitionsExpert"/>
-		<display_value name="dExRadius" value="4"/>
+		<display_value name="dExRadius" value="5"/>
 	</effect_group>
 </item>
 
@@ -1943,7 +1949,7 @@
 	
 	<property class="Action1">
 		<property name="Explosion.RadiusBlocks" value="3"/> <!-- damage radius for blocks -->
-		<property name="Explosion.RadiusEntities" value="4"/> <!-- damage radius for entities -->
+		<property name="Explosion.RadiusEntities" value="7"/> <!-- damage radius for entities -->
 		<property name="Explosion.DamageBonus.stone" value="0"/>
 		<property name="Explosion.DamageBonus.metal" value="0"/>
 		<property name="Explosion.DamageBonus.earth" value="0"/>
@@ -1955,7 +1961,7 @@
 		<passive_effect name="BlockDamage" operation="base_set" value="1" tags="perkDemolitionsExpert"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="625" tags="perkDemolitionsExpert"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="50" tags="perkDemolitionsExpert"/>
-		<display_value name="dExRadius" value="4"/>
+		<display_value name="dExRadius" value="7"/>
 	</effect_group>
 </item>
 
@@ -1973,7 +1979,8 @@
 	<property name="Stacknumber" value="3"/>
 	<effect_group tiered="false">
 		<passive_effect name="BlockDamage" operation="base_set" value="1" tags="perkDemolitionsExpert"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="425" tags="perkDemolitionsExpert"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="510" tags="perkDemolitionsExpert"/>
+		<passive_effect name="DismemberChance" operation="base_add" value="2"/>
 		<display_value name="dExRadius" value="5"/>
 		<display_value name="dFuseTime" value="3"/>
 	</effect_group>
@@ -2053,7 +2060,7 @@
 			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="NotEquals" value="0"/></triggered_effect>
 		<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="positionAOE" range="2.7" buff="buffBurningMolotov"/>
 
-		<display_value name="dExDamageFire" value="375"/>
+		<display_value name="dExDamageFire" value="450"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="1" tags="perkDemolitionsExpert"/>
 		<display_value name="dExRadius" value="3"/>
@@ -2991,7 +2998,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="360"/>
-		<property name="DamageBlock" value="10"/>
+		<property name="DamageBlock" value="200"/>
 		<property name="Range" value="1.6"/>
 	</property>
 	<effect_group name="meleeHandTyrant" tiered="false">
@@ -4030,7 +4037,7 @@
 <item name="LaboratoryKey">
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="45"/>
-	<property name="Tags" value="junk"/>
+	<property name="Tags" value="junk,LaboratoryKey"/>
 	<property name="DescriptionKey" value="REkeys"/>
 	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
