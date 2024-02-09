@@ -104,7 +104,7 @@
 
 		<effect_group>
 
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value=".4"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value=".6"/>
 
 
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="buff_bleeding" play_in_head="true"/>
@@ -182,19 +182,19 @@
 
 		<effect_group>
 			<requirement name="!EntityTagCompare" tags="player"/>
-				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="25,25,25,25">
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="30,30,30,30">
 					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
-				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="25,25,25,25">
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="30,30,30,30">
 					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
 
-				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="25,25,25,25">
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="30,30,30,30">
 					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
 
-				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="25,25,25,25">
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="30,30,30,30">
 					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
-				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="25,25,25,25">
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="30,30,30,30">
 					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
-				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="25,25,25,25">
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="30,30,30,30">
 					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect>
 		</effect_group>
 	</buff>
@@ -300,13 +300,17 @@
 		<display_value value="duration"/>
 
 		<effect_group>
-			<!-- Blinks the display -->
+			
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffInvincibilityFrames"/>
 
 		</effect_group>
+		
 
-		<effect_group>
+		<!-- <effect_group>
 			<passive_effect name="PhysicalDamageResist" operation="base_add" value="100"/>
+		</effect_group> -->
+		<effect_group>
+			<passive_effect name="GeneralDamageResist" operation="base_add" value="1"/>
 		</effect_group>
 	</buff>
 	
