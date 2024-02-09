@@ -1,0 +1,10 @@
+<xml>
+
+	<insertbefore xpath="//window[@name='ingameMenu']/grid[@name='buttons']//simplebutton[@name='btnInvite']">
+		<rect> <!-- width="250" height="46" -->
+			<simplebutton name="btnSaveManual" depth="3" width="250" height="46" caption_key="xuiSaveManual" font_size="40" enabled="{ManualSaveEnabled}"/>
+			<sprite name="spriteSaveStatus" depth="3" pivot="topright" pos="243,-7" width="32" height="32" sprite="ui_game_symbol_check" color="128,255,128,0"/>
+		</rect>
+	</insertbefore>
+
+</xml>
