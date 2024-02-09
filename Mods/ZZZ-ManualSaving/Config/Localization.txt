@@ -1,0 +1,10 @@
+Key,English,Japanese
+xuiSaveManual,[4FC3F7]Save Game[-],[4FC3F7]ゲームを保存する[-]
+xuiSavingInProgress,"[ffff40]Saving in progress...[-]","[ffff40]保存中です...[-]"
+xuiGameSaved,"[40ff40]Game saved.[-]","[40ff40]ゲームが保存されました。[-]"
+potatoOfManualSaving,"[ff00ff]Almighty Potato Of Manual Saving (Test Item)[-]"
+cntCashRegisterInkRibbon,Typewriter,タイプライター
+cntCashRegisterInkRibbon2,Will be restocked in a few minutes!,数分後に再入荷します！
+cntCashRegisterInfiniteInkRibbon,Infinite Typewriter,無限タイプライター
+InkRERibbon,Ink Ribbon,インクリボン
+InkRibbonREdesc,"An important item used to save your progress.\n\nBe sure to save your game before ending your play session.","進行状況を保存するための重要なアイテム。\n\nプレイセッションを終了する前に、必ずゲームを保存してください。"
