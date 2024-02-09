@@ -7,9 +7,9 @@
 	<set xpath="/windows/window[@name='mainMenu']">
 	
 		
-			<mainmenubutton name="btnNewGame" anchor="LeftBottom" pivot="center" pos="-800,-330" width="160" height="50" caption_key="xuiNewGame" />
-			<mainmenubutton name="btnContinueGame" anchor="LeftBottom" pivot="center" pos="-800,-390" width="220" height="50" caption_key="xuiContinueGame" />
-			<mainmenubutton name="btnConnectToServer" anchor="LeftBottom" pivot="center" pos="-800,-450" width="190" height="50" caption_key="xuiConnectToServer" />
+			<mainmenubutton name="btnNewGame" anchor="LeftBottom" pivot="center" pos="-800,-390" width="160" height="50" caption_key="xuiNewGame" />
+			<mainmenubutton name="btnContinueGame" anchor="LeftBottom" pivot="center" pos="-800,-450" width="220" height="50" caption_key="xuiContinueGame" />
+			<mainmenubutton name="btnConnectToServer" anchor="LeftBottom" pivot="center" pos="-800,-1450" width="190" height="50" caption_key="xuiConnectToServer" />
 			<mainmenubutton name="btnEditingTools" anchor="LeftTop" pivot="center" pos="-800,1800" width="200" height="50" caption_key="xuiEditingTools" />
 			<mainmenubutton name="btnOptions" anchor="RightBottom" pivot="center" pos="850,-390" width="160" height="50" caption_key="xuiOptions" />
 			<mainmenubutton name="btnCredits" anchor="LeftTop" pivot="center" pos="-800,1500" width="160" height="50" caption_key="xuiCredits" />
@@ -44,6 +44,10 @@
 	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-40']//gameoption[@name='DayNightLength']/@values">120</set>
 	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-40']//gameoption[@name='DayLightLength']/@title">goDayLightLengthRE</set>
 	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-40']//gameoption[@name='DayLightLength']/@values">0</set>
+	<!-- <remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-40']//gameoption[@name='Region']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-40']//gameoption[@name='ServerVisibility']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-40']//gameoption[@name='ServerPassword']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-40']//gameoption[@name='ServerMaxPlayerCount']"/> -->
 	
 	<!-- Basic tab -->
 	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[2]/grid[@pos='6,-40']//gameoption[@name='BloodMoonFrequency']/@title">goBloodMoonFrequencyRE</set>
