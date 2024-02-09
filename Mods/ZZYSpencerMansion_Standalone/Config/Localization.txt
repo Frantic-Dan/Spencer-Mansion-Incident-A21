@@ -41,7 +41,7 @@ loadingTipRE7,"This devastating weapon can easily take off legs."
 loadingTipRE7_title,The Pump Shotgun:
 loadingTipRE8,"A huge thank you to the following people: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard."
 loadingTipRE8_title,Special Thanks!
-SpencerMansionSpawnText,"You're about to experience the Spencer Mansion Incident in a first person perspective.\n\nTo keep the experience true to Resident Evil, please note the following.\n1) You have limited inventory space of 10 slots. There are Item Storage Boxes to store your items. These boxes are not linked like in classic Resident Evil so be mindful of where you store your items.\n2) You cannot jump.\n3) Most enemies don't feel pain, so fighting them will be different to what you're used to.\n4) You have one life!\n\n[FFC800]For an immersive experience, I'd recommend turning up your ambient sound volume and your music to play all the time.[-]\n\nFor the intended experience, be sure to remove any non-related modlets and your orange game settings are correct."
+SpencerMansionSpawnText,"You're about to experience the Spencer Mansion Incident in a first person perspective.\n\nTo keep the experience true to Resident Evil, please note the following.\n1) You have limited inventory space of 10 slots. There are Item Storage Boxes to store your items. These boxes are not linked like in classic Resident Evil so be mindful of where you store your items.\n2) You cannot jump.\n3) Most enemies don't feel pain, so fighting them will be different to what you're used to.\n4) Ink Ribbons are needed to save your progress! (Found in typewriters)\n\n[FFC800]For an immersive experience, I'd recommend turning up your ambient sound volume and your music to play all the time.[-]\n\nFor the intended experience, be sure to remove any non-related modlets and your orange game settings are correct."
 TwitchAction_SpawnCrawlerCommand,#crawler
 TwitchAction_SpawnToughCommand,#spawn_tough
 TwitchAction_SpawnSnakeCommand,#snake
@@ -364,17 +364,17 @@ perkChemistExpertDesc,When crafting ammo you require 25% less gunpowder.\nWhen c
 meleeTorchRE,Torch
 Torchdesc,Turn on/off with [F]
 SurvivalKnife,Survival Knife
-SurvivalKnifedesc,"Jill's custom made knife, great for close quarter combat and harvesting animals."
+SurvivalKnifedesc,"Jill's custom made knife, great for close quarter combat and harvesting animals.\n\nSprinting Attack: +10% dismember chance.\nStamina > 50%: +10% dismember chance.\n(Calculates after attack)\n\n\n"
 S.T.A.R.SHandgun,S.T.A.R.S Handgun
-Handgundesc,"A Custom S.T.A.R.S. Standard Handgun, fires 9×19mm parabellum rounds."
+Handgundesc,"A Custom S.T.A.R.S. Standard Handgun, fires 9×19mm parabellum rounds.\n\n\n"
 MagnumRevolver,Magnum Revolver
-Magnumdesc,"A heavy magnum revolver, an extremely powerful handgun. It fires .357 magnum rounds"
+Magnumdesc,"A heavy magnum revolver, an extremely powerful handgun. It fires .357 magnum rounds.\n\n\n"
 PumpShotgun,Pump Shotgun
-Shotgundesc,Fires 12 Gauge Shells and Slugs. A weapon that is capable of firing wide-range.\nIt's old and worn so has a slow fire rate.\n\nA great chance to remove a leg!
+Shotgundesc,"Fires 12 Gauge Shells and Slugs. A weapon that is capable of firing wide-range.\nIt's old and worn so has a slow fire rate.\n\nA great chance to remove a leg!\n\n\n"
 AK-47,AK-47 Assault Rifle
-Rifledesc,An automatic assault rifle that can help you in desperate situations.
+Rifledesc,"An automatic assault rifle that can help you in desperate situations.\n\n\n"
 RocketLauncher,Rocket Launcher
-Launcherdesc,"A destructive weapon, try not to blow yourself up, alright!"
+Launcherdesc,"A destructive weapon, try not to blow yourself up, alright!\n\n\n"
 DestroyedRocketLauncher,Destroyed Rocket Launcher
 Launcher2desc,"Destroyed beyond repair, whoops!"
 QuadRocketLauncher,Quad Rocket Launcher
@@ -385,7 +385,7 @@ Vestdesc,This protective vest will mitigate 27.5% damage.\nStacks with Pain Tole
 Bandolier,Bandolier
 Bandolierdesc,"While wearing this, your reload time is reduced by 40% and you'll no longer suffer mobility penalty while reloading."
 modGunSoundSuppressorSilencerRE,Handgun Suppressor
-SuppressorDesc,Installing this suppressor on your handgun will quadruple your critical hit rate.\nDoes not increase damage.\n\nWon't work on tough hostiles.
+SuppressorDesc,"Installing this suppressor on your handgun will quadruple your critical hit rate.\nDoes not increase damage.\n\nWon't work on tough hostiles.\n\n\n"
 apparelToughGuySunglasses,Wesker's Sunglasses
 ammo9mmBulletBallRE,9x19mm Parabellum Bullet
 ammo9mmBulletHPRE,HiPower 9x19mm Parabellum Bullet
@@ -433,22 +433,22 @@ DogWhistle_offer,Today. Sir Spencer told me to hide something where no one could
 JillLockpick,With her lockpick set Jill is the master of unlocking.
 FilesDesc,You can read this note from your Journal.
 modMeleeErgonomicGripRE,Ergonomic Grip
-KnifeGripDesc,"Reduces normal attack stamina consumption by 3 and power attack stamina consumption by 6."
+KnifeGripDesc,"Reduces normal attack stamina consumption by 3 and power attack stamina consumption by 6.\n\n\n"
 modGunFlashlightRE,Firearm Torch Attachment
 modMeleeWeightedHeadRE,Weighted Head
-WeightedHeadDesc,A modification for your knife.\nAdds a 15% chance to stun and slow victims.
+WeightedHeadDesc,"A modification for your knife.\nAdds a 15% chance to stun and slow victims.\n\n\n"
 SamuraiEdgeParts,Samurai Edge Parts
-SamuraiEdgeDesc,Special custom parts that drastically increases fire rate and allow for a 3-round burst.\n\nOverall makes your handgun easier to wield.
+SamuraiEdgeDesc,"Special custom parts that drastically increases fire rate and allow for a 3-round burst.\n\nOverall makes your handgun easier to wield.\n\n\n"
 AssaultShotgunParts,Assault Shotgun Parts
-AssaultShotgunDesc,A S.T.A.R.S. custom arsenal and also Richard's favourite.\n\nHolds 10 rounds. Has a tighter spread. Longer range and faster fire rate. But slower reload speed.
+AssaultShotgunDesc,"A S.T.A.R.S. custom arsenal and also Richard's favourite.\n\nHolds 10 rounds. Has a tighter spread. Longer range and faster fire rate. But slower reload speed.\n\n\n"
 MagnumSpeedloader,Magnum Speedloader
-MagnumSpeedloaderDesc,This assists in a 25% faster reload and overall makes it easier to wield the revolver.
+MagnumSpeedloaderDesc,"This assists in a 25% faster reload and overall makes it easier to wield the revolver.\n\n\n"
 AK-47MuzzleBrake,AK-47 Muzzle Brake
-MuzzleBreakDesc,Makes the assault rifle more accurate and overall easier to wield.
+MuzzleBreakDesc,"Makes the assault rifle more accurate and overall easier to wield.\n\n\n"
 modGunMeleeBlessedMetalTyrant,T-Virus neutraliser
-modGunMeleeBlessedMetalTyrantDesc,Greatly increases damage to Tyrant\n\nKnife Only.
+modGunMeleeBlessedMetalTyrantDesc,"Greatly increases damage to Tyrant\n\nKnife Only.\n\n\n"
 modGunMeleeBlessedMetalPlant,V-Jolt Chemical
-modGunMeleeBlessedMetalPlantDesc,Soak your knife in V-Jolt to inflict extra damage to Plant 42.
+modGunMeleeBlessedMetalPlantDesc,"Soak your knife in V-Jolt to inflict extra damage to Plant 42.\n\n\n"
 drugBoulderBusters,"Chris Redfield secretly has these in his protein shake.\n\nIncreases brawling damage by 400%.\nStacks with Skull Crushers and Beer!"
 drugBoulderBustersDesc,"Your Brawling damage is increased by 400%.\nStacks with Skull Crushers and Beer!"
 drugRockBusters,Boulder Buster!
@@ -475,9 +475,9 @@ TrevorDiaryTip3,"There's something handwritten. it's not dated.\n\nNothing's cha
 BotanyBook,Botany Book
 BotanyBookTip_title,Botany Book
 BotanyBookTip,"Uses of Medicinal Herbs\n\nIt is a well-known fact that there exist many plants that are credited with medicinal healing powers. Since ancient times, mankind has been healing wounds and diseases using various plants.\n\nIn this book, we will sample three herbs that are native of the Arklay Mountains and briefly outline each of their medicinal qualities. Each herb has a distinct color and a distinct medicinal quality.\n\nThe green herb recovers physical strength. The blue herb neutralizes natural toxins. However, the red herb has no real effect by itself. We have found that mixing green and red herbs results in a magnified effect.\n\nWe will outline the effects of red herbs when mixed with other herbs when we have more data. Meanwhile feel free to experiment on your own, for true knowledge is best acquired through own experience."
-BodyDisposal,Body Disposal
-BodyDisposalTip_title,Body Disposal
-BodyDisposalTip,"Special instructions when disposing of dead bodies.\n\nWe have new information regarding those 'beings'. They may appear to be dead but in fact they are able to come back to life. However, there are ways to prevent them from becoming active again.\n\nCurrently there are two known methods to cease their resurrection.\n\n1. DESTRUCTION OF THE HEAD\n2. DISMEMBERMENT OF EITHER LEG\n(While they are alive)\n\nIf further methods are discovered, they will be notified immediately.\n\nMeanwhile to those of you who still have the will to live, kerosene has been placed around the mansion and surrounding areas. Take as much as you need.\n\nYou'll need something to light it with, which you'll need to find by yourself.\n\n[FF4F00]WARNING: Exiting your game session will instantly reanimate intact dead bodies upon loading your save.[-]"
+BodyDisposal,[FF4F00]Body Disposal[-]
+BodyDisposalTip_title,[FF4F00]Body Disposal[-]
+BodyDisposalTip,"Special instructions when disposing of dead bodies.\n\nWe have new information regarding those 'beings'. They may appear to be dead but in fact they are able to come back to life. However, there are ways to prevent them from becoming active again.\n\nCurrently there are three known methods to cease their resurrection.\n\n1. DESTRUCTION OF THE HEAD (Cause of death)\n2. DISMEMBERMENT OF EITHER LEG (While they are alive / Cause of death)\n3. INCINERATION (Cause of death)\n\nIf further methods are discovered, they will be notified immediately.\n\nMeanwhile to those of you who still have the will to live, kerosene has been placed around the mansion and surrounding areas. Take as much as you need.\n\nYou'll need something to light it with, which you'll need to find by yourself."
 Keeper'sDiary,Keeper's Diary
 KeeperDiaryTip_title,Keeper's Diary
 KeeperDiaryTip,"May 9, 1998\nPlayed poker tonight with Scott and Alias from Security, and Steve from Research. Steve was the big winner, but I think he was cheating. Scumbag.\n\nMay 10, 1998\nOne of the higher-ups assigned me to take care of a new creature. It looks like a skinned gorilla. Feeding instructions were to give it live animals. When I threw in a pig, the creature seemed to play with it... tearing off the pig's legs and pulling out the guts before it actually started eating.\n\nMay 11, 1998\nAt around 5 A.M., Scott woke me up. Scared the shit out me, too. He was wearing a protective suit. He handed me another one and told me to put it on. Said there'd been an accident in the basement lab. I just knew something like this would happen. Those bastards in Research never sleep, even on holiday\n\nMay 12, 1998\nI've been wearing the damn space suit since yesterday. My skin's getting grimy and feels itchy all over. The goddamn dogs have been looking at me funny, so I decided not to feed them today. Screw 'em.\n\nMay 13, 1998\nWent to the Infirmary because my back is all swollen and feels itchy. They put a big bandage on it and told me I didn't need to wear the suit anymore. All I wanna do is sleep.\n\nMay 14, 1998\nFound another big blister on my foot this morning. I ended up dragging my foot all the way to the dog's pen. They were quiet all day, which is weird. Then I realized some of them had escaped. Maybe this is their way of getting back at me for not feeding them the last three days. If anybody finds out, I'll have my head handed to me.\n\nMay 16, 1998\nRumors going around that a researcher who tried to escape the estate last night was shot. My entire body feels hot and itchy and I'm sweating all the time now. I scratched the swelling on my arm and a piece of rotten flesh just dropped off. What the hell's happening to me?\n\nMay 19, 1998\nFever gone but itchy. Today hungry and eat doggie food.\n\nMay 21, 1998\n Itchy itchy Scott came ugly face so killed him. Tasty. 4 / / Itchy. Tasty."
@@ -521,6 +521,9 @@ SecurityProtocolsTip,"BASEMENT LEVEL TWO\n\nVisual Data Room/ For use by the Spe
 TrainingInformation,[4FC3F7]Training Information[-]
 TrainingInformationTip_title,[4FC3F7]Training Information[-]
 TrainingInformationTip,"Your training perks - More in-depth details:\n\nChemist Expert:\nAllows you to craft a lot more ammo with great gunpowder efficiency. Also allows you to dismantle unwanted ammo without losing any resources.\n\nPassive Healing:\nYou heal 900 health per hour, as long as you're not at full health. Great for a long playthrough, bad for speedrunning.\n\nMedical Knowledge:\n35% more medical healing is great for maximising your healing supplies as well as mid-combat healing. Better for speedrunning than Passive Healing is."
+Achievements,[4FC3F7]Achievements[-]
+AchievementsTip_title,[4FC3F7]Achievements[-]
+AchievementsTip,"Below is a list of achievements that you can aim for, if you're looking for an extra challenge.\n\n[4FC3F7]Untrained S.T.A.R.S Officer[-]\nBeat the game without reading any S.T.A.R.S Training Manuals.\n\n[4FC3F7]Samurai 'Jill' Edge[-]\nBeat the game using only the Survival Knife as your weapon.\n(Firearms and throwables can't be used at all)\n\n[4FC3F7]Inventory Management Master[-]\nBeat the game without ever using any Item Storage Boxes to store your items.\n(This includes Typewriters, the Forge and Workbench. Exception: You may only use the Red Bags)\n\n[4FC3F7]Outbreak Prevented?[-]\nBeat the game with at least 350 kills.\n\n[4FC3F7]Speedy Escape[-]\nBeat the game in under:\n - C: 2 Hours 45 Minutes.\n - B: 3 Hours 20 Minutes.\n - A: 3 Hours 55 Minutes.\n - S: 4 Hours 30 Minutes.\n - Nightmare: 5 Hours 5 Minutes.\n - Sadomasochist: 5 Hours 40 Minutes.\n\n[4FC3F7]Skin Allergies[-]\nBeat the game without using any Herbs or First Aid Sprays.\n(Passive Healing is allowed. You cannot cure Poison)\n\n[4FC3F7]I'm Saved![-]\nFind the Infinite Typewriter and save your game as many times as you wish!"
 MeleeCombat,[4FC3F7]Melee Combat Safety[-]
 MeleeCombatTip_title,[4FC3F7]Melee Combat Safety[-]
 MeleeCombatTip,"Zombies that walk without a limp will always miss their attack if they are attacked first within approximately 0.05 - 0.75 seconds before their attack would have connected. As long as you have the stamina and the timing, you can safely stand still and not get hit by this type of zombie. (These are the zombies that are super fast when sprinting)\n\nZombies that are limping can only be hit the one time for their attack to miss, every 5 seconds. If a limping zombie is hit again before 5 seconds, their attack will hit you if they are in range. If a limping zombie is hit multiple times in a small space of time, their pain resistance will max out and will require up to 15 seconds before it is safe to hit them again for free. (These are the zombies that are slow, even when speed is set to sprinting)\n\nCrimson Heads are treated the same way as limping zombies. If you space out your attacks and keep your distance (doors help), you can knife Crimson Heads without needing your gun.\n\nThere are monsters even more dangerous than Crimson Heads. When meleeing with these monsters, it's best to bait them into attacking before counterattacking. These monsters will always land on their feet if they fall down a floor.\n\nBosses:\nIf you're good at melee combat and stamina management, it's possible to defeat all bosses with just a knife."
