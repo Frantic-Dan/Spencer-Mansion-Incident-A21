@@ -114,6 +114,8 @@
 	<property name="CanPickup" value="true" param1="vehicleGyroCopterChassis"/>
 </insertafter>
 <set xpath="/blocks/block[@name='gyrocopterStatic']//property[@name='Material']/@value">Mbedrock</set>
+<set xpath="/blocks/block[@name='forge']//property[@name='MaxDamage']/@value">8000</set>
+<set xpath="/blocks/block[@name='workbench']//property[@name='MaxDamage']/@value">8000</set>
 
 <remove xpath="/blocks/block/property[@name='Class' and @value='Loot']"/>
 <remove xpath="/blocks/block/property[@name='Class' and @value='SecureLoot']"/>
@@ -129,6 +131,9 @@
 
 <set xpath="/blocks/block[@name='treePlant02']//drop[2]/@count">0</set>
 <set xpath="/blocks/block[@name='treePlant02']//drop[2]/@prob">0</set>
+<remove xpath="/blocks/block[@name='cropsGrowingMaster']//property[@name='DisplayInfo']"/>
+<remove xpath="/blocks/block[@name='cropsHarvestableMaster']//property[@name='DisplayInfo']"/>
+<remove xpath="/blocks/block[@name='cntShippingCrateShamway']//property[@name='DisplayInfo']"/>
 
 <!-- <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']" /> -->
 
@@ -2003,7 +2008,7 @@
 	<property name="Tags" value="safes,door"/>
 	<property name="Class" value="SecureLoot"/>
 	<property name="LootList" value="doorNest"/>
-	<property name="DowngradeBlock" value="SingleEagleDoorBrown"/>
+	<property name="DowngradeBlock" value="SingleMansionDoorBrown2"/>
 		<property name="LockPickItem" value="WolfMedal"/>
 		<property name="LockPickTime" value="0.1"/>
 		<property name="LockPickSuccessEvent" value="RemoveWolfMedal"/>
