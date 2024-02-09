@@ -1,0 +1,35 @@
+<xml>
+
+	<append xpath="/items">
+
+		<item name="InkRERibbon">
+
+			<property name="Tags" value="food"/>
+			<property name="CustomIcon" value="ink-ribbon"/>
+			<property name="HoldType" value="31" />
+			<property name="DescriptionKey" value="InkRibbonREdesc"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab" />
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab" />
+			<property name="Material" value="Mmetal" />
+			<property name="CreativeMode" value="None"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>
+			<property name="Group" value="Books,BooksOnly,TCReading"/>
+
+			<!-- <property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="UseAnimation" value="true"/>
+				<property name="Sound_start" value="read_mod"/>
+				<property name="Sound_in_head" value="true"/>
+			</property>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ManualSave,ManualSaving"/>
+			</effect_group> -->
+
+		</item>
+
+	</append>
+
+</xml>
