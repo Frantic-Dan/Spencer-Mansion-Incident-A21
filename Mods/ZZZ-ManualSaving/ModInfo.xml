@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<xml>
+	<Name value="ManualSaving" />
+	<DisplayName value="ManualSaving"/>
+	<Description value="Manual saving for Dan The Frantic." />
+	<Author value="redbeardt" />
+	<Version value="1.0.0.2" />
+	<Website value="" />
+</xml>
