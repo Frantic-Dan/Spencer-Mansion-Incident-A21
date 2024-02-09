@@ -10,7 +10,6 @@
 <lootgroup name="DogLoot" count="all">
 	<item name="DogCollar"/>
 	<item name="modMeleeErgonomicGripRE"/>
-	<item name="modMeleeErgonomicGripRE"/>
 </lootgroup>
 
 <!-- Dog with Collar -->
