@@ -6,6 +6,7 @@
 <set xpath="/materials/material[@id='MfertilizedClayPlanter']//property[9]/@value">0</set>
 <set xpath="/materials/material[@id='Mfarmland']//property[8]/@value">5</set>
 <set xpath="/materials/material[@id='MoreMetal']//property[8]/@value">20</set>
+<set xpath="/materials/material[@id='Mglass']//property[10]/@value">200</set>
 
 <append xpath="/materials">
 
