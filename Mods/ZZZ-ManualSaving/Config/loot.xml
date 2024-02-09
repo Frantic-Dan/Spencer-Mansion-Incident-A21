@@ -1,0 +1,25 @@
+<FranticDan>
+<append xpath="/lootcontainers">
+<!--<configs>-->
+
+<!-- Ink Ribbon -->
+<lootcontainer name="InkRibbonLoot" count="1" size="5,1" sound_open="UseActions/open_cash_register" sound_close="UseActions/close_cash_register" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+	<item name="InkRERibbon" count="1"/>
+</lootcontainer>
+
+<lootgroup name="InkRibbonLoot2" count="all" >
+	<item name="InkRERibbon" count="1"/>
+	<item name="InkRERibbon" count="1"/>
+	<item name="InkRERibbon" count="1"/>
+	<item name="InkRERibbon" count="1"/>
+	<item name="InkRERibbon" count="1"/>
+</lootgroup>
+
+<lootcontainer name="InfiniteInkRibbonLoot" size="5,1" sound_open="UseActions/open_cash_register" sound_close="UseActions/close_cash_register" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+	<item group="InkRibbonLoot2"/>
+
+</lootcontainer>
+
+
+</append>
+</FranticDan>
