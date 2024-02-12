@@ -63,7 +63,7 @@ TwitchAction_SupplyAmmoMolotovCommand,#molotov
 TwitchAction_SupplyFirstAidSprayCommand,#firstaidspray
 TwitchAction_SupplyAmmo762Command,#rifle_x12
 buffNewbieCoatNameRE,General Information for The Spencer Mansion Incident
-buffNewbieCoatDescRE,"The Spencer Mansion Incident will give you a unique 7 Days to Die experience like no other mod.\nHere's some information to help you settle in.\n\nThere are no critical injuries, so you don't have to worry about bleeding out, knowing this you can focus on making the most of the limited healing supplies available.\n\nBe mindful of your inventory, don't try to gather herbs or ammo when full, as they will drop on the floor and go to waste.\n\nYou don't have to worry about food and water here, they'll always remain full. However, getting set on fire will make you thirsty. If you become completely dehydrated, then you'll have to drink from a water source and risk getting sick.\n\nZombies can open doors, so never assume you're safe!\n\nThis mod was made for single player in mind, if playing multiplayer, it could potentially make the game harder and SOFT LOCKING is possible, you've been warned!"
+buffNewbieCoatDescRE,"The Spencer Mansion Incident will give you a unique 7 Days to Die experience like no other mod.\nHere's some information to help you settle in.\n\nThere are no critical injuries, so you don't have to worry about bleeding out, knowing this you can focus on making the most of the limited healing supplies available.\n\nBe mindful of your inventory, don't try to gather herbs or ammo when full, as they will drop on the floor and go to waste.\n\nYou don't have to worry about food and water here, they'll always remain full. However, getting set on fire will make you thirsty. If you become completely dehydrated, then you'll have to drink from a water source and risk getting sick.\n\nZombies can open doors, so never assume you're safe!"
 xuiInventory,Jill Valentine's Inventory
 tooltipJammed,([DECEA3]Jammed[-])
 tooltipLocked,{1}
@@ -358,7 +358,7 @@ perkCardioDesc,Stamina drains 50% slower while sprinting.\nSprint 10% faster.
 perkKnifeTrainedName,Knife Trained
 perkKnifeTrainedDesc,Inflict 25% more damage.\nAttack 25% faster.\nDrain 4 less stamina with normal attacks\nand 8 less stamina with power attacks.
 perkMedicalKnowledgeName,Medical Knowledge
-perkMedicalKnowledgeDesc,Medical items are 35% more potent.\n\nIn multiplayer you can heal your partner for the same benefit.
+perkMedicalKnowledgeDesc,Medical items are 35% more potent.
 perkChemistExpertName,Chemist Expert
 perkChemistExpertDesc,When crafting ammo you require 25% less gunpowder.\nWhen crafting gunpowder you require 20% less Nitrate and Coal.
 meleeTorchRE,Torch
