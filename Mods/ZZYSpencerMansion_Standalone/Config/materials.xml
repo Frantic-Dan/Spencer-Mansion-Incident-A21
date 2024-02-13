@@ -7,6 +7,7 @@
 <set xpath="/materials/material[@id='Mfarmland']//property[8]/@value">5</set>
 <set xpath="/materials/material[@id='MoreMetal']//property[8]/@value">20</set>
 <set xpath="/materials/material[@id='Mglass']//property[10]/@value">200</set>
+<set xpath="/materials/material[@id='Mmetal']//property[8]/@value">5000</set>
 
 <append xpath="/materials">
 
@@ -33,6 +34,8 @@
 	<property name="MaxDamage" value="10000"/>
 	<property name="Experience" value="0"/>
 </material>
+
+
 
 <material id="MstoneMansion">
 	<property name="damage_category" value="stone"/>
