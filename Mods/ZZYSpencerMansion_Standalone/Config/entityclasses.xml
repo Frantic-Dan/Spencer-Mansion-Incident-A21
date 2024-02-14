@@ -354,12 +354,13 @@
 	<property name="PainResistPerHit" value="1.01"/><!-- Feral -->
 	<property name="KnockdownProneDamageThreshold" value="0"/>
 	<property name="KnockdownKneelDamageThreshold" value="0"/>
+	
 
 	<!-- Gameplay -->
 	<property name="MoveSpeedAggro" value=".5, 1"/> <!-- 1.35 -->
 	<property name="HandItem" value="meleeHandTyrant"/>
 	<property name="JumpMaxDistance" value="4.6, 5"/>
-
+	<property name="OpenDoorPercentage" value="1"/>
 	<property name="ExperienceGain" value="0"/> <!-- XP strong -->
 	<property name="TimeStayAfterDeath" value="1200"/>
 	<property name="LootDropProb" value="1"/> <!-- Feral -->
