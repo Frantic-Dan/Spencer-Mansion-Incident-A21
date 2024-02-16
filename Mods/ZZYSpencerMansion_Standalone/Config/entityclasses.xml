@@ -789,6 +789,10 @@
 	<property name="PainResistPerHit" value="3"/><!-- Feral -->
 	<property name="MoveSpeedAggro" value=".25, .25"/> <!-- slim, feral -->
 	<property name="JumpMaxDistance" value="11, 13"/>
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemalescoutroam"/>
+	<property name="SoundAlert" value="Enemies/Scout_Zombie/zombiefemalescoutalert"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemalescoutattack"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalescoutsense"/>
 	<property name="WalkType" value="2"/>
 	<property name="HandItem" value="meleeHandLisaTrevor"/>
 	<property name="ExperienceGain" value="0"/><!-- XP grunt feral -->
