@@ -87,11 +87,12 @@
 		<property name="offer_key" value="quest_BasicSurvival_offer"/>
 		<property name="shareable" value="false"/>
 
-		<objective type="Craft">
+		<objective type="FetchKeep" id="vehicleGyrocopterPlaceable" value="1" phase="1"/>
+		<!-- <objective type="Craft">
 			<property name="phase" value="1"/>
 			<property name="item" value="vehicleGyrocopterPlaceable"/>
 			<property name="count" value="1"/>
-		</objective>
+		</objective> -->
 
 		<reward type="Quest" id="FinalEscape"/>
 	</quest>
